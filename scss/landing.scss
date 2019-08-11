@@ -1,0 +1,76 @@
+@font-face {
+  src: url("../fonts/FuturaBoldCondensedBT.ttf");
+  font-family: "Futura";
+}
+
+.landing-wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #e6c002;
+  position: relative;
+
+  .landing-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(
+      rgba(52, 44, 95, 1) 0%,
+      rgba(52, 44, 95, 1) 38%,
+      rgba(80, 68, 130, 1) 100%
+    );
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#342c5f', endColorstr='#504482', GradientType=1 );
+    clip-path: polygon(65% 0, 40% 75%, 61% 100%, 100% 100%, 100% 0);
+  }
+}
+
+.bosm-header {
+  position: absolute;
+  font-family: "Futura";
+  color: #fff;
+  top: 50%;
+  left: 0;
+  // transform: translateY(-50%);
+  width: 100%;
+  font-size: 15em;
+  display: flex;
+  justify-content: space-around;
+  z-index: 20;
+  transform: translateY(-50px);
+  opacity: 0;
+  animation: appear-bosm 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes appear-bosm {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-50%);
+    opacity: 1;
+  }
+}
+
+.cricket {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  opacity: 0;
+  animation: fade-in 0.5s linear 0.7s forwards;
+
+  img {
+    height: 80%;
+    width: auto;
+  }
+}
+
+@keyframes fade-in {
+  from {opacity: 0}
+  to {opacity: 1;}
+}
