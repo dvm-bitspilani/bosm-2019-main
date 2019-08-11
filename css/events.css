@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaBoldCondensedBT.ttf"); }
+
+@font-face {
+  font-family: "SFPro";
+  src: url("../fonts/SF-Pro-Display-MediumItalic.ttf"); }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.events-wrapper {
+  width: 100%;
+  padding: 32px 16px;
+  background: #1876B7;
+  overflow-x: hidden; }
+  .events-wrapper .events-title {
+    font-family: "FuturaPT";
+    letter-spacing: 20px;
+    margin: 2% auto;
+    font-size: 4rem;
+    text-align: center;
+    color: #ffffff; }
+  .events-wrapper .events-container {
+    width: 100%;
+    padding: 76px 0;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.75s ease-in; }
+    .events-wrapper .events-container .events-set {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      min-width: 100%; }
+      .events-wrapper .events-container .events-set .events-card {
+        width: 15%;
+        height: 370px;
+        border-radius: 5%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease-in; }
+        .events-wrapper .events-container .events-set .events-card .events-card-back {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #ffffff;
+          border-radius: 5%;
+          backface-visibility: hidden; }
+          .events-wrapper .events-container .events-set .events-card .events-card-back img {
+            width: 75%; }
+        .events-wrapper .events-container .events-set .events-card .events-card-front {
+          width: 100%;
+          height: calc(100% - 32px);
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 16px 0;
+          background: #ffffff;
+          transform: rotateY(180deg) translateY(-100%);
+          border-radius: 5%;
+          backface-visibility: hidden; }
+          .events-wrapper .events-container .events-set .events-card .events-card-front .event-name {
+            font-family: "FuturaPT";
+            font-size: 1.75rem;
+            letter-spacing: 7.5px;
+            color: #333333; }
+          .events-wrapper .events-container .events-set .events-card .events-card-front img {
+            height: 80%; }
+  .events-wrapper .events-msg {
+    font-family: "SFPro";
+    text-align: end;
+    font-size: 1.15rem;
+    padding-right: 7.5%;
+    color: #ffffff; }
+  .events-wrapper .events-nav-dots {
+    text-align: center;
+    margin: 32px 0; }
+    .events-wrapper .events-nav-dots .event-nav-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 3.5px solid #ffffff;
+      margin: 3px;
+      display: inline-block;
+      cursor: pointer;
+      transition: 0.75s; }
