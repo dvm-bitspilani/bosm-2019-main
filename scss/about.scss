@@ -19,6 +19,54 @@ body {
   width: 100%;
   background-color: #1876b7;
   position: relative;
+  .circle {
+    width: 500px;
+    height: 500px;
+    background: url("../img/Ellipse.png") no-repeat center center/cover;
+    position: absolute;
+    left: calc(50vw - 250px);
+    top: 20%;
+    transform: translateY(-50%);
+    animation: rotate-ellipse 45s linear infinite;
+  }
+  .dash1 {
+    height: 2px;
+    width: 20%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    opacity: 0.2;
+    animation: translate-div 60s ease-in-out infinite;
+  }
+  .dash2 {
+    height: 2px;
+    width: 13%;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 14%;
+    opacity: 0.2;
+    animation: translate-div 70s ease-in-out infinite;
+  }
+
+  @keyframes rotate-ellipse {
+    from {
+      transform: translateY(-50%) rotate(0);
+    }
+    to {
+      transform: translateY(-50%) rotate(360deg);
+    }
+  }
+  @keyframes translate-div {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100vw);
+    }
+  }
+
   .clip-div {
     height: 100%;
     width: 100%;
@@ -70,6 +118,7 @@ body {
           background-color: #e8c8ce;
           position: absolute;
           left: 100%;
+          z-index: 22;
           transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
         }
         .img3 {

@@ -15,7 +15,6 @@ var text = [
 ];
 
 function tweetchange() {
-  console.log(tweet_count);
   tweet_count++;
   if (tweet_count > 4) {
     tweet_count = 0;
@@ -102,7 +101,6 @@ function slideleft() {
       dots[2].style.backgroundColor = "transparent";
       tweet_text.innerHTML = text[0];
   }
-  console.log("works");
 }
 
 var Var = setInterval(slideleft, 5000);

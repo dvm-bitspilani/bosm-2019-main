@@ -21,6 +21,87 @@ body {
   position: relative;
 }
 
+.about-div .circle {
+  width: 500px;
+  height: 500px;
+  background: url("../img/Ellipse.png") no-repeat center center/cover;
+  position: absolute;
+  left: calc(50vw - 250px);
+  top: 20%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-animation: rotate-ellipse 45s linear infinite;
+          animation: rotate-ellipse 45s linear infinite;
+}
+
+.about-div .dash1 {
+  height: 2px;
+  width: 20%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  opacity: 0.2;
+  -webkit-animation: translate-div 60s ease-in-out infinite;
+          animation: translate-div 60s ease-in-out infinite;
+}
+
+.about-div .dash2 {
+  height: 2px;
+  width: 13%;
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 14%;
+  opacity: 0.2;
+  -webkit-animation: translate-div 70s ease-in-out infinite;
+          animation: translate-div 70s ease-in-out infinite;
+}
+
+@-webkit-keyframes rotate-ellipse {
+  from {
+    -webkit-transform: translateY(-50%) rotate(0);
+            transform: translateY(-50%) rotate(0);
+  }
+  to {
+    -webkit-transform: translateY(-50%) rotate(360deg);
+            transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@keyframes rotate-ellipse {
+  from {
+    -webkit-transform: translateY(-50%) rotate(0);
+            transform: translateY(-50%) rotate(0);
+  }
+  to {
+    -webkit-transform: translateY(-50%) rotate(360deg);
+            transform: translateY(-50%) rotate(360deg);
+  }
+}
+
+@-webkit-keyframes translate-div {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+}
+
+@keyframes translate-div {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+}
+
 .about-div .clip-div {
   height: 100%;
   width: 100%;
@@ -95,6 +176,7 @@ body {
   background-color: #e8c8ce;
   position: absolute;
   left: 100%;
+  z-index: 22;
   -webkit-transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
