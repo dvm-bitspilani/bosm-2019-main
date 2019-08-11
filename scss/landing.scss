@@ -34,7 +34,8 @@
 
 //------------- Animated background elements ---------
 
-.ellipse-1, .ellipse-2 {
+.ellipse-1,
+.ellipse-2 {
   height: 500px;
   width: 500px;
   position: absolute;
@@ -50,11 +51,16 @@
   background: url("../img/Ellipse 2.png") no-repeat center center/cover;
 }
 @keyframes rotate-ellipse {
-  from {transform: rotateZ(0)}
-  to {transform: rotateZ(360deg)}
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
-.line-1, .line-2 {
+.line-1,
+.line-2 {
   height: 2px;
   width: 0;
   background-color: #fff;
@@ -65,11 +71,15 @@
 .line-1 {
   top: 23.5%;
   left: 0;
-  animation: grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards; 
+  animation: grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards;
 }
 @keyframes grow-1 {
-  from {width: 0}
-  to {width: 200px}
+  from {
+    width: 0;
+  }
+  to {
+    width: 200px;
+  }
 }
 
 .line-2 {
@@ -78,13 +88,22 @@
   animation: grow-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards;
 }
 @keyframes grow-2 {
-  from {width: 0}
-  to {width: 300px}
+  from {
+    width: 0;
+  }
+  to {
+    width: 300px;
+  }
 }
 
-// .line-3 {
-
-// }
+.line-3 {
+  position: absolute;
+  height: 80vh;
+  width: 400px;
+  top: 0;
+  left: 20%;
+  background: url("../img/tilt_line.png") no-repeat center center/cover;
+}
 // -----------------------------------------------------
 
 .bosm-header {
@@ -99,6 +118,12 @@
   transform: translateY(200px);
   opacity: 0;
   animation: appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+.letter {
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.letter:hover {
+  transform: rotateY(540deg);
 }
 .grit {
   width: 185px;
@@ -210,11 +235,12 @@
     font-size: 2.5em;
     letter-spacing: 4px;
 
-    #days, #min {
+    #days,
+    #min {
       color: #fff;
     }
     #hrs {
-      color: #4A3F7B;
+      color: #4a3f7b;
     }
   }
 
@@ -226,8 +252,9 @@
     letter-spacing: 1px;
     font-size: 0.9em;
 
-    #daysLabel, #minLabel {
-      color: #4A3F7B;
+    #daysLabel,
+    #minLabel {
+      color: #4a3f7b;
     }
     #daysLabel {
       margin-right: 5px;
@@ -250,6 +277,7 @@
   flex-direction: row;
   align-items: center;
   letter-spacing: 2px;
+  z-index: 20;
 
   .social-icon {
     margin-left: 20px;
@@ -257,9 +285,14 @@
     height: 30px;
     width: 30px;
 
-    &:hover {
-      cursor: pointer;
-    } 
+    a {
+      width: 100%;
+      height: 100%;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
   }
   .social-icon.fb {
     background: url("../img/fb.png") no-repeat center center/cover;
@@ -269,10 +302,11 @@
   }
 }
 
-.slogan-1, .slogan-2 {
+.slogan-1,
+.slogan-2 {
   position: absolute;
   font-size: 2em;
-  color: #4A3F7B;
+  color: #4a3f7b;
   // opacity: 0.8;
   font-family: "Futura";
   letter-spacing: 12px;
@@ -292,4 +326,3 @@
   left: 13%;
   animation-delay: 0.4s;
 }
-
