@@ -3,11 +3,18 @@
   font-family: "Futura";
 }
 
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/SF-Pro-Text-Regular.ttf");
+}
+
 .landing-wrapper {
   height: 100vh;
   width: 100%;
   background-color: #e6c002;
   position: relative;
+  display: flex;
+  align-items: center;
 
   .landing-clip {
     position: absolute;
@@ -26,29 +33,49 @@
 }
 
 .bosm-header {
-  position: absolute;
   font-family: "Futura";
+  // position: relative;
   color: #fff;
-  top: 50%;
-  left: 0;
-  // transform: translateY(-50%);
   width: 100%;
   font-size: 15em;
   display: flex;
   justify-content: space-around;
   z-index: 20;
-  transform: translateY(-50px);
+  transform: translateY(200px);
   opacity: 0;
-  animation: appear-bosm 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation: appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+.grit {
+  width: 185px;
+  height: 25px;
+  background: url("../img/GRIT.png") no-repeat center center/cover;
+  position: absolute;
+  right: 14%;
+  bottom: 34%;
+  transform: translateY(100px);
+  opacity: 0;
+  animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation-delay: 0.3s;
 }
 
 @keyframes appear-bosm {
   from {
-    transform: translateY(-50px);
+    transform: translateY(200px);
     opacity: 0;
   }
   to {
-    transform: translateY(-50%);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes appear-grit {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -71,6 +98,102 @@
 }
 
 @keyframes fade-in {
-  from {opacity: 0}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: 1.2em;
+  font-family: "sfpro";
+  margin: 0;
+  z-index: 20;
+  box-sizing: border-box;
+
+  .nav-item {
+    padding: 30px;
+    color: #fff;
+    transition: all 0.1s ease;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  height: 80px;
+  width: 80px;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.social {
+  font-size: 1.3em;
+  font-family: "sfpro";
+  color: #e6c002;
+  position: absolute;
+  right: 3%;
+  bottom: 6%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 2px;
+
+  .social-icon {
+    margin-left: 20px;
+    font-size: 1em;
+    height: 30px;
+    width: 30px;
+
+    &:hover {
+      cursor: pointer;
+    } 
+  }
+  .social-icon.fb {
+    background: url("../img/fb.png") no-repeat center center/cover;
+  }
+  .social-icon.insta {
+    background: url("../img/insta.png") no-repeat center center/cover;
+  }
+}
+
+.slogan-1, .slogan-2 {
+  position: absolute;
+  font-size: 2em;
+  color: #4A3F7B;
+  // opacity: 0.8;
+  font-family: "Futura";
+  letter-spacing: 12px;
+  transform: translateY(100px);
+  opacity: 0;
+  animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
+.slogan-1 {
+  top: 19%;
+  left: 5%;
+  animation-delay: 0.3s;
+}
+
+.slogan-2 {
+  top: 25%;
+  left: 13%;
+  animation-delay: 0.4s;
+}
+
