@@ -32,6 +32,61 @@
   }
 }
 
+//------------- Animated background elements ---------
+
+.ellipse-1, .ellipse-2 {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  left: calc(50vw - 250px);
+  z-index: 10;
+  animation: rotate-ellipse 45s linear infinite;
+}
+
+.ellipse-1 {
+  background: url("../img/Ellipse.png") no-repeat center center/cover;
+}
+.ellipse-2 {
+  background: url("../img/Ellipse 2.png") no-repeat center center/cover;
+}
+@keyframes rotate-ellipse {
+  from {transform: rotateZ(0)}
+  to {transform: rotateZ(360deg)}
+}
+
+.line-1, .line-2 {
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.line-1 {
+  top: 23.5%;
+  left: 0;
+  animation: grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards; 
+}
+@keyframes grow-1 {
+  from {width: 0}
+  to {width: 200px}
+}
+
+.line-2 {
+  top: 24.5%;
+  left: 0;
+  animation: grow-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards;
+}
+@keyframes grow-2 {
+  from {width: 0}
+  to {width: 300px}
+}
+
+// .line-3 {
+
+// }
+// -----------------------------------------------------
+
 .bosm-header {
   font-family: "Futura";
   // position: relative;
@@ -140,6 +195,47 @@
   img {
     height: 100%;
     width: auto;
+  }
+}
+
+.time {
+  position: absolute;
+  left: 5%;
+  bottom: 8%;
+  font-family: "sfpro";
+
+  .timeNum {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+
+    #days, #min {
+      color: #fff;
+    }
+    #hrs {
+      color: #4A3F7B;
+    }
+  }
+
+  .timeLabel {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+
+    #daysLabel, #minLabel {
+      color: #4A3F7B;
+    }
+    #daysLabel {
+      margin-right: 5px;
+    }
+    #hrsLabel {
+      color: #fff;
+      margin-right: 5px;
+    }
   }
 }
 
