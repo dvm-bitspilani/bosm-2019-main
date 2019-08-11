@@ -5,7 +5,23 @@ var dots = document.getElementsByClassName("dot");
 var navigation = document.getElementsByClassName("navigations");
 var tweet_text = document.getElementById("tweet-text");
 var count = 0;
-var text = ["#tweetno.1", "#tweetno.2", "#tweetno.3"];
+var tweet_count = 0;
+var text = [
+  "#tweetno.1",
+  "#tweetno.2",
+  "#tweetno.3",
+  "#tweetno.4",
+  "#tweetno.5"
+];
+
+function tweetchange() {
+  console.log(tweet_count);
+  tweet_count++;
+  if (tweet_count > 4) {
+    tweet_count = 0;
+  }
+  tweet_text.innerHTML = text[tweet_count];
+}
 
 function setvalue(i) {
   count = i;
@@ -17,7 +33,6 @@ function setvalue(i) {
       dots[0].style.backgroundColor = "#fffffe";
       dots[1].style.backgroundColor = "transparent";
       dots[2].style.backgroundColor = "transparent";
-      tweet_text.innerHTML = text[0];
       break;
     case 1:
       img1.style.transform = "translateX(-100%)";
@@ -26,7 +41,6 @@ function setvalue(i) {
       dots[0].style.backgroundColor = "transparent";
       dots[1].style.backgroundColor = "#fffffe";
       dots[2].style.backgroundColor = "transparent";
-      tweet_text.innerHTML = text[1];
       break;
     case 2:
       img1.style.transform = "translateX(-200%)";
@@ -35,7 +49,6 @@ function setvalue(i) {
       dots[0].style.backgroundColor = "transparent";
       dots[1].style.backgroundColor = "transparent";
       dots[2].style.backgroundColor = "#fffffe";
-      tweet_text.innerHTML = text[2];
       break;
     default:
       img1.style.transform = "translateX(0)";
@@ -44,7 +57,6 @@ function setvalue(i) {
       dots[0].style.backgroundColor = "#fffffe";
       dots[1].style.backgroundColor = "transparent";
       dots[2].style.backgroundColor = "transparent";
-      tweet_text.innerHTML = text[0];
   }
 }
 
@@ -93,4 +105,5 @@ function slideleft() {
   console.log("works");
 }
 
-var myVar = setInterval(slideleft, 5000);
+var Var = setInterval(slideleft, 5000);
+var Var2 = setInterval(tweetchange, 3000);
