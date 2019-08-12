@@ -23,7 +23,7 @@
     width: 500px;
     height: 500px;
     top: calc(50% - 250px);
-    z-index: 0;
+    z-index: -1;
     right: -250px;
     animation: rotate-ellipse 45s linear infinite;
     -webkit-animation: rotate-ellipse 45s linear infinite
@@ -38,7 +38,7 @@
     top: -5%;
     left: 10%;
     margin: 10% 0;
-    z-index: 0
+    z-index: -1;
 }
 
 .events-wrapper .event-background-asset-03 {
@@ -49,7 +49,7 @@
     height: 80%;
     top: 5%;
     left: 20%;
-    z-index: 0
+    z-index: -1;
 }
 
 .events-wrapper .events-title {

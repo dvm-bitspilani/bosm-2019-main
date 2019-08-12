@@ -1,0 +1,88 @@
+.gallery-wrapper {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    background: #1876B7;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+.gallery-background-asset-04 {
+    position: absolute;
+    background: url("../img/events-asset-01.png");
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    top: calc(50% - 250px);
+    z-index: -1;
+    left: -250px;
+    animation: rotate-ellipse 45s linear infinite;
+    -webkit-animation: rotate-ellipse 45s linear infinite;
+}
+.gallery-container {
+    display: flex;
+    transition: 1.5s;
+}
+.gallery {
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: 23vh 20px 23vh 20px 23vh;
+    grid-template-columns: 5vw 28vw 20px 28vw 20px 28vw 5vw;
+}
+.gallery-1 {
+    background: url('../img/youtube-logo-thumbnail-change-experiment.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column-start: 2;
+    z-index: 10;
+}
+.gallery-2 {
+    background: url('../img/youtube-logo-thumbnail-change-experiment.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    z-index: 10;
+}
+.gallery-3 {
+    background: url('../img/youtube-logo-thumbnail-change-experiment.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    z-index: 10;
+}
+.gallery-4 {
+    background: url('../img/youtube-logo-thumbnail-change-experiment.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column-start: 4;
+    grid-row-start: 5;
+    z-index: 10;
+}
+.gallery-5 {
+    background: url('../img/youtube-logo-thumbnail-change-experiment.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-column-start: 6;
+    grid-row-start: 5;
+    z-index: 10;
+}
+
+.gallery-nav-dots {
+    text-align: center;
+    margin: 32px 0; 
+}
+.gallery-nav-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 3.5px solid #ffffff;
+    margin: 3px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.75s;
+}
