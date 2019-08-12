@@ -15,8 +15,12 @@ function setTime() {
     document.getElementById("min").innerHTML = min;
 }
 
-function setPlayer() {
-    const player = document.getElementsByClassName
+function setPlayer(num) {
+    const players = ["../img/cricket.png", "../img/Football.png", "../img/Soccer.png"];
+    const text = ["GRIT", "GUTS", "GLORY"];
+
+    const player = document.getElementsByClassName("player_image")[0];
+    player.src = players[num];
 }
 
 window.onload = function() {
@@ -58,6 +62,7 @@ window.onload = function() {
     }, 4500);
 
     setInterval(() => setTime(), 60000);
+    
 };
 
 window.onbeforeunload = () => {

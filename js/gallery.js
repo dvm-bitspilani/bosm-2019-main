@@ -3,7 +3,7 @@ let galleryNumber = 1;
 const galleryContainer = document.getElementsByClassName("gallery-container")[0];
 
 const changeGallerySet = () => {
-    console.log(galleryNumber)
+    // console.log(galleryNumber)
     if (galleryNumber < numberOfSet) {
         galleryNumber++;
         galleryContainer.style.transform = "translate(" + (-100 * (galleryNumber - 1)) + "%)";

@@ -177,16 +177,16 @@
 }
 
 .grit {
-  width: 185px;
-  height: 25px;
-  background: url("../img/GRIT.png") no-repeat center center/cover;
   position: absolute;
-  right: 14%;
-  bottom: 34%;
+  right: 8%;
+  bottom: 32%;
   transform: translateY(100px);
   opacity: 0;
+  font-family: "Futura";
+  font-size: 2.4em;
+  letter-spacing: 40px;
+  color: #e6c002;
 //   animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-  animation-delay: 0.3s;
 }
 
 @keyframes appear-bosm {
