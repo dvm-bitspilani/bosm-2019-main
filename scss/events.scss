@@ -30,6 +30,7 @@ body {
         width: 500px;
         height: 500px;
         top: calc(50% - 250px);
+        z-index: 0;
         right: -250px;
         animation: rotate-ellipse 45s linear infinite;
         -webkit-animation: rotate-ellipse 45s linear infinite;
@@ -41,9 +42,10 @@ body {
         background-size: 100% 100%;
         width: 80%;
         height: 70%;
-        top: 0;
+        top: -5%;
         left: 10%;
         margin: 10% 0;
+        z-index: 0;
     }
 
     .event-background-asset-03 {
@@ -52,8 +54,9 @@ body {
         background-size: 100% 100%;
         width: 60%;
         height: 80%;
-        top: 10%;
+        top: 5%;
         left: 20%;
+        z-index: 0;
     }
 
     .events-title {
@@ -85,7 +88,7 @@ body {
                 border-radius: 5%;
                 transform-style: preserve-3d;
                 transition: transform 0.5s ease-in;
-                // transform: rotateY(180deg);
+                box-shadow: 0 0 50px 1px #333333;
 
                 .events-card-back {
                     width: 100%;

@@ -8,16 +8,26 @@ const openCard = () => {
         const eventsCard = document.querySelectorAll('.events-set:nth-of-type(' + setNumber + ') > .events-card');
         foldCard();
         document.querySelectorAll('.events-nav-dots > .event-nav-dot')[setNumber - 1].style.background = "#ffffff";
-        for(eventCard of eventsCard) {
-            eventCard.style.transform = "rotateY(180deg)";
-        }
+        let i = 0;
+        const flip = setInterval(() => {
+            if(i < eventsCard.length) {
+                eventsCard[i].style.transform = "rotateY(180deg)";
+                i++;
+            } else {
+                clearInterval(flip);
+            }
+        }, 200);
     }
 }
 
 const foldCard = () => {
     if(eventsContainer.getBoundingClientRect().top-10 <= window.innerHeight){
-        const eventsCard = document.querySelectorAll('.events-set:nth-of-type(' + ((setNumber - 1) || (numberOfSet)) + ') > .events-card');
-        for(eventCard of eventsCard) {
+        const eventsCard1 = document.querySelectorAll('.events-set:nth-of-type(' + ((setNumber - 1) || (numberOfSet)) + ') > .events-card');
+        const eventsCard2 = document.querySelectorAll('.events-set:nth-of-type(' + ((setNumber + 1) || (numberOfSet)) + ') > .events-card');
+        for(eventCard of eventsCard1) {
+            eventCard.style.transform = "rotateY(0deg)";
+        }
+        for(eventCard of eventsCard2) {
             eventCard.style.transform = "rotateY(0deg)";
         }
     }
