@@ -31,7 +31,13 @@
       rgba(80, 68, 130, 1) 100%
     );
     // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#342c5f', endColorstr='#504482', GradientType=1 );
-    clip-path: polygon(65% 0, 40% 75%, 61% 100%, 100% 100%, 100% 0);
+    clip-path: polygon(100% 0, 100% 30%, 100% 100%, 100% 100%, 100% 0);
+    // animation: grow-clip 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  }
+
+  @keyframes grow-clip {
+      from {clip-path: polygon(100% 0, 100% 30%, 100% 100%, 100% 100%, 100% 0)}
+      to {clip-path: polygon(65% 0, 40% 75%, 61% 100%, 100% 100%, 100% 0)}
   }
 }
 

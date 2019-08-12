@@ -37,6 +37,7 @@ window.onload = function() {
 
         // trigger landing page animations only when page is loaded. Forgive the selectors.
         setTimeout(() => {
+            document.getElementsByClassName("landing-clip")[0].style.animation = "grow-clip 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
             document.getElementsByClassName("line-1")[0].style.animation = "grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards";
             document.getElementsByClassName("line-2")[0].style.animation = "grow-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards";
             document.getElementsByClassName("line-3")[0].style.animation = "grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards";
