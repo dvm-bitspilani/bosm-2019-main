@@ -11,6 +11,7 @@
   padding: 32px 16px;
   background: #1876B7;
   overflow: hidden;
+  z-index: 0;
   position: relative; }
   .events-wrapper .event-background-asset-01 {
     position: absolute;
@@ -19,7 +20,7 @@
     width: 500px;
     height: 500px;
     top: calc(50% - 250px);
-    z-index: 0;
+    z-index: -1;
     right: -250px;
     animation: rotate-ellipse 45s linear infinite;
     -webkit-animation: rotate-ellipse 45s linear infinite; }
@@ -32,7 +33,7 @@
     top: -5%;
     left: 10%;
     margin: 10% 0;
-    z-index: 0; }
+    z-index: -1; }
   .events-wrapper .event-background-asset-03 {
     position: absolute;
     background: url("../img/events-asset-03.png");
@@ -41,7 +42,7 @@
     height: 80%;
     top: 5%;
     left: 20%;
-    z-index: 0; }
+    z-index: -1; }
   .events-wrapper .events-title {
     font-family: "FuturaPT";
     letter-spacing: 20px;
