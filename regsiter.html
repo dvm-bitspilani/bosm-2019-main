@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="scss/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/register.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="form-div">
+      <div class="header">
+        <span>REGISTRATION</span>
+        <span><i class="fas fa-times"></i></span>
+      </div>
+      <div class="form-container">
+        <div class="input-el">
+          <input type="text" placeholder="Name *" class="text-type" id="name" />
+          <input
+            type="text"
+            placeholder="E-Mail *"
+            class="text-type"
+            id="email"
+          />
+          <input
+            type="number"
+            placeholder="Phone *"
+            class="text-type"
+            id="phone"
+          />
+          <div class="select-wrapper">
+            <select
+              id="gender_opt"
+              class="select-input"
+              onchange="getgendervalue()"
+            >
+              <option value="">Select your Gender</option>
+              <option value="M">Male</option>
+              <option value="F">Femlae</option>
+              <option value="O">Others</option>
+            </select>
+          </div>
+          <div class="select-wrapper">
+            <select id="yos_opt" class="select-input" onchange="getyosvalue()">
+              <option value="">Select your Year of Study</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+        <div class="input-el">
+          <div class="select-wrapper">
+            <select
+              id="sports_opt"
+              class="select-input"
+              onchange="getsportsvalue()"
+            >
+              <option value="">Select your Sports</option>
+              <option value="Badminton">Badminton</option>
+              <option value="Badminton">Badminton</option>
+              <option value="Badminton">Badminton</option>
+              <option value="Badminton">Badminton</option>
+            </select>
+          </div>
+          <div class="selected-sports"></div>
+          <div class="select-wrapper">
+            <select id="college_opt" class="select-input">
+              <option value="">Select College</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <input type="text" placeholder="City *" class="text-type" id="city" />
+          <input
+            type="text"
+            placeholder="State *"
+            class="text-type"
+            id="state"
+          />
+        </div>
+      </div>
+      <div class="button-div">
+        <span>REGSITER</span>
+      </div>
+    </div>
+    <script src="js/register.js"></script>
+  </body>
+</html>
