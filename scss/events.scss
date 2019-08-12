@@ -20,7 +20,41 @@ body {
     width: 100%;
     padding: 32px 16px;
     background: #1876B7;
-    overflow-x: hidden;
+    overflow: hidden;
+    position: relative;
+
+    .event-background-asset-01 {
+        position: absolute;
+        background: url('../img/events-asset-01.png');
+        background-size: cover;
+        width: 500px;
+        height: 500px;
+        top: calc(50% - 250px);
+        right: -250px;
+        animation: rotate-ellipse 45s linear infinite;
+        -webkit-animation: rotate-ellipse 45s linear infinite;
+    }
+
+    .event-background-asset-02 {
+        position: absolute;
+        background: url('../img/events-asset-02.png');
+        background-size: 100% 100%;
+        width: 80%;
+        height: 70%;
+        top: 0;
+        left: 10%;
+        margin: 10% 0;
+    }
+
+    .event-background-asset-03 {
+        position: absolute;
+        background: url('../img/events-asset-03.png');
+        background-size: 100% 100%;
+        width: 60%;
+        height: 80%;
+        top: 10%;
+        left: 20%;
+    }
 
     .events-title {
         font-family: $FuturaPT;
