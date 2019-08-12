@@ -88,34 +88,48 @@ function bosmreg() {
   const city = document.getElementById("city").value;
   const state = document.getElementById("state").value;
 
-  data = {
-    name: name,
-    email_id: email,
-    phone: phone,
-    gender: gender_value,
-    year_of_study: yos_value,
-    sports_ids: sportsarr,
-    college_id: collegeid,
-    city: city,
-    state: state
-  };
+  if (
+    name == "" ||
+    email == "" ||
+    phone == "" ||
+    city == "" ||
+    state == "" ||
+    sportsarr == [] ||
+    collegeid == null ||
+    yos_value == null ||
+    gender_value == null
+  ) {
+    alert("Please fill all mentioned feilds");
+  } else {
+    data = {
+      name: name,
+      email_id: email,
+      phone: phone,
+      gender: gender_value,
+      year_of_study: yos_value,
+      sports_ids: sportsarr,
+      college_id: collegeid,
+      city: city,
+      state: state
+    };
 
-  fetch(" http://test1.bits-bosm.org/registrations/register/", {
-    method: "post",
-    headers: {
-      Accept: "application/json, text/plain, */*",
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  })
-    .then(function(response) {
-      return response.json();
+    fetch(" http://test1.bits-bosm.org/registrations/register/", {
+      method: "post",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
     })
-    .then(function(result) {
-      console.log(result.message);
-    })
-    .catch(function(error) {
-      console.log(error);
-    });
-  console.log(data);
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(result) {
+        alert(result.message);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+    console.log(data);
+  }
 }
