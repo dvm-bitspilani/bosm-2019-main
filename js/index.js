@@ -7,6 +7,8 @@ window.onload = function() {
     setTimeout(() => {
         loader.style.display = "none";
         contentWraper.style.opacity = 1;
+        document.getElementsByTagName('body')[0].style.height = 'initial';
+        document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
         // // document.getElementsByClassName("nav-bar")[0].style.display = "flex";
         // // document.getElementsByClassName("sidebar")[0].style.display = "flex";
         // // if (window.innerWidth > 500)
