@@ -47,7 +47,7 @@
             >
               <option value="">Select your Gender</option>
               <option value="M">Male</option>
-              <option value="F">Femlae</option>
+              <option value="F">Female</option>
               <option value="O">Others</option>
             </select>
           </div>
@@ -58,6 +58,7 @@
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
+              <option value="5">5</option>
             </select>
           </div>
         </div>
@@ -69,20 +70,16 @@
               onchange="getsportsvalue()"
             >
               <option value="">Select your Sports</option>
-              <option value="Badminton">Badminton</option>
-              <option value="Badminton">Badminton</option>
-              <option value="Badminton">Badminton</option>
-              <option value="Badminton">Badminton</option>
             </select>
           </div>
           <div class="selected-sports"></div>
           <div class="select-wrapper">
-            <select id="college_opt" class="select-input">
+            <select
+              id="college_opt"
+              class="select-input"
+              onchange="getcollegeid()"
+            >
               <option value="">Select College</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
             </select>
           </div>
           <input type="text" placeholder="City *" class="text-type" id="city" />
@@ -95,7 +92,7 @@
         </div>
       </div>
       <div class="button-div">
-        <span>REGISTER</span>
+        <span onclick="bosmreg()">REGISTER</span>
       </div>
     </div>
     <script src="js/register.js"></script>
