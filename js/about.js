@@ -1,6 +1,7 @@
 var img1 = document.getElementsByClassName("img1")[0];
 var img2 = document.getElementsByClassName("img2")[0];
 var img3 = document.getElementsByClassName("img3")[0];
+var play = document.getElementsByClassName("play-btn")[0];
 var dots = document.getElementsByClassName("dot");
 var navigation = document.getElementsByClassName("navigations");
 var tweet_text = document.getElementById("tweet-text");
@@ -100,6 +101,22 @@ function slideleft() {
       dots[1].style.backgroundColor = "transparent";
       dots[2].style.backgroundColor = "transparent";
       tweet_text.innerHTML = text[0];
+  }
+}
+
+function ytpage(i, e) {
+  switch (i) {
+    case 0:
+      window.location.href = "https://www.youtube.com/watch?v=4lv-Ji3W9oU";
+      break;
+    case 1:
+      window.location.href = "https://www.youtube.com/watch?v=3lbRUfKTwWc";
+      break;
+    case 2:
+      window.location.href = "https://www.youtube.com/watch?v=5sH7FRg-7_Q";
+      break;
+    default:
+      window.location.href = "https://www.youtube.com/watch?v=4lv-Ji3W9oU";
   }
 }
 
