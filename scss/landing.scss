@@ -64,12 +64,23 @@
 }
 
 .line-1,
-.line-2 {
+.line-2,
+.line-3,
+.line-4 {
   height: 2px;
   width: 0;
   background-color: #fff;
   position: absolute;
   opacity: 0.5;
+}
+
+.line-5,
+.line-6 {
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    position: absolute;
+    opacity: 0.5;
 }
 
 .line-1 {
@@ -79,12 +90,8 @@
 }
 
 @keyframes grow-1 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 200px;
-  }
+  from {width: 0;}
+  to {width: 200px;}
 }
 
 .line-2 {
@@ -94,21 +101,49 @@
 }
 
 @keyframes grow-2 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 300px;
-  }
+  from {width: 0;}
+  to {width: 300px;}
 }
 
 .line-3 {
+    bottom: 20%;
+    left: 0;
+}
+
+.line-4 {
+    bottom: 19%;
+    left: 0;
+}
+
+.line-5 {
+    bottom: 42%;
+    left: 6%;
+}
+
+.line-6 {
+    bottom: 42%;
+    left: 54%;
+    z-index: 10;
+}
+
+.tilt-line {
   position: absolute;
   height: 80vh;
   width: 400px;
   top: 0;
   left: 20%;
   background: url("../img/tilt_line.png") no-repeat center center/cover;
+}
+
+.back-asset-1 {
+    position: absolute;
+    background: url("../img/events-asset-03.png");
+    background-size: 100% 100%;
+    width: 60%;
+    height: 80%;
+    top: 5%;
+    left: 20%;
+    z-index: 10;
 }
 
 // -----------------------------------------------------
