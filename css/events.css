@@ -6,10 +6,6 @@
   font-family: "SFPro";
   src: url("../fonts/SF-Pro-Display-MediumItalic.ttf"); }
 
-body {
-  margin: 0;
-  padding: 0; }
-
 .events-wrapper {
   width: 100%;
   padding: 32px 16px;
