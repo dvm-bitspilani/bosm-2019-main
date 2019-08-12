@@ -1,4 +1,7 @@
 const dDay = new Date("September 12, 2019 23:59:59").getTime();
+document.getElementsByClassName("navbar")[0].lastElementChild.addEventListener("click", () => {
+    window.location.href = "./regsiter.html";
+})
 
 function setTime() {
     const timeNow = new Date().getTime();
@@ -31,7 +34,6 @@ window.onload = function() {
         // // if (window.innerWidth < 500) {
         // //     document.getElementsByClassName("navigator")[0].style.display = "none";
         // }
-
 
         // trigger landing page animations only when page is loaded. Forgive the selectors.
         setTimeout(() => {

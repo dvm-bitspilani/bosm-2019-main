@@ -29,10 +29,11 @@
     span {
       background-color: #ffffff;
       color: #4d427f;
-      padding: 2% 4% 2% 4%;
+      padding: 20px 50px;
       font-size: 1.5em;
       font-family: "Roboto", sans-serif;
       margin-bottom: 2vh;
+      border-radius: 40px;
       cursor: pointer;
     }
   }
@@ -53,7 +54,7 @@
       &:nth-child(2) {
         margin-right: 5vw;
         cursor: pointer;
-        transition: all 0.5s ease-in-out;
+        transition: all 0.2s ease-in-out;
         font-size: 3em;
         &:hover {
           transform: scale(1.2);
