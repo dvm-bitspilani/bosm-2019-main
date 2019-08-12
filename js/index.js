@@ -15,6 +15,10 @@ function setTime() {
     document.getElementById("min").innerHTML = min;
 }
 
+function setPlayer() {
+    const player = document.getElementsByClassName
+}
+
 window.onload = function() {
     setTime()
     let loader = document.getElementsByClassName("loader")[0];
