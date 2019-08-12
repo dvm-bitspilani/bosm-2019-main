@@ -18,3 +18,7 @@ window.onload = function() {
         // }
     }, 4500);
 };
+
+window.onbeforeunload = () => {
+    window.scrollTo(0, 0);
+}
