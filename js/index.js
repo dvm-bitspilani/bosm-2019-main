@@ -31,6 +31,19 @@ window.onload = function() {
         // // if (window.innerWidth < 500) {
         // //     document.getElementsByClassName("navigator")[0].style.display = "none";
         // }
+
+
+        // trigger landing page animations only when page is loaded. Forgive the selectors.
+        setTimeout(() => {
+            document.getElementsByClassName("line-1")[0].style.animation = "grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards";
+            document.getElementsByClassName("line-2")[0].style.animation = "grow-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards";
+            document.getElementsByClassName("bosm-header")[0].style.animation = "appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards";
+            document.getElementsByClassName("grit")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards";
+            document.getElementsByClassName("cricket")[0].style.animation = "fade-in 0.5s linear 0.7s forwards";
+            document.getElementsByClassName("slogan-1")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1)forwards";
+            document.getElementsByClassName("slogan-2")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1)forwards";
+        }, 500)
+    // ----------------------------------------------------------------------------
     }, 4500);
 
     setInterval(() => setTime(), 60000);
