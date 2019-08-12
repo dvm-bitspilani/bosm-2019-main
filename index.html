@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/landing.min.css" />
     <link rel="stylesheet" href="css/gallery.css" />
-    <link rel="stylesheet" href="css/loader.css" />
+    <link rel="stylesheet" href="css/loader.css" type="text/css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
     <title>BOSM'19 | Halla Toh Hoga Hi</title>
 </head>
 
@@ -22,8 +28,7 @@
     <div class="loader_wraper">
         <div class="loader">
             <div id="heading">BOSM '19</div>
-            <svg width="100vw" height="100vw" class="loader-1" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 400 400">
+            <svg width="100vw" height="100vw" class="loader-1" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
                 <path id="p1" class="all" stroke-miterlimit="10" d="M0.5,99.6c297.5,39.8,367.6,91.1,371.9,132.4
                       c5,48.4-76.8,112.7-117,96.7c-58.9-23.3-58.5-230.9,0.9-254.5c27.3-10.9,73,14.9,77.4,43.9c10.2,67.1-198.1,173.7-235.2,136.3
                       c-13.2-13.3-4.4-44.5,8.6-74.4" />
@@ -186,6 +191,8 @@
                 <span class="letter">M</span>
             </div>
             <div class="grit">GRIT</div>
+            <div class="guts">GUTS</div>
+            <div class="glory">GLORY</div>
             <div class="cricket"><img class="player_image" src="./img/cricket.png" alt="" /></div>
 
             <div class="time">
@@ -224,9 +231,15 @@
                 <div class="slider-div">
                     <span class="heading">ABOUT US</span>
                     <div class="img-div">
-                        <div class="img1"></div>
-                        <div class="img2"></div>
-                        <div class="img3"></div>
+                        <div class="img1">
+                            <span class="play-btn" onclick="ytpage(0)"><i class="fab fa-youtube"></i></span>
+                        </div>
+                        <div class="img2">
+                            <span class="play-btn" onclick="ytpage(1)"><i class="fab fa-youtube"></i></span>
+                        </div>
+                        <div class="img3">
+                            <span class="play-btn" onclick="ytpage(2)"><i class="fab fa-youtube"></i></span>
+                        </div>
                     </div>
                     <div class="nav-dots">
                         <div class="dot navigation" onclick="setvalue(0)"></div>

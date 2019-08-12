@@ -176,19 +176,6 @@
   transform: rotateY(360deg);
 }
 
-.grit {
-  position: absolute;
-  right: 8%;
-  bottom: 32%;
-  transform: translateY(100px);
-  opacity: 0;
-  font-family: "Futura";
-  font-size: 2.4em;
-  letter-spacing: 40px;
-  color: #e6c002;
-//   animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-}
-
 @keyframes appear-bosm {
   from {
     transform: translateY(200px);
@@ -200,6 +187,23 @@
   }
 }
 
+.grit, .guts, .glory {
+  position: absolute;
+  right: 8%;
+  bottom: 32%;
+  // transform: translateY(100px);
+  opacity: 0;
+  font-family: "Futura";
+  font-size: 2.4em;
+  letter-spacing: 40px;
+  color: #e6c002;
+  animation-duration: 15s;
+  // animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-iteration-count: infinite;
+//   animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+}
+
 @keyframes appear-grit {
   from {
     transform: translateY(100px);
@@ -209,6 +213,24 @@
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { bottom: 30%; opacity: 0; }
+  8.3%,25% { bottom: 32%; opacity: 1; }
+  33.33%, 100% { bottom: 30%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { bottom: 30%; opacity: 0; }
+  41.63%, 58.29% { bottom: 32%; opacity: 1; }
+  66.66%, 100% { bottom: 30%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { bottom: 30%; opacity: 0; }
+  74.96%, 91.62% { bottom: 32%; opacity: 1; }
+  100% { bottom: 30%; opacity: 0; }
 }
 
 .cricket {
