@@ -1,67 +1,82 @@
 @font-face {
-    src: url("../fonts/FuturaBoldCondensedBT.ttf");
-    font-family: "Futura";
+  src: url("../fonts/FuturaBoldCondensedBT.ttf");
+  font-family: "Futura";
 }
 
 @font-face {
-    font-family: "sfpro";
-    src: url("../fonts/SF-Pro-Text-Regular.ttf");
+  font-family: "sfpro";
+  src: url("../fonts/SF-Pro-Text-Regular.ttf");
 }
 
 .content-wrapper {
-    opacity: 0;
+  opacity: 0;
 }
 
 .landing-wrapper {
-    height: 100vh;
+  height: 100vh;
+  width: 100%;
+  background-color: #e6c002;
+  position: relative;
+  display: flex;
+  align-items: center;
+  .landing-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    background-color: #e6c002;
-    position: relative;
-    display: flex;
-    align-items: center;
-    .landing-clip {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: radial-gradient( rgba(52, 44, 95, 1) 0%, rgba(52, 44, 95, 1) 38%, rgba(80, 68, 130, 1) 100%);
-        // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#342c5f', endColorstr='#504482', GradientType=1 );
-        clip-path: polygon(65% 0, 40% 75%, 61% 100%, 100% 100%, 100% 0);
-    }
+    background: radial-gradient(
+      rgba(52, 44, 95, 1) 0%,
+      rgba(52, 44, 95, 1) 38%,
+      rgba(80, 68, 130, 1) 100%
+    );
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#342c5f', endColorstr='#504482', GradientType=1 );
+    clip-path: polygon(65% 0, 40% 75%, 61% 100%, 100% 100%, 100% 0);
+  }
 }
 
 //------------- Animated background elements ---------
 .ellipse-1,
 .ellipse-2 {
-    height: 500px;
-    width: 500px;
-    position: absolute;
-    left: calc(50vw - 250px);
-    z-index: 10;
-    animation: rotate-ellipse 45s linear infinite;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  left: calc(50vw - 250px);
+  z-index: 10;
+  animation: rotate-ellipse 45s linear infinite;
 }
 
 .ellipse-1 {
-    background: url("../img/Ellipse.png") no-repeat center center/cover;
+  background: url("../img/Ellipse.png") no-repeat center center/cover;
 }
 
 .ellipse-2 {
-    background: url("../img/Ellipse 2.png") no-repeat center center/cover;
+  background: url("../img/Ellipse 2.png") no-repeat center center/cover;
 }
 
 @keyframes rotate-ellipse {
-    from {
-        transform: rotateZ(0);
-    }
-    to {
-        transform: rotateZ(360deg);
-    }
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .line-1,
-.line-2 {
-    height: 2px;
+.line-2,
+.line-3,
+.line-4 {
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.line-5,
+.line-6 {
+    height: 3px;
     width: 0;
     background-color: #fff;
     position: absolute;
@@ -69,254 +84,289 @@
 }
 
 .line-1 {
-    top: 23.5%;
-    left: 0;
-    animation: grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards;
+  top: 23.5%;
+  left: 0;
+//   animation: grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards;
 }
 
 @keyframes grow-1 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 200px;
-    }
+  from {width: 0;}
+  to {width: 200px;}
 }
 
 .line-2 {
-    top: 24.5%;
-    left: 0;
-    animation: grow-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards;
+  top: 24.5%;
+  left: 0;
+//   animation: grow-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards;
 }
 
 @keyframes grow-2 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 300px;
-    }
+  from {width: 0;}
+  to {width: 300px;}
 }
 
 .line-3 {
+    bottom: 20%;
+    left: 0;
+}
+
+.line-4 {
+    bottom: 19%;
+    left: 0;
+}
+
+.line-5 {
+    bottom: 42%;
+    left: 6%;
+}
+
+.line-6 {
+    bottom: 42%;
+    left: 54%;
+    z-index: 10;
+}
+
+.tilt-line {
+  position: absolute;
+  height: 80vh;
+  width: 400px;
+  top: 0;
+  left: 20%;
+  background: url("../img/tilt_line.png") no-repeat center center/cover;
+}
+
+.back-asset-1 {
     position: absolute;
-    height: 80vh;
-    width: 400px;
-    top: 0;
+    background: url("../img/events-asset-03.png");
+    background-size: 100% 100%;
+    width: 60%;
+    height: 80%;
+    top: 5%;
     left: 20%;
-    background: url("../img/tilt_line.png") no-repeat center center/cover;
+    z-index: 10;
 }
 
 // -----------------------------------------------------
 .bosm-header {
-    font-family: "Futura";
-    // position: relative;
-    color: #fff;
-    width: 100%;
-    font-size: 15em;
-    display: flex;
-    justify-content: space-around;
-    z-index: 20;
-    transform: translateY(200px);
-    opacity: 0;
-    animation: appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  font-family: "Futura";
+  // position: relative;
+  color: #fff;
+  width: 100%;
+  font-size: 15em;
+  display: flex;
+  justify-content: space-around;
+  z-index: 20;
+  transform: translateY(200px);
+  opacity: 0;
+//   animation: appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 
 .letter {
-    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  text-shadow: 35px 35px 75px #4e4d4d;
 }
 
 .letter:hover {
-    transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }
 
 .grit {
-    width: 185px;
-    height: 25px;
-    background: url("../img/GRIT.png") no-repeat center center/cover;
-    position: absolute;
-    right: 14%;
-    bottom: 34%;
-    transform: translateY(100px);
-    opacity: 0;
-    animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
-    animation-delay: 0.3s;
+  width: 185px;
+  height: 25px;
+  background: url("../img/GRIT.png") no-repeat center center/cover;
+  position: absolute;
+  right: 14%;
+  bottom: 34%;
+  transform: translateY(100px);
+  opacity: 0;
+//   animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  animation-delay: 0.3s;
 }
 
 @keyframes appear-bosm {
-    from {
-        transform: translateY(200px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @keyframes appear-grit {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .cricket {
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-    opacity: 0;
-    animation: fade-in 0.5s linear 0.7s forwards;
-    img {
-        height: 80%;
-        width: auto;
-    }
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  opacity: 0;
+//   animation: fade-in 0.5s linear 0.7s forwards;
+  img {
+    height: 80%;
+    width: auto;
+  }
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    font-size: 1.2em;
-    font-family: "sfpro";
-    margin: 0;
-    z-index: 20;
-    box-sizing: border-box;
-    .nav-item {
-        padding: 30px;
-        color: #fff;
-        transition: all 0.1s ease;
-        &:hover {
-            cursor: pointer;
-        }
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  font-size: 1.2em;
+  font-family: "sfpro";
+  margin: 0;
+  z-index: 20;
+  box-sizing: border-box;
+  .nav-item {
+    padding: 30px;
+    color: #fff;
+    transition: all 0.1s ease;
+    &:hover {
+      cursor: pointer;
     }
+  }
 }
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    height: 80px;
-    width: 80px;
-    img {
-        height: 100%;
-        width: auto;
-    }
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  height: 80px;
+  width: 80px;
+  img {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .time {
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  font-family: "sfpro";
+  .timeNum {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    #days,
+    #min {
+      color: #fff;
+    }
+    #hrs {
+      color: #4a3f7b;
+    }
+  }
+  .timeLabel {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    #daysLabel,
+    #minLabel {
+      color: #4a3f7b;
+    }
+    #daysLabel {
+      margin-right: 5px;
+    }
+    #hrsLabel {
+      color: #fff;
+      margin-right: 5px;
+    }
+  }
+}
+
+.scroll {
     position: absolute;
-    left: 5%;
-    bottom: 8%;
-    font-family: "sfpro";
-    .timeNum {
-        display: flex;
-        flex-direction: row;
-        font-size: 2.5em;
-        letter-spacing: 4px;
-        #days,
-        #min {
-            color: #fff;
-        }
-        #hrs {
-            color: #4a3f7b;
-        }
-    }
-    .timeLabel {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        letter-spacing: 1px;
-        font-size: 0.9em;
-        #daysLabel,
-        #minLabel {
-            color: #4a3f7b;
-        }
-        #daysLabel {
-            margin-right: 5px;
-        }
-        #hrsLabel {
-            color: #fff;
-            margin-right: 5px;
-        }
-    }
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 46px;
+    width: 27px;
+    background: url("../img/mouse.png") no-repeat center center/cover;
 }
 
 .social {
-    font-size: 1.3em;
-    font-family: "sfpro";
-    color: #e6c002;
-    position: absolute;
-    right: 3%;
-    bottom: 6%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    letter-spacing: 2px;
-    z-index: 20;
-    .social-icon {
-        margin-left: 20px;
-        font-size: 1em;
-        height: 30px;
-        width: 30px;
-        a {
-            width: 100%;
-            height: 100%;
-            &:hover {
-                cursor: pointer;
-            }
-        }
+  font-size: 1.3em;
+  font-family: "sfpro";
+  color: #e6c002;
+  position: absolute;
+  right: 3%;
+  bottom: 6%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 2px;
+  z-index: 20;
+  .social-icon {
+    margin-left: 20px;
+    font-size: 1em;
+    height: 30px;
+    width: 30px;
+    a {
+      width: 100%;
+      height: 100%;
+      &:hover {
+        cursor: pointer;
+      }
     }
-    .social-icon.fb {
-        background: url("../img/fb.png") no-repeat center center/cover;
-    }
-    .social-icon.insta {
-        background: url("../img/insta.png") no-repeat center center/cover;
-    }
+  }
+  .social-icon.fb {
+    background: url("../img/fb.png") no-repeat center center/cover;
+  }
+  .social-icon.insta {
+    background: url("../img/insta.png") no-repeat center center/cover;
+  }
 }
 
 .slogan-1,
 .slogan-2 {
-    position: absolute;
-    font-size: 2em;
-    color: #4a3f7b;
-    // opacity: 0.8;
-    font-family: "Futura";
-    letter-spacing: 12px;
-    transform: translateY(100px);
-    opacity: 0;
-    animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+  position: absolute;
+  font-size: 2em;
+  color: #4a3f7b;
+  // opacity: 0.8;
+  font-family: "Futura";
+  letter-spacing: 12px;
+  transform: translateY(100px);
+  opacity: 0;
+//   animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 
 .slogan-1 {
-    top: 19%;
-    left: 5%;
-    animation-delay: 0.3s;
+  top: 19%;
+  left: 5%;
+  animation-delay: 0.3s;
 }
 
 .slogan-2 {
-    top: 25%;
-    left: 13%;
-    animation-delay: 0.4s;
+  top: 25%;
+  left: 13%;
+  animation-delay: 0.4s;
 }
