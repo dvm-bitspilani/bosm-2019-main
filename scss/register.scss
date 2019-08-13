@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2699fb;
+}
+
 @font-face {
   font-family: "futbold";
   src: url("../fonts/FuturaBoldCondensedBT.ttf");
@@ -10,16 +16,18 @@
 
 .form-div {
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  width: 90%;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
   z-index: 40;
+  border-radius: 10px;
   .button-div {
     height: 20vh;
     width: 100%;
@@ -97,7 +105,7 @@
       }
       .select-wrapper {
         width: 69%;
-        height: 13%;
+        height: 15%;
         select {
           -webkit-appearance: none;
           padding: 0% 3% 0% 7%;
@@ -117,7 +125,7 @@
       }
       .selected-sports {
         width: 69%;
-        height: 10%;
+        height: 13%;
         color: #2699fb;
         background-color: #ffffff;
         border-radius: 5px;
@@ -178,6 +186,10 @@
   font-size: 1.25em;
   font-family: "Roboto", sans-serif;
   margin-top: 10%;
+}
+
+#textInput:focus {
+  outline: none;
 }
 
 ::placeholder {
