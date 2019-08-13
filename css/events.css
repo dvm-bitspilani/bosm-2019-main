@@ -67,17 +67,11 @@
       min-width: 100%; }
       .events-wrapper .events-container .events-set .events-card {
         width: 15%;
-        height: 370px;
+        height: 20vw;
         border-radius: 5%;
         transform-style: preserve-3d;
         transition: transform 0.5s ease-in;
         box-shadow: 0 0 50px 1px #333333; }
-        @media screen and (max-width: 1500px) {
-          .events-wrapper .events-container .events-set .events-card {
-            height: 325px; } }
-        @media screen and (max-width: 1300px) {
-          .events-wrapper .events-container .events-set .events-card {
-            height: 275px; } }
         .events-wrapper .events-container .events-set .events-card .events-card-back {
           width: 100%;
           height: 100%;
@@ -115,7 +109,8 @@
                 font-size: 1.5rem; } }
           .events-wrapper .events-container .events-set .events-card .events-card-front img {
             height: 100%;
-            width: 100; }
+            width: 100;
+            border-radius: 5%; }
   .events-wrapper .events-msg {
     font-family: "SFPro";
     text-align: end;
