@@ -8,6 +8,16 @@
   src: url("../fonts/SF-Pro-Text-Regular.ttf");
 }
 
+@font-face {
+  font-family: "spantaran";
+  src: url("../fonts/Spantaran\ \(DEMO\).otf")
+}
+
+@font-face {
+  font-family: "futura-light";
+  src: url("../fonts/FuturaLightCondensedBT.ttf");
+}
+
 .content-wrapper {
   opacity: 0;
 }
@@ -154,7 +164,7 @@
 
 // -----------------------------------------------------
 .bosm-header {
-  font-family: "Futura";
+  font-family: "spantaran";
   // position: relative;
   color: #fff;
   width: 100%;
@@ -193,7 +203,7 @@
   bottom: 32%;
   // transform: translateY(100px);
   opacity: 0;
-  font-family: "Futura";
+  font-family: "futura-light";
   font-size: 2.4em;
   letter-spacing: 40px;
   color: #e6c002;
