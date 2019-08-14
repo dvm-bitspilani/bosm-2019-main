@@ -20,9 +20,9 @@
         </div>
         <div class="form-container">
             <div class="input-el">
-                <input type="text" placeholder="Name *"  class="text-type" id="name" />
-                <input type="text" placeholder="Email *"  class="text-type" id="email" />
-                <input type="number" placeholder="Phone *"  class="text-type" id="phone" />
+                <input type="text" placeholder="Name"  class="text-type" id="name" />
+                <input type="text" placeholder="Email"  class="text-type" id="email" />
+                <input type="number" placeholder="Phone"  class="text-type" id="phone" />
                 <div class="select-wrapper-gender">
                     <span class="gender-heading">Gender</span> <span style="color: #34AAFC">*</span>
                     <br>
@@ -54,23 +54,20 @@
               <option value="">Select College</option>
             </select>
                 </div>
-                <input type="text" placeholder="City *" class="text-type" id="city" />
-                <input type="text" placeholder="State *" class="text-type" id="state" />
+                <input type="text" placeholder="City" class="text-type" id="city" />
+                <input type="text" placeholder="State" class="text-type" id="state" />
+                <div class="g-recaptcha" data-sitekey="6LdmArMUAAAAALzI9PmxpWVLZ1bCP273Rw1b0fKj"></div>
             </div>
+            
         </div>
 
-        <div class="capt">
-            <p>
-                <h2 type="text" id="mainCaptcha"></h2>
-                <span id="refresh" onclick="Captcha();"></span>
-            </p>
-            <input type="text" id="txtInput" placeholder="captcha" />
-        </div>
+       
 
         <div class="button-div">
             <span class="button-span" onclick="bosmreg()">REGISTER</span>
         </div>
     </div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/register.js"></script>
     </script>
 </body>
