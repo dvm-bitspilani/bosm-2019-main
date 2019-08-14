@@ -25,16 +25,16 @@ function navigate(id){
     }
 }
 
-var counter = 1;
-setInterval(() => {
-    counter++;
-    if(counter ==2){
-        navigate(counter);
-    }else{
-        counter=1;
-        navigate(counter);
-    }
+// var counter = 1;
+// setInterval(() => {
+//     counter++;
+//     if(counter ==2){
+//         navigate(counter);
+//     }else{
+//         counter=1;
+//         navigate(counter);
+//     }
 
-},3000);
-navigate(1);
+// },3000);
+// navigate(1);
 setLayout();

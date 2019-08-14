@@ -7,15 +7,16 @@
   src: url("../fonts/SF-Pro-Text-Regular.ttf");
 }
 .contact-wrapper {
-  width: 100vw;
-  height: 80vh;
+  height: 100vh;
   background: #1876B7;
 }
 .contact-wrapper .contact-main-container {
   height: 100%;
   display: grid;
-  grid-template-columns: [col-1] 50% [col-2] 50% [end];
-  grid-template-rows: [row-1] 100% [end];
+  grid-template-columns: [col-1] 50vw [col-2] 1vw [col-3] 99vw [end];
+  grid-template-rows: [row-1] 100vh [end];
+  transition: 1s;
+  transform: translateX(0);
 }
 .contact-wrapper .contact-quote {
   grid-column-start: col-1;
@@ -34,7 +35,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 3vw;
-  letter-spacing: 20.54px;
+  letter-spacing: 1vw;
 }
 .contact-wrapper .contact-quote .image {
   width: 100%;
@@ -57,7 +58,7 @@
   color: #7E7E7E;
 }
 .contact-wrapper .contact-container {
-  grid-column-start: col-2;
+  grid-column-start: col-3;
   grid-column-end: end;
   grid-row-start: row-1;
   grid-row-end: end;
@@ -65,15 +66,14 @@
   overflow: hidden;
 }
 .contact-wrapper .contact-container .cards-container {
-  height: 92%;
-  width: 1600px;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
-  margin-left: 4vw;
   /* flex-direction: column; */
-  transition: 0.5s;
+  transition: 0.75s;
 }
 .contact-wrapper .contact-container .cards-container .cards {
   height: 360px;
@@ -113,19 +113,15 @@
   height: 30px;
   color: rgba(255, 255, 255, 0.6);
 }
-.contact-wrapper .contact-container .contacts-nav-dots {
-  text-align: center;
-  height: 50px;
-}
-.contact-wrapper .contact-container .contacts-nav-dots .contact-nav-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 3.5px solid #ffffff;
-  margin: 3px;
-  display: inline-block;
-  cursor: pointer;
-  transition: 0.75s;
+.contact-wrapper .contact-container .arrow {
+  display: "flex";
+  grid-column-start: col-2;
+  grid-column-end: col-3;
+  grid-row-start: row-1;
+  grid-row-end: end;
+  justify-content: center;
+  align-items: center;
+  background: #7E7E7E;
 }
 
 /*# sourceMappingURL=contact-min.css.map */
