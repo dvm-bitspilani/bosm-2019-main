@@ -39,8 +39,8 @@ window.onload = function() {
     setTimeout(() => {
         loader.style.display = "none";
         contentWraper.style.opacity = 1;
-        document.getElementsByTagName('body')[0].style.height = 'initial';
-        document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
+        // document.getElementsByTagName('body')[0].style.height = 'initial';
+        // document.getElementsByTagName('body')[0].style.overflowY = 'scroll';
 
         const animation1 = "grow-1 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s forwards";
         const animation2 = "grow-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards";
