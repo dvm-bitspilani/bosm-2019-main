@@ -62,7 +62,7 @@
   .clip-div {
     height: 100%;
     width: 100%;
-    background-color: #e6c002;
+    background:  transparent linear-gradient(180deg, #F7DC52 0%, #FFD500 100%) 0% 0% no-repeat padding-box;
     clip-path: polygon(0 0, 61% 0, 34% 100%, 0% 100%);
     position: absolute;
     top: 0;
@@ -74,10 +74,11 @@
     height: 100%;
     position: absolute;
     display: flex;
+    align-items: center;
     z-index: 10;
     .slider-div {
       width: 50%;
-      height: 100%;
+      height: 80%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -89,8 +90,8 @@
         letter-spacing: 2vw;
       }
       .img-div {
-        width: 70%;
-        height: 35%;
+        width: 52%;
+        height: 30%;
         border-radius: 10px;
         box-shadow: 0 0 25px gray;
         position: relative;
@@ -170,26 +171,27 @@
         }
       }
       .nav-dots {
-        width: 40%;
-        height: 10%;
+        width: 25%;
+        height: 7%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         .dot {
-          width: 15px;
-          height: 15px;
+          width: 7px;
+          height: 7px;
           border-radius: 50%;
-          border: 5px solid #ffffff;
+          border: 3px solid #ffffff;
           cursor: pointer;
           transition: all 0.5s ease-in-out;
           &:nth-child(1) {
+
             background-color: #fffffe;
           }
         }
       }
       .tweet-div {
         height: 15%;
-        width: 70%;
+        width: 65%;
         background-color: #ffffff;
         border-radius: 10px;
         display: flex;
@@ -198,6 +200,73 @@
         font-family: sfpro;
         color: #4a4a4a;
         font-size: 1.5em;
+        position: relative;
+        overflow-x: hidden;
+        .tweet-text{
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         background-color: #fffffe;
+         border-radius: 10px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         transition: all 0.5s ease-in-out;
+         overflow-y: hidden;
+         &:nth-child(2){
+           left: 100%;
+         }
+         &:nth-child(3){
+          left: 200%;
+        }
+        &:nth-child(4){
+          left: 300%;
+        }
+        &:nth-child(5){
+          left: 400%;
+        }
+        .tweet-pic{
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          background-color: #5600ff;
+        }
+        .tweet-info{
+          height: 100%;
+          width: 70%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: flex-start;
+          flex-flow: column;
+          padding-left: 3%;
+          padding-top: 3%;
+          padding-bottom: 3%; 
+          .tweet-name{
+            color: #171717;
+            font-family: sfpro;
+            font-size: 0.7em;
+            margin-top: 2%;
+          }
+          .tweet-id{
+            color: #9D9D9D;
+            font-family: sfpro;
+            font-size: 0.4em;
+            margin-bottom: 3%;
+          }
+          .tweet{
+            color: #4A4A4A;
+            font-family: sfpro;
+            font-size: 0.7em;
+            margin-bottom: 4%;
+          }
+          .tweet-date{
+            color: #9D9D9D;
+            font-family: sfpro;
+            font-size: 0.5em;
+            margin-bottom: 4%;
+          }
+        }
+        }
       }
     }
     .content-div {
