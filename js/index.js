@@ -6,12 +6,12 @@ document.getElementsByClassName("navbar")[0].lastElementChild.addEventListener("
 function setTime() {
     const timeNow = new Date().getTime();
 
-    let days = Math.floor((dDay - timeNow) / (1000 * 60 * 60 *24));
+    let days = Math.floor((dDay - timeNow) / (1000 * 60 * 60 * 24));
 
-    let hrs = Math.floor((dDay - timeNow) / (1000 * 60 * 60)) - days*24;
+    let hrs = Math.floor((dDay - timeNow) / (1000 * 60 * 60)) - days * 24;
     hrs = hrs < 10 ? `0${hrs}` : hrs;
 
-    let min = Math.floor((dDay - timeNow) / (1000 * 60)) - days*24*60 - hrs*60;
+    let min = Math.floor((dDay - timeNow) / (1000 * 60)) - days * 24 * 60 - hrs * 60;
     min = min < 10 ? `0${min}` : min;
 
     document.getElementById("days").innerHTML = days;
@@ -48,35 +48,35 @@ window.onload = function() {
 
         // trigger landing page animations only when page is loaded. Forgive the selectors.
         setTimeout(() => {
-            document.getElementsByClassName("landing-clip")[0].style.animation = "grow-clip 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
-            document.getElementsByClassName("line-1")[0].style.animation = animation1;
-            document.getElementsByClassName("line-2")[0].style.animation = animation2;
-            document.getElementsByClassName("line-3")[0].style.animation = animation1;
-            document.getElementsByClassName("line-4")[0].style.animation = animation2;
-            document.getElementsByClassName("line-5")[0].style.animation = animation2;
-            document.getElementsByClassName("line-6")[0].style.animation = animation2;
-            document.getElementsByClassName("line-7")[0].style.animation = animation2;
-            document.getElementsByClassName("line-8")[0].style.animation = animation3;
-            document.getElementsByClassName("line-9")[0].style.animation = animation3;
-            document.getElementsByClassName("line-10")[0].style.animation = animation1;
-            document.getElementsByClassName("line-11")[0].style.animation = animation2;
-            document.getElementsByClassName("line-12")[0].style.animation = animation1;
-            document.getElementsByClassName("line-13")[0].style.animation = animation2;
-            document.getElementsByClassName("bosm-header")[0].style.animation = "appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards";
+                document.getElementsByClassName("landing-clip")[0].style.animation = "grow-clip 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
+                document.getElementsByClassName("line-1")[0].style.animation = animation1;
+                document.getElementsByClassName("line-2")[0].style.animation = animation2;
+                document.getElementsByClassName("line-3")[0].style.animation = animation1;
+                document.getElementsByClassName("line-4")[0].style.animation = animation2;
+                document.getElementsByClassName("line-5")[0].style.animation = animation2;
+                document.getElementsByClassName("line-6")[0].style.animation = animation2;
+                document.getElementsByClassName("line-7")[0].style.animation = animation2;
+                document.getElementsByClassName("line-8")[0].style.animation = animation3;
+                document.getElementsByClassName("line-9")[0].style.animation = animation3;
+                document.getElementsByClassName("line-10")[0].style.animation = animation1;
+                document.getElementsByClassName("line-11")[0].style.animation = animation2;
+                document.getElementsByClassName("line-12")[0].style.animation = animation1;
+                document.getElementsByClassName("line-13")[0].style.animation = animation2;
+                document.getElementsByClassName("bosm-header")[0].style.animation = "appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards";
 
-            document.getElementsByClassName("grit")[0].style.animationName = "anim-1";
-            document.getElementsByClassName("guts")[0].style.animationName = "anim-2";
-            document.getElementsByClassName("glory")[0].style.animationName = "anim-3";
+                document.getElementsByClassName("grit")[0].style.animationName = "anim-1";
+                document.getElementsByClassName("guts")[0].style.animationName = "anim-2";
+                document.getElementsByClassName("glory")[0].style.animationName = "anim-3";
 
-            document.getElementsByClassName("cricket")[0].style.animation = "fade-in 0.5s linear 0.7s forwards";
-            document.getElementsByClassName("slogan-1")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s forwards";
-            document.getElementsByClassName("slogan-2")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s forwards";
-        }, 500)
-    // ----------------------------------------------------------------------------
+                document.getElementsByClassName("cricket")[0].style.animation = "fade-in 0.5s linear 0.7s forwards";
+                document.getElementsByClassName("slogan-1")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s forwards";
+                document.getElementsByClassName("slogan-2")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s forwards";
+            }, 500)
+            // ----------------------------------------------------------------------------
     }, 4500);
 
     setInterval(() => setTime(), 60000);
-    
+
     let count = 0;
 
     setInterval(() => {
