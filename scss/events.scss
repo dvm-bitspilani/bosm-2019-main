@@ -168,5 +168,8 @@ $SFPro: "SFPro";
         display: inline-block;
         cursor: pointer;
         transition: 0.75s;
+        &:nth-of-type(1) {
+            background: #ffffff;
+        }
     }
 }

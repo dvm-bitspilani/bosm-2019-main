@@ -143,3 +143,5 @@
     display: inline-block;
     cursor: pointer;
     transition: 0.75s; }
+    .events-nav-dots .event-nav-dot:nth-of-type(1) {
+      background: #ffffff; }

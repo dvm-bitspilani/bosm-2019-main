@@ -33,8 +33,17 @@ const foldCard = () => {
     }
 }
 
-document.onload = openCard();
-document.addEventListener("scroll", openCard);
+let eventSetChangeInterval;
+
+const initiateAnimation = () => {
+    if (eventsContainer.getBoundingClientRect().top - 10 <= window.innerHeight) {
+        openCard();
+        eventSetChangeInterval = setInterval(changeEventSet, 5000);
+        document.removeEventListener("wheel", initiateAnimation);
+    }
+}
+
+document.addEventListener("wheel", initiateAnimation);
 
 const changeEventSet = () => {
     setNumber++;
@@ -49,8 +58,6 @@ const changeEventSet = () => {
         changeEventSet();
     }
 }
-
-let eventSetChangeInterval = setInterval(changeEventSet, 5000);
 
 const navigateEvent = (dotIndex) => {
     setNumber = dotIndex - 1;
