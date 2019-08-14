@@ -1,1 +1,155 @@
+<<<<<<< Updated upstream
 @font-face{font-family:"FuturaPT";src:url("../fonts/FuturaBoldCondensedBT.ttf")}@font-face{font-family:"SFPro";src:url("../fonts/SF-Pro-Display-MediumItalic.ttf")}.events-wrapper{width:100%;padding:32px 16px;background:#288aff;overflow:hidden;position:relative;height:100vh;display:flex;flex-direction:column;justify-content:center}.events-wrapper .event-background-asset-01{position:absolute;background:url("../img/events-asset-01.png");background-size:cover;width:500px;height:500px;top:calc(50% - 250px);z-index:0;right:-250px;animation:rotate-ellipse 45s linear infinite;-webkit-animation:rotate-ellipse 45s linear infinite}.events-wrapper .event-background-asset-02{position:absolute;background:url("../img/events-asset-02.png");background-size:100% 100%;width:80%;height:70%;top:-5%;left:10%;margin:10% 0;z-index:0}.events-wrapper .event-background-asset-03{position:absolute;background:url("../img/events-asset-03.png");background-size:100% 100%;width:60%;height:80%;top:5%;left:20%;z-index:0}.events-wrapper .events-title{font-family:"FuturaPT";letter-spacing:20px;margin:2% auto;font-size:4rem;text-align:center;color:#fff}.events-wrapper .events-container{width:100%;padding:76px 0;display:inline-flex;justify-content:flex-start;align-items:center;transition:transform .75s ease-in}.events-wrapper .events-container .events-set{display:flex;justify-content:space-evenly;align-items:center;min-width:100%}.events-wrapper .events-container .events-set .events-card{width:15%;height:20vw;border-radius:5%;transform-style:preserve-3d;transition:transform .5s ease-in;box-shadow:0 0 50px 1px #333}.events-wrapper .events-container .events-set .events-card .events-card-back{width:100%;height:100%;display:flex;justify-content:center;align-items:center;background:#fff;border-radius:5%;backface-visibility:hidden}.events-wrapper .events-container .events-set .events-card .events-card-back img{width:75%}.events-wrapper .events-container .events-set .events-card .events-card-front{width:100%;height:100%;display:flex;flex-direction:column;justify-content:space-around;align-items:center;background:#fff;transform:rotateY(180deg) translateY(-100%);border-radius:5%;backface-visibility:hidden;position:relative}.events-wrapper .events-container .events-set .events-card .events-card-front .event-name{font-family:"FuturaPT";font-size:1.75rem;letter-spacing:7.5px;color:#fff;text-align:center;position:absolute;z-index:20;bottom:5%}@media screen and (max-width: 1600px){.events-wrapper .events-container .events-set .events-card .events-card-front .event-name{font-size:1.5rem}}.events-wrapper .events-container .events-set .events-card .events-card-front img{height:100%;width:100;border-radius:5%}.events-wrapper .events-msg{font-family:"SFPro";text-align:end;font-size:1.15rem;padding-right:7.5%;color:#fff}.events-wrapper .events-nav-dots{text-align:center;margin:32px 0}.events-wrapper .events-nav-dots .event-nav-dot{width:10px;height:10px;border-radius:50%;border:3.5px solid #fff;margin:3px;display:inline-block;cursor:pointer;transition:.75s}/*# sourceMappingURL=events.css.map */
+=======
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaBoldCondensedBT.ttf"); }
+
+@font-face {
+  font-family: "SFPro";
+  src: url("../fonts/SF-Pro-Display-MediumItalic.ttf"); }
+
+.events-wrapper {
+  width: 100%;
+  padding: 32px 16px;
+  background: #1876B7;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .events-wrapper .event-background-asset-01 {
+    position: absolute;
+    background: url("../img/events-asset-01.png");
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    top: calc(50% - 250px);
+    z-index: 0;
+    right: -250px;
+    animation: rotate-ellipse 45s linear infinite;
+    -webkit-animation: rotate-ellipse 45s linear infinite; }
+  .events-wrapper .event-background-asset-02 {
+    position: absolute;
+    background: url("../img/events-asset-02.png");
+    background-size: 100% 100%;
+    width: 80%;
+    height: 70%;
+    top: -5%;
+    left: 10%;
+    margin: 10% 0;
+    z-index: 0; }
+  .events-wrapper .event-background-asset-03 {
+    position: absolute;
+    background: url("../img/events-asset-03.png");
+    background-size: 100% 100%;
+    width: 60%;
+    height: 80%;
+    top: 5%;
+    left: 20%;
+    z-index: 0; }
+  .events-wrapper .events-title {
+    font-family: "FuturaPT";
+    letter-spacing: 20px;
+    margin: 2% auto;
+    font-size: 4rem;
+    text-align: center;
+    color: #ffffff; }
+  .events-wrapper .events-container {
+    width: 100%;
+    padding: 76px 0;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.75s ease-in; }
+    .events-wrapper .events-container .events-set {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      min-width: 100%; }
+      .events-wrapper .events-container .events-set .events-card {
+        width: 15%;
+        height: 20vw;
+        border-radius: 5%;
+        transform-style: preserve-3d;
+        transition: transform 0.5s ease-in;
+        box-shadow: 0 0 50px 1px #333333; }
+        .events-wrapper .events-container .events-set .events-card .events-card-back {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #ffffff;
+          border-radius: 5%;
+          backface-visibility: hidden; }
+          .events-wrapper .events-container .events-set .events-card .events-card-back img {
+            width: 75%; }
+        .events-wrapper .events-container .events-set .events-card .events-card-front {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          background: #ffffff;
+          transform: rotateY(180deg) translateY(-100%);
+          border-radius: 5%;
+          backface-visibility: hidden;
+          position: relative; }
+          .events-wrapper .events-container .events-set .events-card .events-card-front .event-name {
+            font-family: "FuturaPT";
+            font-size: 1.75rem;
+            letter-spacing: 7.5px;
+            color: #ffffff;
+            text-align: center;
+            position: absolute;
+            z-index: 20;
+            bottom: 5%; }
+            @media screen and (max-width: 1600px) {
+              .events-wrapper .events-container .events-set .events-card .events-card-front .event-name {
+                font-size: 1.25rem; } }
+            @media screen and (max-width: 1300px) {
+              .events-wrapper .events-container .events-set .events-card .events-card-front .event-name {
+                font-size: 1.1rem; } }
+          .events-wrapper .events-container .events-set .events-card .events-card-front img {
+            height: 100%;
+            width: 100;
+            border-radius: 5%; }
+  .events-wrapper .events-msg {
+    font-family: "SFPro";
+    text-align: end;
+    font-size: 1.15rem;
+    padding-right: 7.5%;
+    color: #ffffff; }
+  .events-wrapper .events-nav-dots {
+    text-align: center;
+    margin: 32px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%; }
+    .events-wrapper .events-nav-dots .event-nav-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 3.5px solid #ffffff;
+      margin: 3px;
+      display: inline-block;
+      cursor: pointer;
+      transition: 0.75s; }
+  .events-wrapper .dummy-events-nav-dots {
+    text-align: center;
+    margin: 32px 0;
+    visibility: hidden; }
+    .events-wrapper .dummy-events-nav-dots .event-nav-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 3.5px solid #ffffff;
+      margin: 3px;
+      display: inline-block;
+      cursor: pointer;
+      transition: 0.75s; }
+>>>>>>> Stashed changes
