@@ -92,6 +92,7 @@
   margin-bottom: 10px;
   height: fit-content;
   text-align: center;
+  text-decoration: bold;
 }
 .contact-wrapper .contact-container .cards-container .cards img {
   width: 176px;
@@ -104,9 +105,13 @@
   height: 35px;
   font-size: 21px;
 }
+.contact-wrapper .contact-container .cards-container .cards .card-number {
+  color: rgba(255, 255, 255, 0.5);
+}
 .contact-wrapper .contact-container .cards-container .cards .card-id {
   font-size: 15px;
   height: 30px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .contact-wrapper .contact-container .contacts-nav-dots {
   text-align: center;
