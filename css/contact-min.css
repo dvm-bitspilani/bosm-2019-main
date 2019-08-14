@@ -19,7 +19,6 @@
   grid-template-rows: [row-1] 100vh [end];
   transition: 1s;
   transform: translateX(0);
-  overflow: hidden;
 }
 .contact-wrapper .contact-quote {
   grid-column-start: col-1;
@@ -72,7 +71,6 @@
   grid-row-start: row-1;
   grid-row-end: end;
   background-color: #7E7E7E;
-  overflow: hidden;
 }
 .contact-wrapper .contact-container .cards-container {
   height: 100%;
@@ -130,6 +128,8 @@
   grid-column-end: col-3;
   grid-row-start: row-1;
   grid-row-end: end;
+  z-index: 2;
+  transition: 0.5s;
 }
 .contact-wrapper .contact-container .arrow img {
   background-image: url("/img/arrow.png");
@@ -145,11 +145,12 @@
   grid-row-start: row-1;
   grid-row-end: end;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   align-self: start;
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
   flex-direction: column;
+  transition: 0.5s;
 }
 .contact-wrapper .instructions h1 {
   color: black;
@@ -157,6 +158,8 @@
   font-family: "FuturaPT";
   letter-spacing: 13.54px;
   margin-bottom: 4vw;
+  margin-left: 4vw;
+  transition: 0.25s;
 }
 .contact-wrapper .instructions div {
   color: black;
@@ -164,6 +167,8 @@
   letter-spacing: 6.64px;
   font-size: 22px;
   letter-spacing: 1.5px;
+  margin-left: 4vw;
+  transition: 0.25s;
 }
 
 /*# sourceMappingURL=contact-min.css.map */
