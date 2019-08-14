@@ -1,14 +1,15 @@
 let galleryNumber = 1;
+let numberOfGallerySet = 3;
 
 const galleryContainer = document.getElementsByClassName("gallery-container")[0];
 
 const changeGallerySet = () => {
     // console.log(galleryNumber)
-    if (galleryNumber < numberOfSet) {
+    if (galleryNumber < numberOfGallerySet) {
         galleryNumber++;
         galleryContainer.style.transform = "translate(" + (-100 * (galleryNumber - 1)) + "%)";
         for (dot of document.getElementsByClassName('gallery-nav-dot')) {
-                dot.style.background = 'none';
+            dot.style.background = 'none';
         }
         document.getElementsByClassName('gallery-nav-dot')[galleryNumber - 1].style.background = "#ffffff";
     } else {
