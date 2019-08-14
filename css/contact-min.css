@@ -53,7 +53,7 @@
   width: 314px;
   height: 314px;
   border-radius: 50%;
-  background-image: url("/img/director.png");
+  background-image: url("../img/director.png");
   background-size: cover;
 }
 .contact-wrapper .contact-quote .quote-box {
@@ -132,7 +132,7 @@
   transition: 0.5s;
 }
 .contact-wrapper .contact-container .arrow img {
-  background-image: url("/img/arrow.png");
+  background-image: url("../img/arrow.png");
   background-size: cover;
   height: 70px;
   width: 70px;

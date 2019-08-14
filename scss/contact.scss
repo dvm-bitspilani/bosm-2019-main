@@ -64,7 +64,7 @@ $sfpro: "sfpro";
             height: 314px;
             border-radius: 50%;
             // background: #7E7E7E;
-            background-image: url('/img/director.png');
+            background-image: url('../img/director.png');
             background-size: cover;
            }
         }
@@ -164,7 +164,7 @@ $sfpro: "sfpro";
             z-index: 2;
             transition: 0.5s;
             img{
-                background-image: url('/img/arrow.png');
+                background-image: url('../img/arrow.png');
                 background-size: cover;
                 height:70px;
                 width:70px;
