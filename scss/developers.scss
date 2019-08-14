@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/SF-Pro-Display-Medium.otf");
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/FuturaBoldCondensedBT.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.devs-wrapper {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  background: transparent linear-gradient(180deg, #288aff 0%, #72b2ff 100%) 0%
+    0% no-repeat padding-box;
+}
+
+.header {
+  width: 100%;
+  height: 25vh;
+  font-size: 5em;
+  letter-spacing: 15px;
+  margin: 0;
+  // background-color: lightgreen;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "futura";
+  position: relative;
+}
+
+.header::before, .header::after {
+  content: "";
+  width: 100px;
+  background-color: #fff;
+  height: 2px;
+  position: absolute;
+}
+
+.header::before {
+  top: 60px;
+  transform: translateX(-200px);
+}
+
+.header::after {
+  bottom: 60px;
+  transform: translateX(187px);
+}
+
+.developers {
+  display: grid;
+  height: 75vh;
+  width: 80%;
+  overflow-y: scroll;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 440px 440px 440px;
+  margin: 0 auto;
+}
+
+.developer {
+  justify-self: center;
+  height: 350px;
+  width: 340px;
+  position: relative;
+  margin-bottom: 40px;
+
+  .dev-image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 9px solid #ffffff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: salmon;
+    z-index: 5;
+  }
+
+  .dev-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "sfpro";
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0.5px #535353;
+
+    #name {
+      font-size: 2em;
+      color: #707070;
+      padding: 10px 0;
+    }
+
+    #separator {
+      height: 1px;
+      background-color: #288aff;
+      width: 70px;
+      margin-bottom: 10px;
+    }
+
+    #team {
+      font-size: 18px;
+      color: #288aff;
+      padding-bottom: 10px;
+    }
+
+    #links {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+.tilt-line {
+  position: absolute;
+  height: 53vh;
+  width: 258px;
+  top: 0;
+  left: 2%;
+  background: url("../img/tilt_line.png") no-repeat center center/cover;
+}
+
+.ellipse-1{
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  background: url("../img/Ellipse.png") no-repeat center center/cover;
+}
+
