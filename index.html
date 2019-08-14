@@ -9,23 +9,21 @@
     <meta name="keywords" content="bosm, bits, pilani, sports, festival, fest, 2019" />
     <meta name="author" content="DVM" />
     <link rel="icon" href="./img/bosm-logo.png" />
-    <link rel="stylesheet" href="css/events.min.css" />
     <link rel="stylesheet" href="css/events.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/landing.min.css" />
     <link rel="stylesheet" href="css/gallery.css" />
-    <link rel="stylesheet" href="css/loader.css" type="text/css">
+    <link rel="stylesheet" href="css/loader.css" />
     <link rel="stylesheet" href="css/contact-min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
     <title>BOSM'19 | Halla Toh Hoga Hi</title>
 </head>
 
 <body>
-        <div class="loader_wraper">
-                <div class="loader">
-                    <div id="heading">BOSM '19</div>
-                    <svg width="100vw" height="100vw" class="loader-1" id="Layer_1" data-name="Layer 1"
-                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+    <div class="loader_wraper">
+        <div class="loader">
+            <div id="heading">BOSM '19</div>
+            <svg width="100vw" height="100vw" class="loader-1" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
                         <path id="p1" class="all" stroke-miterlimit="10" d="M0.5,99.6c297.5,39.8,367.6,91.1,371.9,132.4
                             c5,48.4-76.8,112.7-117,96.7c-58.9-23.3-58.5-230.9,0.9-254.5c27.3-10.9,73,14.9,77.4,43.9c10.2,67.1-198.1,173.7-235.2,136.3
                             c-13.2-13.3-4.4-44.5,8.6-74.4" />
@@ -109,8 +107,7 @@
                             </clipPath>
                         </defs>
                     </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" id="black" class="loader-2" data-name="Layer 1"
-                        viewBox="0 0 796.32 789.87">
+            <svg xmlns="http://www.w3.org/2000/svg" id="black" class="loader-2" data-name="Layer 1" viewBox="0 0 796.32 789.87">
                         <defs>
                             <style>
                                 .cls-1 {
@@ -176,9 +173,8 @@
                             d="M840.86,369.77c1.06,3.94,2.7,8-2.67,10.31-.07-2.44-.45-4.92-.07-7.28C838.29,371.67,839.9,370.77,840.86,369.77Z"
                             class="blue-man"></path>
                     </svg>
-                </div>
         </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    </div>
 
     <div class="content-wrapper">
         <div class="landing-wrapper">
@@ -241,7 +237,11 @@
                     <div id="minLabel">MINUTES</div>
                 </div>
             </div>
-            <div class="scroll"></div>
+            <div class="scroll-downs">
+                <div class="mousey">
+                  <div class="scroller"></div>
+                </div>
+              </div>
             <div class="social">
                 <div style="margin-right: 20px">Follow us on</div>
                 <a href="https://www.facebook.com/bosmbitspilani/" target="blank">
@@ -528,65 +528,55 @@
             <div class="event-background-asset-02"></div>
             <div class="event-background-asset-03"></div>
         </div>
-    </div>
-    <!-- <div class="events-wrapper gallery-wrapper">
-        <div class="events-title">GALLERY</div>
-        <div class="gallery-container">
-            <div class="gallery">
-                <div class="gallery-1"></div>
-                <div class="gallery-2"></div>
-                <div class="gallery-3"></div>
-                <div class="gallery-4"></div>
-                <div class="gallery-5"></div>
+
+        <div class="events-wrapper gallery-wrapper">
+            <div class="events-title">GALLERY</div>
+            <div class="gallery-container">
+                <div class="gallery">
+                    <div class="gallery-1"></div>
+                    <div class="gallery-2"></div>
+                    <div class="gallery-3"></div>
+                    <div class="gallery-4"></div>
+                    <div class="gallery-5"></div>
+                </div>
+                <div class="gallery">
+                    <div class="gallery-1"></div>
+                    <div class="gallery-2"></div>
+                    <div class="gallery-3"></div>
+                    <div class="gallery-4"></div>
+                    <div class="gallery-5"></div>
+                </div>
+                <div class="gallery">
+                    <div class="gallery-1"></div>
+                    <div class="gallery-2"></div>
+                    <div class="gallery-3"></div>
+                    <div class="gallery-4"></div>
+                    <div class="gallery-5"></div>
+                </div>
             </div>
-            <div class="gallery">
-                <div class="gallery-1"></div>
-                <div class="gallery-2"></div>
-                <div class="gallery-3"></div>
-                <div class="gallery-4"></div>
-                <div class="gallery-5"></div>
+            <div class="gallery-nav-dots">
+                <div class="gallery-nav-dot" id="1" onclick="navigateGallery(this.id)"></div>
+                <div class="gallery-nav-dot" id="2" onclick="navigateGallery(this.id)"></div>
+                <div class="gallery-nav-dot" id="3" onclick="navigateGallery(this.id)"></div>
             </div>
-            <div class="gallery">
-                <div class="gallery-1"></div>
-                <div class="gallery-2"></div>
-                <div class="gallery-3"></div>
-                <div class="gallery-4"></div>
-                <div class="gallery-5"></div>
-            </div>
-            <div class="gallery">
-                <div class="gallery-1"></div>
-                <div class="gallery-2"></div>
-                <div class="gallery-3"></div>
-                <div class="gallery-4"></div>
-                <div class="gallery-5"></div>
-            </div>
-        </div>
-        <div class="gallery-nav-dots">
-            <div class="gallery-nav-dot" id="1" onclick="navigateGallery(this.id)"></div>
-            <div class="gallery-nav-dot" id="2" onclick="navigateGallery(this.id)"></div>
-            <div class="gallery-nav-dot" id="3" onclick="navigateGallery(this.id)"></div>
-            <div class="gallery-nav-dot" id="4" onclick="navigateGallery(this.id)"></div>
+
+            <div class="event-background-asset-01"></div>
+            <div class="event-background-asset-02"></div>
+            <div class="event-background-asset-03"></div>
+            <div class="gallery-background-asset-04"></div>
         </div>
 
-        <div class="event-background-asset-01"></div>
-        <div class="event-background-asset-02"></div>
-        <div class="event-background-asset-03"></div>
-        <div class="gallery-background-asset-04"></div>
-    </div> -->
-
-    <div class="contact-wrapper">
-        <!-- <div class="contact-title">CONTACT US</div> -->
+        <div class="contact-wrapper">
             <div class="contact-main-container">
                 <div class="contact-quote">
                     <div class="contact-quote-heading">DIRECTOR'S MESSAGE</div>
                     <!-- <div class="image"><img class="director" src='/img/nolan.jpg'></div> -->
                     <div class="image"><img class="director"></div>
                     <div class="quote-box">
-                            An idea is like a virus. Resilient. Highly contagious. And even the smallest seed of an idea
-                             can grow. It can grow to define or destroy you.
+                        An idea is like a virus. Resilient. Highly contagious. And even the smallest seed of an idea can grow. It can grow to define or destroy you.
                     </div>
                 </div>
-                
+
                 <div class="contact-container">
                     <div class="cards-container">
                         <div class="cards">
@@ -597,80 +587,74 @@
                             <div class="card-id">megh@gmail.com</div>
                         </div>
                         <div class="cards">
-                                <div class="card-heading">DVM</div>
-                                <img class="card-image">
-                                <div class="card-name">Megh Thakkar2</div>
-                                <div class="card-number">999900007</div>
-                                <div class="card-id">megh@gmail.com</div>
-                            </div>
-                        <div class="cards">
-                                <div class="card-heading">DVM</div>
-                                <img class="card-image">
-                                <div class="card-name">Megh Thakkar3</div>
-                                <div class="card-number">999900007</div>
-                                <div class="card-id">megh@gmail.com</div>
-                        </div> 
-                        <div class="cards">
-                                <div class="card-heading">DVM</div>
-                                <img class="card-image">
-                                <div class="card-name">Megh Thakkar4</div>
-                                <div class="card-number">999900007</div>
-                                <div class="card-id">megh@gmail.com</div>
-                        </div>  
-                        <div class="cards">
-                                <div class="card-heading">DVM</div>
-                                <img class="card-image">
-                                <div class="card-name">Megh Thakkar5</div>
-                                <div class="card-number">999900007</div>
-                                <div class="card-id">megh@gmail.com</div>
-                        </div>  
-                        <div class="cards">
-                                <div class="card-heading">DVM</div>
-                                <img class="card-image">
-                                <div class="card-name">Megh Thakkar6</div>
-                                <div class="card-number">999900007</div>
-                                <div class="card-id">megh@gmail.com</div>
-                        </div>  
-                        <div class="cards">
-                                <div class="card-heading">DVM</div>
-                                <img class="card-image">
-                                <div class="card-name">Megh Thakkar7</div>
-                                <div class="card-number">999900007</div>
-                                <div class="card-id">megh@gmail.com</div>
-                        </div>  
-                        <div class="cards">
-                                <div class="card-heading">DVM</div>
-                                <img class="card-image">
-                                <div class="card-name">Megh Thakkar8</div>
-                                <div class="card-number">999900007</div>
-                                <div class="card-id">megh@gmail.com</div>
+                            <div class="card-heading">DVM</div>
+                            <img class="card-image">
+                            <div class="card-name">Megh Thakkar2</div>
+                            <div class="card-number">999900007</div>
+                            <div class="card-id">megh@gmail.com</div>
                         </div>
                         <div class="cards">
-                                <div class="card-heading">DVM</div>
-                                <img class="card-image">
-                                <div class="card-name">Megh Thakkar9</div>
-                                <div class="card-number">999900007</div>
-                                <div class="card-id">megh@gmail.com</div>
-                        </div>  
+                            <div class="card-heading">DVM</div>
+                            <img class="card-image">
+                            <div class="card-name">Megh Thakkar3</div>
+                            <div class="card-number">999900007</div>
+                            <div class="card-id">megh@gmail.com</div>
+                        </div>
+                        <div class="cards">
+                            <div class="card-heading">DVM</div>
+                            <img class="card-image">
+                            <div class="card-name">Megh Thakkar4</div>
+                            <div class="card-number">999900007</div>
+                            <div class="card-id">megh@gmail.com</div>
+                        </div>
+                        <div class="cards">
+                            <div class="card-heading">DVM</div>
+                            <img class="card-image">
+                            <div class="card-name">Megh Thakkar5</div>
+                            <div class="card-number">999900007</div>
+                            <div class="card-id">megh@gmail.com</div>
+                        </div>
+                        <div class="cards">
+                            <div class="card-heading">DVM</div>
+                            <img class="card-image">
+                            <div class="card-name">Megh Thakkar6</div>
+                            <div class="card-number">999900007</div>
+                            <div class="card-id">megh@gmail.com</div>
+                        </div>
+                        <div class="cards">
+                            <div class="card-heading">DVM</div>
+                            <img class="card-image">
+                            <div class="card-name">Megh Thakkar7</div>
+                            <div class="card-number">999900007</div>
+                            <div class="card-id">megh@gmail.com</div>
+                        </div>
+                        <div class="cards">
+                            <div class="card-heading">DVM</div>
+                            <img class="card-image">
+                            <div class="card-name">Megh Thakkar8</div>
+                            <div class="card-number">999900007</div>
+                            <div class="card-id">megh@gmail.com</div>
+                        </div>
+                        <div class="cards">
+                            <div class="card-heading">DVM</div>
+                            <img class="card-image">
+                            <div class="card-name">Megh Thakkar9</div>
+                            <div class="card-number">999900007</div>
+                            <div class="card-id">megh@gmail.com</div>
+                        </div>
                     </div>
-                    
-                    <!-- <div class="contacts-nav-dots">
-                            <div class="contact-nav-dot" id="1" onclick="navigate(this.id)"></div>
-                            <div class="contact-nav-dot" id="2" onclick="navigate(this.id)"></div>
-                    </div> -->
                     <div class="arrow"><img src="/img/Group 66.png"></div>
                 </div>
             </div>
-            </div>
-
+        </div>
     </div>
 
 
-    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/about.js"></script>
     <script src="js/events.js"></script>
-    <!-- <script src="js/gallery.js"></script> -->
+    <script src="js/gallery.js"></script>
     <script src="js/loader.js"></script>
     <script src="js/contact.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
