@@ -92,7 +92,7 @@
   margin-bottom: 10px;
   height: fit-content;
   text-align: center;
-  text-decoration: bold;
+  font-weight: bold;
 }
 .contact-wrapper .contact-container .cards-container .cards img {
   width: 176px;
