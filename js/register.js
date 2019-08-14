@@ -37,38 +37,38 @@ function getgendervalue(i) {
     case 0:
       document.getElementsByClassName("gender")[0].style.color = "#34AAFC";
       document.getElementsByClassName("gender")[0].style.border =
-        "1px solid #34AAFC";
+        "2px solid #34AAFC";
       document.getElementsByClassName("gender")[1].style.color = "#686868";
       document.getElementsByClassName("gender")[1].style.border =
-        "1px solid #686868";
+        "2px solid #686868";
       document.getElementsByClassName("gender")[2].style.color = "#686868";
       document.getElementsByClassName("gender")[2].style.border =
-        "1px solid #686868";
+        "2px solid #686868";
       gender_value = "M";
       console.log(gender_value);
       break;
     case 1:
       document.getElementsByClassName("gender")[1].style.color = "#34AAFC";
       document.getElementsByClassName("gender")[1].style.border =
-        "1px solid #34AAFC";
+        "2px solid #34AAFC";
       document.getElementsByClassName("gender")[0].style.color = "#686868";
       document.getElementsByClassName("gender")[0].style.border =
-        "1px solid #686868";
+        "2px solid #686868";
       document.getElementsByClassName("gender")[2].style.color = "#686868";
       document.getElementsByClassName("gender")[2].style.border =
-        "1px solid #686868";
+        "2px solid #686868";
       gender_value = "F";
       break;
     case 2:
       document.getElementsByClassName("gender")[2].style.color = "#34AAFC";
       document.getElementsByClassName("gender")[2].style.border =
-        "1px solid #34AAFC";
+        "2px solid #34AAFC";
       document.getElementsByClassName("gender")[1].style.color = "#686868";
       document.getElementsByClassName("gender")[1].style.border =
-        "1px solid #686868";
+        "2px solid #686868";
       document.getElementsByClassName("gender")[0].style.color = "#686868";
       document.getElementsByClassName("gender")[0].style.border =
-        "1px solid #686868";
+        "2px solid #686868";
       gender_value = "O";
       break;
   }
