@@ -11,7 +11,7 @@ $sfpro: "sfpro";
   }
 
 .contact-wrapper{
-    // width:fit-conten;
+    width:100vw;
     height: 100vh;
     background: #1876B7;
     // .contact-title {
@@ -30,6 +30,8 @@ $sfpro: "sfpro";
         grid-template-rows: [row-1] 100vh [end]; 
         transition: 1s;
         transform: translateX(0);
+        overflow: hidden;
+
     }
     .contact-quote{
         grid-column-start: col-1;
