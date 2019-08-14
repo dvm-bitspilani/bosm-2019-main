@@ -7,8 +7,10 @@
   src: url("../fonts/SF-Pro-Text-Regular.ttf");
 }
 .contact-wrapper {
+  width: 100vw;
   height: 100vh;
   background: #1876B7;
+  overflow: hidden;
 }
 .contact-wrapper .contact-main-container {
   height: 100%;
@@ -17,6 +19,7 @@
   grid-template-rows: [row-1] 100vh [end];
   transition: 1s;
   transform: translateX(0);
+  overflow: hidden;
 }
 .contact-wrapper .contact-quote {
   grid-column-start: col-1;
