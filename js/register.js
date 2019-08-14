@@ -118,34 +118,29 @@ window.onload = function() {
 };
 
 function bosmreg() {
-  if (!document.getElementById("txtInput").value) {
-    return alert("Please! Enter the captcha");
-  }
-
-  if (!ValidCaptcha()) {
-    alert("Invalid captcha!");
-    return Captcha();
-  }
+  
 
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
   const city = document.getElementById("city").value;
   const state = document.getElementById("state").value;
+  var v = grecaptcha.getResponse();
+  console.log(v);
 
-  if (
-    name == "" ||
-    email == "" ||
-    phone == "" ||
-    city == "" ||
-    state == "" ||
-    sportsarr == [] ||
-    collegeid == null ||
-    yos_value == null ||
-    gender_value == null
-  ) {
-    alert("Please fill all mentioned feilds");
-  } else {
+  // if (
+  //   name == "" ||
+  //   email == "" ||
+  //   phone == "" ||
+  //   city == "" ||
+  //   state == "" ||
+  //   sportsarr == [] ||
+  //   collegeid == null ||
+  //   yos_value == null ||
+  //   gender_value == null
+  // ) {
+  //   alert("Please fill all mentioned feilds");
+  // } else {
     data = {
       name: name,
       email_id: email,
@@ -155,8 +150,10 @@ function bosmreg() {
       sports_ids: sportsarr,
       college_id: collegeid,
       city: city,
-      state: state
+      state: state,
+      captcha : v
     };
+
 
     fetch(" http://test1.bits-bosm.org/registrations/register/", {
       method: "post",
@@ -177,7 +174,7 @@ function bosmreg() {
       });
     console.log(data);
   }
-}
+
 
 function Captcha() {
   var alpha = new Array(
