@@ -20,16 +20,19 @@
         </div>
         <div class="form-container">
             <div class="input-el">
-                <input type="text" placeholder="Name *" class="text-type" id="name" />
-                <input type="text" placeholder="E-Mail *" class="text-type" id="email" />
-                <input type="number" placeholder="Phone *" class="text-type" id="phone" />
-                <div class="select-wrapper">
-                    <select id="gender_opt" class="select-input" onchange="getgendervalue()">
-              <option value="">Select your Gender</option>
-              <option value="M">Male</option>
-              <option value="F">Female</option>
-              <option value="O">Others</option>
-            </select>
+                <div class="label"><span  class="label-text">Name <span style="color: #34AAFC">*</span></span></div>  
+                <input type="text"  class="text-type" id="name" />
+                <div class="label"><span  class="label-text">Email <span style="color: #34AAFC">*</span></span></div>  
+                <input type="text" class="text-type" id="email" />
+                <div class="label"><span  class="label-text">Phone <span style="color: #34AAFC">*</span></span></div>  
+                <input type="number" class="text-type" id="phone" />
+                <div class="select-wrapper-gender">
+                    <span class="gender-heading">Gender</span> <span style="color: #34AAFC">*</span>
+                    <br>
+                    <br>
+                    <span class="gender" onclick="getgendervalue(0)">Male</span>
+                    <span class="gender" onclick="getgendervalue(1)">Female</span>
+                    <span class="gender" onclick="getgendervalue(2)">Other</span>
                 </div>
                 <div class="select-wrapper">
                     <select id="yos_opt" class="select-input" onchange="getyosvalue()">
@@ -54,7 +57,9 @@
               <option value="">Select College</option>
             </select>
                 </div>
+                <div class="label"><span  class="label-text">City <span style="color: #34AAFC">*</span></span></div>  
                 <input type="text" placeholder="City *" class="text-type" id="city" />
+                <div class="label"><span  class="label-text">State <span style="color: #34AAFC">*</span></span></div>  
                 <input type="text" placeholder="State *" class="text-type" id="state" />
             </div>
         </div>
