@@ -30,12 +30,12 @@ var delay = speed - 0.12;
 var delayStep = 0.2;
 
 animate();
-setInterval(function() {
-    var a = document.getElementById("black");
-    a.style.animation = "logoFadeOut 0.00001s ease-in forwards";
-    a.style.opacity = 0;
-    animate();
-  }, 6000);
+// setInterval(function() {
+//     var a = document.getElementById("black");
+//     a.style.animation = "logoFadeOut 0.00001s ease-in forwards";
+//     a.style.opacity = 0;
+//     animate();
+//   }, 6000);
   
 function animate() 
 {

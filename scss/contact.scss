@@ -27,7 +27,7 @@ $sfpro: "sfpro";
     .contact-main-container{
         height: 100%;
         display: grid;
-        grid-template-columns: [col-1] 50vw [col-2] 1vw [col-3] 99vw [end];
+        grid-template-columns: [col-1] 50vw [col-2] 0vw [col-3] 100vw [end];
         grid-template-rows: [row-1] 100vh [end]; 
         transition: 1s;
         transform: translateX(0);
@@ -41,16 +41,18 @@ $sfpro: "sfpro";
         grid-row-end: span end;
         background-color: #DCDCDC;
         padding-top: 4vw;
+        background: url("/img/clocktower.png");
         .contact-quote-heading{
             width:100%;
-            height:2vw;
+            height:4vw;
             font-size: 3.5em;
             font-family: $FuturaPT;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 3vw;
+            margin-bottom: 7vw;
             letter-spacing: 1.0vw;
+            color: white;
         }
         .image{
             width: 100%;
@@ -58,19 +60,24 @@ $sfpro: "sfpro";
             justify-content: center;
             align-items: center;
             height: 31vh;
+            margin-bottom: 6vw;
            img{
-            width: 264px;
-            height: 264px;
+            width: 314px;
+            height: 314px;
             border-radius: 50%;
-            background: #7E7E7E;
+            // background: #7E7E7E;
+            background-image: url('/img/director.png');
+            background-size: cover;
            }
         }
         .quote-box{
             width: 70%;
             margin: 0 auto;
-            font-size: 2em;
-            font-family: $FuturaPT;
-            color: #7E7E7E;
+            font-size: 21px;
+            font-family: "sfpro";
+            color: white;
+            letter-spacing: 0;
+            text-align: center;
         }
     }
     .contact-container{
@@ -149,18 +156,49 @@ $sfpro: "sfpro";
         //         transition: 0.75s;   
         //     }
         // }
-        
         .arrow{
-            display: "flex";
+            position: absolute;
+            bottom: 50vh;
+            left: calc(-35px);
             grid-column-start: col-2;
             grid-column-end: col-3;
             grid-row-start: row-1;
             grid-row-end: end;
-            justify-content: center;
-            align-items: center;
-            background: #7E7E7E;
+            img{
+                background-image: url('/img/arrow.png');
+                background-size: cover;
+                height:70px;
+                width:70px;
+            }
         }
     }
-    
 
+    .instructions{
+        background:#E1E1E1;
+        display: flex;
+        grid-column-start: col-3;
+        grid-column-end: end;
+        grid-row-start: row-1;
+        grid-row-end: end;
+        justify-content: center;
+        align-items: center;
+        align-self: start;
+        width:50vw;
+        height:100vh;
+        flex-direction: column;
+        h1{
+            color: black;
+            font-size: 46px;
+            font-family: "FuturaPT";
+            letter-spacing: 13.54px;
+            margin-bottom: 4vw;
+        }
+        div{
+            color: black;
+            font-family: "FuturaPT";
+            letter-spacing: 6.64px;
+            font-size: 22px;
+            letter-spacing: 1.5px;
+        }
+    }
 }
