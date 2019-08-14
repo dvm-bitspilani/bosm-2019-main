@@ -1,6 +1,14 @@
 const dDay = new Date("September 12, 2019 23:59:59").getTime();
-document.getElementsByClassName("navbar")[0].lastElementChild.addEventListener("click", () => {
+document.getElementById("register").addEventListener("click", () => {
     window.location.href = "./regsiter.html";
+})
+
+let menu = document.getElementsByClassName("hamburger")[0];
+document.getElementById("openNav").addEventListener("click", () => {
+    menu.style.transform = "translateX(0)";
+})
+document.getElementById("closeNav").addEventListener("click", () => {
+    menu.style.transform = "translateX(370px)";
 })
 
 function setTime() {
