@@ -26,11 +26,17 @@ $SFPro: "SFPro";
         background-size: cover;
         width: 500px;
         height: 500px;
-        top: calc(50% - 250px);
+        top: calc(50% - 125px);
         z-index: 0;
         right: -250px;
         animation: rotate-ellipse 45s linear infinite;
         -webkit-animation: rotate-ellipse 45s linear infinite;
+        @media screen and (max-width: 600px) {
+            width: 250px;
+            height: 250px;
+            right: -125px;
+            top: 25%;
+        }
     }
     .event-background-asset-02 {
         position: absolute;
@@ -42,6 +48,12 @@ $SFPro: "SFPro";
         left: 10%;
         margin: 10% 0;
         z-index: 0;
+        @media screen and (max-width: 600px) {
+            width: 150%;
+            left: -50%;
+            top: 15%;
+            transform: rotateX(-45deg);
+        }
     }
     .event-background-asset-03 {
         position: absolute;
@@ -52,6 +64,9 @@ $SFPro: "SFPro";
         top: 5%;
         left: 20%;
         z-index: 0;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
     }
     .events-index {
         position: absolute;

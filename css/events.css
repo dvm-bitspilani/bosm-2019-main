@@ -22,11 +22,17 @@
     background-size: cover;
     width: 500px;
     height: 500px;
-    top: calc(50% - 250px);
+    top: calc(50% - 125px);
     z-index: 0;
     right: -250px;
     animation: rotate-ellipse 45s linear infinite;
     -webkit-animation: rotate-ellipse 45s linear infinite; }
+    @media screen and (max-width: 600px) {
+      .events-wrapper .event-background-asset-01 {
+        width: 250px;
+        height: 250px;
+        right: -125px;
+        top: 25%; } }
   .events-wrapper .event-background-asset-02 {
     position: absolute;
     background: url("../img/events-asset-02.png");
@@ -37,6 +43,12 @@
     left: 10%;
     margin: 10% 0;
     z-index: 0; }
+    @media screen and (max-width: 600px) {
+      .events-wrapper .event-background-asset-02 {
+        width: 150%;
+        left: -50%;
+        top: 15%;
+        transform: rotateX(-45deg); } }
   .events-wrapper .event-background-asset-03 {
     position: absolute;
     background: url("../img/events-asset-03.png");
@@ -46,6 +58,9 @@
     top: 5%;
     left: 20%;
     z-index: 0; }
+    @media screen and (max-width: 600px) {
+      .events-wrapper .event-background-asset-03 {
+        width: 100%; } }
   .events-wrapper .events-index {
     position: absolute;
     z-index: 1;

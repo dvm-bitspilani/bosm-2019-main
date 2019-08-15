@@ -141,6 +141,7 @@ const initiateAnimation = () => {
         openCard();
         eventSetChangeInterval = setInterval(changeEventSet, 5000);
         document.removeEventListener("wheel", initiateAnimation);
+        document.removeEventListener("touchmove", initiateAnimation);
     }
 }
 
