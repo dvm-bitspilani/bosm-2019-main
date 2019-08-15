@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100vw;
     padding: 0;
-    background: #1876B7;
+    background: linear-gradient(180deg, #288AFF 0%, #7AC8FF 100%);
     overflow: hidden;
     position: relative;
     z-index: 0;

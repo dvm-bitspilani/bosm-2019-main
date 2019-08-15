@@ -11,7 +11,7 @@
 .about-div {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(180deg, #5600ff 0%, #288aff 100%);
+  background: transparent linear-gradient(181deg, #2A14EA 0%, #288AFF 100%) 0% 0% no-repeat padding-box;
   position: relative;
   .circle {
     width: 500px;
@@ -62,7 +62,7 @@
   .clip-div {
     height: 100%;
     width: 100%;
-    background:  transparent linear-gradient(180deg, #F7DC52 0%, #FFD500 100%) 0% 0% no-repeat padding-box;
+    background:  #FED401;
     clip-path: polygon(0 0, 61% 0, 34% 100%, 0% 100%);
     position: absolute;
     top: 0;
@@ -78,7 +78,7 @@
     z-index: 10;
     .slider-div {
       width: 50%;
-      height: 80%;
+      height: 85%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -90,8 +90,8 @@
         letter-spacing: 2vw;
       }
       .img-div {
-        width: 52%;
-        height: 30%;
+        width: 55%;
+        height: 32%;
         border-radius: 10px;
         box-shadow: 0 0 25px gray;
         position: relative;
