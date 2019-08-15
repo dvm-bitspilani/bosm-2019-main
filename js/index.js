@@ -54,13 +54,27 @@ window.onload = function() {
         const animation2 = "grow-2 0.7s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards";
         const animation3 = "grow-3 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards";
 
+        document.getElementsByClassName("line-1")[0].style.animation = animation1;
+        document.getElementsByClassName("line-2")[0].style.animation = animation2;
+        document.getElementsByClassName("line-10")[0].style.animation = animation1;
+        document.getElementsByClassName("line-11")[0].style.animation = animation2;
+
+        document.getElementsByClassName("grit")[0].style.animationName = "anim-4";
+        document.getElementsByClassName("guts")[0].style.animationName = "anim-5";
+        document.getElementsByClassName("glory")[0].style.animationName = "anim-6";
         // trigger landing page animations only when page is loaded. Forgive the selectors.
+        document.getElementsByClassName("bosm-header")[0].style.animation = "appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards";
+        document.getElementsByClassName("cricket")[0].style.animation = "fade-in 0.5s linear 0.7s forwards";
+        document.getElementsByClassName("slogan-1")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s forwards";
+        document.getElementsByClassName("slogan-2")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s forwards";
         if (window.innerWidth > 450) {
             // console.log('works')
             setTimeout(() => {
                 document.getElementsByClassName("landing-clip")[0].style.animation = "grow-clip 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
-                document.getElementsByClassName("line-1")[0].style.animation = animation1;
-                document.getElementsByClassName("line-2")[0].style.animation = animation2;
+                document.getElementsByClassName("grit")[0].style.animationName = "anim-1";
+                document.getElementsByClassName("guts")[0].style.animationName = "anim-2";
+                document.getElementsByClassName("glory")[0].style.animationName = "anim-3";
+
                 document.getElementsByClassName("line-3")[0].style.animation = animation1;
                 document.getElementsByClassName("line-4")[0].style.animation = animation2;
                 document.getElementsByClassName("line-5")[0].style.animation = animation2;
@@ -68,19 +82,8 @@ window.onload = function() {
                 document.getElementsByClassName("line-7")[0].style.animation = animation2;
                 document.getElementsByClassName("line-8")[0].style.animation = animation3;
                 document.getElementsByClassName("line-9")[0].style.animation = animation3;
-                document.getElementsByClassName("line-10")[0].style.animation = animation1;
-                document.getElementsByClassName("line-11")[0].style.animation = animation2;
                 document.getElementsByClassName("line-12")[0].style.animation = animation1;
                 document.getElementsByClassName("line-13")[0].style.animation = animation2;
-                document.getElementsByClassName("bosm-header")[0].style.animation = "appear-bosm 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards";
-
-                document.getElementsByClassName("grit")[0].style.animationName = "anim-1";
-                document.getElementsByClassName("guts")[0].style.animationName = "anim-2";
-                document.getElementsByClassName("glory")[0].style.animationName = "anim-3";
-
-                document.getElementsByClassName("cricket")[0].style.animation = "fade-in 0.5s linear 0.7s forwards";
-                document.getElementsByClassName("slogan-1")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s forwards";
-                document.getElementsByClassName("slogan-2")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s forwards";
             }, 500)
         }
             // ----------------------------------------------------------------------------

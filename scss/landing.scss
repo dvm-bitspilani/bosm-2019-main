@@ -100,6 +100,37 @@
 			}
     }
   }
+
+  .mobile-hamburger {
+    position: absolute;
+    background-color: salmon;
+    right: 0;
+		top: 0;
+		transform: translateX(-100vw);
+		transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 100%;
+    width: 100vw;
+    z-index: 30;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .close {
+      left: 0;
+      margin: 0;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    .ham-item {
+      width: 100%;
+      padding: 30px 0;
+      font-size: 2em;
+      text-align: center;
+      color: #fff;
+      font-family: "futura";
+      letter-spacing: 2px;
+    }
+  }
 }
 
 @media all and (max-width: 450px) {
@@ -113,6 +144,9 @@
 
     .hamburger {
       display: none;
+    }
+    .mobile-hamburger {
+      display: flex;
     }
   }
 }
@@ -367,8 +401,9 @@
 
 @media all and (max-width: 450px) {
   .bosm-header {
-    font-size: 2em;
+    font-size: 5em;
     transform: translateY(0);
+    margin-bottom: -110%;
   }
 
   .letter {
@@ -459,6 +494,24 @@
   }
 }
 
+@keyframes anim-4 {
+  0%, 8.3% {bottom: 10%; opacity: 0;}
+  8.3%, 25% {bottom: 12%; opacity: 1;}
+  33.33%, 100% {bottom: 10%; opacity: 0;}
+}
+
+@keyframes anim-5 {
+  0%,33.33% {bottom: 10%; opacity: 0;}
+  41.63%,58.29% {bottom: 12%; opacity: 1;}
+  66.66%,100% {bottom: 10%; opacity: 0;}
+}
+
+@keyframes anim-6 {
+  0%,66.66% {bottom: 10%;opacity: 0;}
+  74.96%,91.62% {bottom: 12%;opacity: 1;}
+  100% {bottom: 10%;opacity: 0;}
+}
+
 .cricket {
   height: 100%;
   position: absolute;
@@ -507,9 +560,18 @@
 }
 
 @media all and (max-width: 450px) {
+  .grit,
+  .guts,
+  .glory {
+    right: 7%;
+    bottom: 10%;
+    font-size: 2em;
+    letter-spacing: 10px;
+  }
+
   .cricket {
     img {
-      height: 50%;
+      height: 57%;
     }
   }
 
@@ -646,12 +708,10 @@
   position: absolute;
   font-size: 2em;
   color: #4a3f7b;
-  // opacity: 0.8;
   font-family: "Futura";
   letter-spacing: 12px;
   transform: translateY(100px);
   opacity: 0;
-  //   animation: appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
 }
 
 .slogan-1 {
@@ -689,15 +749,13 @@
         color: #F3D331;
       }
     }
-
     .timeLabel {
       display: none;
     }
   }
 
   .scroll-downs {
-    width: 20px;
-    height: 40px;
+    display: none
   }
 
   .social {
@@ -711,5 +769,19 @@
       height: 30px;
       width: 30px;
     }
+  }
+
+  .slogan-1, 
+  .slogan-2 {
+    font-size: 1.7em;
+    letter-spacing: 7px;
+  }
+  .slogan-1 {
+    top: 15%;
+    left: 4%;
+  }
+  .slogan-2 {
+    top: 19.5%;
+    left: 18%;
   }
 }
