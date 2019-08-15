@@ -82,8 +82,8 @@ function getcollegeid() {
 }
 
 window.onload = function() {
-  const URL = "http://test1.bits-bosm.org/registrations/get_sports";
-  const URL2 = "http://test1.bits-bosm.org/registrations/get_colleges";
+  const URL = "https://test1.bits-bosm.org/registrations/get_sports";
+  const URL2 = "https://test1.bits-bosm.org/registrations/get_colleges";
 
   fetch(URL)
     .then(resp => resp.json())
