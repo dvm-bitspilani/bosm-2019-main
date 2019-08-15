@@ -15,10 +15,7 @@
   background: #288aff;
   overflow: hidden;
   position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  height: 100vh; }
   .events-wrapper .event-background-asset-01 {
     position: absolute;
     background: url("../img/events-asset-01.png");
@@ -54,7 +51,10 @@
     z-index: 1;
     overflow: hidden;
     position: relative;
-    height: 100vh; }
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
     .events-wrapper .events-index .events-title {
       font-family: "FuturaPT";
       letter-spacing: 20px;
@@ -62,6 +62,11 @@
       font-size: 4rem;
       text-align: center;
       color: #ffffff; }
+      @media screen and (max-width: 600px) {
+        .events-wrapper .events-index .events-title {
+          font-size: 2rem;
+          letter-spacing: 2vw;
+          margin: 3% auto; } }
     .events-wrapper .events-index .events-container {
       width: 100%;
       padding: 76px 0;
@@ -69,11 +74,18 @@
       justify-content: flex-start;
       align-items: center;
       transition: transform 0.75s ease-in; }
+      @media screen and (max-width: 600px) {
+        .events-wrapper .events-index .events-container {
+          padding: 0; } }
       .events-wrapper .events-index .events-container .events-set {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         min-width: 100%; }
+        @media screen and (max-width: 600px) {
+          .events-wrapper .events-index .events-container .events-set {
+            flex-direction: column;
+            height: 80vh; } }
         .events-wrapper .events-index .events-container .events-set .events-card {
           width: 15%;
           height: 20vw;
@@ -81,6 +93,10 @@
           transform-style: preserve-3d;
           transition: transform 0.5s ease-in;
           box-shadow: 0 0 50px 1px #333333; }
+          @media screen and (max-width: 600px) {
+            .events-wrapper .events-index .events-container .events-set .events-card {
+              width: 30%;
+              height: 30%; } }
           .events-wrapper .events-index .events-container .events-set .events-card .events-card-back {
             width: 100%;
             height: 100%;
@@ -119,6 +135,10 @@
               @media screen and (max-width: 1300px) {
                 .events-wrapper .events-index .events-container .events-set .events-card .events-card-front .event-name {
                   font-size: 1.1rem; } }
+              @media screen and (max-width: 600px) {
+                .events-wrapper .events-index .events-container .events-set .events-card .events-card-front .event-name {
+                  font-size: 0.8rem;
+                  letter-spacing: 5px; } }
             .events-wrapper .events-index .events-container .events-set .events-card .events-card-front img {
               height: 100%;
               width: 100;
@@ -130,10 +150,16 @@
   font-size: 1.15rem;
   padding-right: 7.5%;
   color: #ffffff; }
+  @media screen and (max-width: 600px) {
+    .events-msg {
+      display: none; } }
 
 .events-nav-dots {
   text-align: center;
   margin: 32px 0; }
+  @media screen and (max-width: 600px) {
+    .events-nav-dots {
+      margin: 16px 0; } }
   .events-nav-dots .event-nav-dot {
     width: 10px;
     height: 10px;
@@ -145,3 +171,8 @@
     transition: 0.75s; }
     .events-nav-dots .event-nav-dot:nth-of-type(1) {
       background: #ffffff; }
+    @media screen and (max-width: 600px) {
+      .events-nav-dots .event-nav-dot {
+        width: 7px;
+        height: 7px;
+        border: 2px solid #ffffff; } }
