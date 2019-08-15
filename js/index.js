@@ -11,6 +11,16 @@ document.getElementById("closeNav").addEventListener("click", () => {
     menu.style.transform = "translateX(370px)";
 })
 
+let mobileMenu = document.getElementsByClassName("mobile-hamburger")[0];
+document.getElementById("openMobileNav").addEventListener("click", () => {
+    console.log('openMobile');
+    mobileMenu.style.transform = "translateX(0)";
+})
+document.getElementById("closeMobileNav").addEventListener("click", () => {
+    console.log('closeMobile');
+    mobileMenu.style.transform = "translateX(-100vw)";
+})
+
 function setTime() {
     const timeNow = new Date().getTime();
 
