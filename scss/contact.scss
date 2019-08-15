@@ -95,9 +95,12 @@ $sfpro: "sfpro";
             // transform: translateX(-259px);
             // align-items: center;
             transition: 0.75s;
+            @media screen and (max-width: 1000px) {
+                flex-direction: column;
+            }
             .cards {
-                height: 360px;
-                width: 321px;
+                height: 307px;
+                width: 315px;
                 color: white;
                 display: flex;
                 flex-direction: column;
@@ -106,14 +109,18 @@ $sfpro: "sfpro";
                 font-family: $sfpro;
                 .card-heading {
                     width: 100%;
+                    // font-size: 1.6vw;  
                     font-size: 23px;
                     letter-spacing: 2.84px;
+                    // margin-bottom: 0.20vw;
                     margin-bottom: 10px;
                     height: fit-content;
                     text-align: center;
                     font-weight: bold;
                 }
                 img {
+                    // width: 12.9vw;
+                    // height: 12.9vw;
                     width: 176px;
                     height: 176px;
                     background: #DCDCDC;
@@ -121,8 +128,10 @@ $sfpro: "sfpro";
                     margin-bottom: 10px;
                 }
                 .card-name {
-                    height: 35px;
+                    // height: 2.54vw;
                     // width: 100%;
+                    // font-size: 1.52vw;
+                    height: 35px;
                     font-size: 21px;
                 }
                 .card-number {
@@ -130,6 +139,8 @@ $sfpro: "sfpro";
                 }
                 .card-id {
                     // width: 100%;
+                    // font-size:1.09vw;
+                    // height: 2.1vw;
                     font-size: 15px;
                     height: 30px;
                     color: rgba(255, 255, 255, 0.6);
@@ -154,7 +165,7 @@ $sfpro: "sfpro";
         .arrow {
             position: absolute;
             bottom: 50vh;
-            left: calc(-35px);
+            left: calc(-1.545vw);
             grid-column-start: col-2;
             grid-column-end: col-3;
             grid-row-start: row-1;
@@ -164,9 +175,12 @@ $sfpro: "sfpro";
             img {
                 background-image: url('../img/arrow.png');
                 background-size: cover;
-                height: 70px;
+                <<<<<<< HEAD height: 70px;
                 width: 70px;
                 cursor: pointer;
+                =======height: 3.09vw;
+                width: 3.09vw;
+                >>>>>>>bccfc869f4aeb3ba6365f2e2ef299e91e2f2bb91
             }
         }
     }

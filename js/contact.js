@@ -7,6 +7,7 @@ var cardsContainer = document.getElementsByClassName('cards-container')[0];
 console.log("h1"+h1);
 console.log("h2"+h2);
 console.log("card "+cardsContainer);
+cardsContainer.style.opacity = 0; 
 function translate(action){
     var container= document.getElementsByClassName('contact-main-container')[0];
     if(action){

@@ -82,9 +82,14 @@
   /* flex-direction: column; */
   transition: 0.75s;
 }
+@media screen and (max-width: 1000px) {
+  .contact-wrapper .contact-container .cards-container {
+    flex-direction: column;
+  }
+}
 .contact-wrapper .contact-container .cards-container .cards {
-  height: 360px;
-  width: 321px;
+  height: 307px;
+  width: 315px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -123,7 +128,7 @@
 .contact-wrapper .contact-container .arrow {
   position: absolute;
   bottom: 50vh;
-  left: calc(-35px);
+  left: calc(-1.545vw);
   grid-column-start: col-2;
   grid-column-end: col-3;
   grid-row-start: row-1;
@@ -134,8 +139,8 @@
 .contact-wrapper .contact-container .arrow img {
   background-image: url("../img/arrow.png");
   background-size: cover;
-  height: 70px;
-  width: 70px;
+  height: 3.09vw;
+  width: 3.09vw;
 }
 .contact-wrapper .instructions {
   background: #E1E1E1;
