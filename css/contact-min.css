@@ -128,7 +128,7 @@
 .contact-wrapper .contact-container .arrow {
   position: absolute;
   bottom: 50vh;
-  left: calc(-35px);
+  left: calc(-1.545vw);
   grid-column-start: col-2;
   grid-column-end: col-3;
   grid-row-start: row-1;
@@ -139,8 +139,8 @@
 .contact-wrapper .contact-container .arrow img {
   background-image: url("../img/arrow.png");
   background-size: cover;
-  height: 5.09vw;
-  width: 5.09vw;
+  height: 3.09vw;
+  width: 3.09vw;
 }
 .contact-wrapper .instructions {
   background: #E1E1E1;
@@ -156,7 +156,6 @@
   height: 100vh;
   flex-direction: column;
   transition: 0.5s;
-  z-index: -1;
 }
 .contact-wrapper .instructions h1 {
   color: black;
