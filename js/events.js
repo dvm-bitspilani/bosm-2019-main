@@ -144,6 +144,7 @@ const initiateAnimation = () => {
     }
 }
 
+document.addEventListener("scroll", initiateAnimation);
 document.addEventListener("wheel", initiateAnimation);
 
 const changeEventSet = () => {
