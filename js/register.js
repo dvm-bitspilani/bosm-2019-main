@@ -127,8 +127,7 @@ function bosmreg() {
   const state = document.getElementById("state").value;
   var v = grecaptcha.getResponse();
   console.log(v);
-
-  // if (
+ // if (
   //   name == "" ||
   //   email == "" ||
   //   phone == "" ||
