@@ -59,3 +59,7 @@ arrow.addEventListener('click',()=>{
         isOpen = false;        
     }
 });
+
+if(window.innerWidth < 700){
+    cardsContainer.style.opacity =1;
+}
