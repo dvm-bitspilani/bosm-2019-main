@@ -34,6 +34,10 @@
     grid-template-columns: 5vw 26vw 20px 26vw 20px 26vw 5vw;
 }
 
+.gallery>div {
+    position: relative;
+}
+
 .gallery:nth-of-type(1)>.gallery-1 {
     background: url('../img/gallery/b1.jpg');
     background-position: center;
@@ -189,4 +193,30 @@
     display: inline-block;
     cursor: pointer;
     transition: 0.75s;
+}
+
+.likes-container {
+    width: calc(100% - 32px);
+    height: 0;
+    background: rgba(42, 42, 42, 0.75);
+    padding: 0 16px;
+    color: #eeeeee;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.likes-container>img {
+    height: 7.5%;
+    margin-left: 12px;
+}
+
+.gallery>div:hover>.likes-container {
+    height: initial;
+    padding: 8px 16px;
 }
