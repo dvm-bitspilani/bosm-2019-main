@@ -55,7 +55,9 @@ window.onload = function() {
         const animation3 = "grow-3 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) 0.7s forwards";
 
         // trigger landing page animations only when page is loaded. Forgive the selectors.
-        setTimeout(() => {
+        if (window.innerWidth > 450) {
+            // console.log('works')
+            setTimeout(() => {
                 document.getElementsByClassName("landing-clip")[0].style.animation = "grow-clip 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards"
                 document.getElementsByClassName("line-1")[0].style.animation = animation1;
                 document.getElementsByClassName("line-2")[0].style.animation = animation2;
@@ -80,6 +82,7 @@ window.onload = function() {
                 document.getElementsByClassName("slogan-1")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s forwards";
                 document.getElementsByClassName("slogan-2")[0].style.animation = "appear-grit 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s forwards";
             }, 500)
+        }
             // ----------------------------------------------------------------------------
     }, 4500);
 
