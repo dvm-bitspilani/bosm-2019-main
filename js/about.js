@@ -17,13 +17,7 @@ var text = [
   "#tweetno.5"
 ];
 
-function tweetchange() {
-  tweet_count++;
-  if (tweet_count > 4) {
-    tweet_count = 0;
-  }
-  tweet_text.innerHTML = text[tweet_count];
-}
+
 
 function setvalue(i) {
   count = i;
@@ -75,7 +69,6 @@ function slideleft() {
       dots[0].style.backgroundColor = "#fffffe";
       dots[1].style.backgroundColor = "transparent";
       dots[2].style.backgroundColor = "transparent";
-      tweet_text.innerHTML = text[0];
       break;
     case 1:
       img1.style.transform = "translateX(-100%)";
@@ -84,7 +77,6 @@ function slideleft() {
       dots[0].style.backgroundColor = "transparent";
       dots[1].style.backgroundColor = "#fffffe";
       dots[2].style.backgroundColor = "transparent";
-      tweet_text.innerHTML = text[1];
       break;
     case 2:
       img1.style.transform = "translateX(-200%)";
@@ -93,7 +85,6 @@ function slideleft() {
       dots[0].style.backgroundColor = "transparent";
       dots[1].style.backgroundColor = "transparent";
       dots[2].style.backgroundColor = "#fffffe";
-      tweet_text.innerHTML = text[2];
       break;
     default:
       img1.style.transform = "translateX(0)";
@@ -102,7 +93,6 @@ function slideleft() {
       dots[0].style.backgroundColor = "#fffffe";
       dots[1].style.backgroundColor = "transparent";
       dots[2].style.backgroundColor = "transparent";
-      tweet_text.innerHTML = text[0];
   }
 }
 
@@ -174,4 +164,4 @@ function ytpage(i, e) {
 
 var Var = setInterval(slideleft, 5000);
 var Var3 = setInterval(slidetweet, 3000);
-var Var2 = setInterval(tweetchange, 3000);
+// var Var2 = setInterval(tweetchange, 3000);
