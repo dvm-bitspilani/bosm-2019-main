@@ -1,17 +1,17 @@
 $FuturaPT: "FuturaPT";
 $sfpro: "sfpro";
-
 @font-face {
     font-family: "FuturaPT";
     src: url("../fonts/FuturaBoldCondensedBT.ttf");
 }
+
 @font-face {
     font-family: "sfpro";
     src: url("../fonts/SF-Pro-Text-Regular.ttf");
-  }
+}
 
-.contact-wrapper{
-    width:100vw;
+.contact-wrapper {
+    width: 100vw;
     height: 100vh;
     background: #1876B7;
     overflow: hidden;
@@ -24,15 +24,15 @@ $sfpro: "sfpro";
     //   font-size:4rem;
     //   font-family: $FuturaPT;
     // }
-    .contact-main-container{
+    .contact-main-container {
         height: 100%;
         display: grid;
         grid-template-columns: [col-1] 50vw [col-2] 0vw [col-3] 100vw [end];
-        grid-template-rows: [row-1] 100vh [end]; 
+        grid-template-rows: [row-1] 100vh [end];
         transition: 1s;
         transform: translateX(0);
     }
-    .contact-quote{
+    .contact-quote {
         grid-column-start: col-1;
         grid-column-end: col-2;
         grid-row-start: row-1;
@@ -40,9 +40,9 @@ $sfpro: "sfpro";
         background-color: #DCDCDC;
         padding-top: 4vw;
         background: url("../img/clocktower.png");
-        .contact-quote-heading{
-            width:100%;
-            height:4vw;
+        .contact-quote-heading {
+            width: 100%;
+            height: 4vw;
             font-size: 3.5em;
             font-family: $FuturaPT;
             display: flex;
@@ -52,23 +52,23 @@ $sfpro: "sfpro";
             letter-spacing: 1.0vw;
             color: white;
         }
-        .image{
+        .image {
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 31vh;
             margin-bottom: 6vw;
-           img{
-            width: 314px;
-            height: 314px;
-            border-radius: 50%;
-            // background: #7E7E7E;
-            background-image: url('../img/director.png');
-            background-size: cover;
-           }
+            img {
+                width: 314px;
+                height: 314px;
+                border-radius: 50%;
+                // background: #7E7E7E;
+                background-image: url('../img/director.png');
+                background-size: cover;
+            }
         }
-        .quote-box{
+        .quote-box {
             width: 70%;
             margin: 0 auto;
             font-size: 21px;
@@ -78,13 +78,13 @@ $sfpro: "sfpro";
             text-align: center;
         }
     }
-    .contact-container{
+    .contact-container {
         grid-column-start: col-3;
         grid-column-end: end;
         grid-row-start: row-1;
         grid-row-end: end;
         background-color: #7E7E7E;
-        .cards-container{
+        .cards-container {
             height: 100%;
             width: 100%;
             display: flex;
@@ -95,7 +95,7 @@ $sfpro: "sfpro";
             // transform: translateX(-259px);
             // align-items: center;
             transition: 0.75s;
-            .cards{
+            .cards {
                 height: 360px;
                 width: 321px;
                 color: white;
@@ -104,40 +104,38 @@ $sfpro: "sfpro";
                 align-items: center;
                 justify-content: center;
                 font-family: $sfpro;
-                .card-heading{
-                    width:100%;
-                    font-size: 23px;  
-                    letter-spacing:2.84px;
-                    margin-bottom: 10px;  
-                    height:fit-content;
-                    text-align: center; 
-                    font-weight: bold; 
+                .card-heading {
+                    width: 100%;
+                    font-size: 23px;
+                    letter-spacing: 2.84px;
+                    margin-bottom: 10px;
+                    height: fit-content;
+                    text-align: center;
+                    font-weight: bold;
                 }
-                img{
+                img {
                     width: 176px;
                     height: 176px;
                     background: #DCDCDC;
                     margin: 0 auto;
                     margin-bottom: 10px;
                 }
-                .card-name{
+                .card-name {
                     height: 35px;
                     // width: 100%;
                     font-size: 21px;
                 }
-                .card-number{
-                    color:rgba(255, 255, 255, 0.5);                    
+                .card-number {
+                    color: rgba(255, 255, 255, 0.5);
                 }
-                .card-id{
+                .card-id {
                     // width: 100%;
-                    font-size:15px;
+                    font-size: 15px;
                     height: 30px;
                     color: rgba(255, 255, 255, 0.6);
                 }
-
             }
         }
-
         // .contacts-nav-dots{
         //     // width:100%;
         //     text-align: center;
@@ -153,7 +151,7 @@ $sfpro: "sfpro";
         //         transition: 0.75s;   
         //     }
         // }
-        .arrow{
+        .arrow {
             position: absolute;
             bottom: 50vh;
             left: calc(-35px);
@@ -163,17 +161,17 @@ $sfpro: "sfpro";
             grid-row-end: end;
             z-index: 2;
             transition: 0.5s;
-            img{
+            img {
                 background-image: url('../img/arrow.png');
                 background-size: cover;
-                height:70px;
-                width:70px;
+                height: 70px;
+                width: 70px;
+                cursor: pointer;
             }
         }
     }
-
-    .instructions{
-        background:#E1E1E1;
+    .instructions {
+        background: #E1E1E1;
         display: flex;
         grid-column-start: col-3;
         grid-column-end: end;
@@ -182,11 +180,11 @@ $sfpro: "sfpro";
         justify-content: center;
         align-items: flex-start;
         align-self: start;
-        width:100vw;
-        height:100vh;
+        width: 100vw;
+        height: 100vh;
         flex-direction: column;
         transition: 0.5s;
-        h1{
+        h1 {
             color: black;
             font-size: 46px;
             font-family: "FuturaPT";
@@ -195,7 +193,7 @@ $sfpro: "sfpro";
             margin-left: 4vw;
             transition: 0.25s;
         }
-        div{
+        div {
             color: black;
             font-family: "FuturaPT";
             letter-spacing: 6.64px;
