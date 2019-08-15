@@ -82,9 +82,14 @@
   /* flex-direction: column; */
   transition: 0.75s;
 }
+@media screen and (max-width: 1000px) {
+  .contact-wrapper .contact-container .cards-container {
+    flex-direction: column;
+  }
+}
 .contact-wrapper .contact-container .cards-container .cards {
-  height: 360px;
-  width: 321px;
+  height: 307px;
+  width: 315px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -134,8 +139,8 @@
 .contact-wrapper .contact-container .arrow img {
   background-image: url("../img/arrow.png");
   background-size: cover;
-  height: 70px;
-  width: 70px;
+  height: 5.09vw;
+  width: 5.09vw;
 }
 .contact-wrapper .instructions {
   background: #E1E1E1;
@@ -151,6 +156,7 @@
   height: 100vh;
   flex-direction: column;
   transition: 0.5s;
+  z-index: -1;
 }
 .contact-wrapper .instructions h1 {
   color: black;
