@@ -4,22 +4,23 @@ document.getElementById("register").addEventListener("click", () => {
 })
 
 let menu = document.getElementsByClassName("hamburger")[0];
-document.getElementById("openNav").addEventListener("click", () => {
-    menu.style.transform = "translateX(0)";
-})
-document.getElementById("closeNav").addEventListener("click", () => {
-    menu.style.transform = "translateX(370px)";
-})
-
 let mobileMenu = document.getElementsByClassName("mobile-hamburger")[0];
-document.getElementById("openMobileNav").addEventListener("click", () => {
-    console.log('openMobile');
-    mobileMenu.style.transform = "translateX(0)";
-})
-document.getElementById("closeMobileNav").addEventListener("click", () => {
-    console.log('closeMobile');
-    mobileMenu.style.transform = "translateX(-100vw)";
-})
+
+const openNav = (ham) => {
+    ham.style.transform = "translateX(0)";
+    console.log('open ham');
+}
+const closeNav = (ham, width) => {
+    ham.style.transform = "translateX(" + width + ")";
+    console.log('close ham');
+}
+
+document.getElementById("openNav").addEventListener("click", () => openNav(menu))
+document.getElementById("closeNav").addEventListener("click", () => closeNav(menu, "370px")
+)
+
+document.getElementById("openMobileNav").addEventListener("click", () => openNav(mobileMenu))
+document.getElementById("closeMobileNav").addEventListener("click", () => closeNav(mobileMenu, "-100vw"))
 
 function setTime() {
     const timeNow = new Date().getTime();
