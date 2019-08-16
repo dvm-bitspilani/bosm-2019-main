@@ -176,7 +176,7 @@
   transition: 0.25s;
 }
 
-@media screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
   .contact-wrapper {
     height: 200vh;
     overflow: hidden;
