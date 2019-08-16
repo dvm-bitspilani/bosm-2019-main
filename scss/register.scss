@@ -170,7 +170,7 @@ body {
           padding: 0% 3% 0% 7%;
           color: #2699fb;
           background-color: #ffffff;
-          width: 100%;
+          width: 95%;
           height: 100%;
           border: none;
           border-radius: 5px;
@@ -308,4 +308,18 @@ cursor: pointer;
 
 ::placeholder {
   color: #2699fb;
+}
+
+// .select-wrapper::after{
+//   content:" ";
+//   background: url('/img/dropdown.jpg');
+//   width: 20px;
+//   height: 20px;
+//   background-size: cover;
+// }
+
+.fa, .fas{
+  font-weight: 900;
+  color: #2699fb;
+  transform: translateX(-38px);
 }
