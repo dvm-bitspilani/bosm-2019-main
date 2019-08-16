@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/register.min.css" />
     <title>Register</title>
-</head>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <body>
     <div class="form-div">
         <div class="header">
@@ -53,7 +52,6 @@
                 </div>
                 <input type="text" placeholder="City" class="text-type" id="city" />
                 <input type="text" placeholder="State" class="text-type" id="state" />
-                <div class="g-recaptcha" data-sitekey="6LdmArMUAAAAALzI9PmxpWVLZ1bCP273Rw1b0fKj"></div>
             </div>
             
         </div>
@@ -61,10 +59,13 @@
        
 
         <div class="button-div">
-            <span class="button-span" onclick="bosmreg()">REGISTER</span>
+            <div id='recaptcha' class="g-recaptcha"
+            data-sitekey="6LeITLMUAAAAAMu57K4hezHJUzeDk5BlEslZNdbT"
+            data-callback="bosmreg"
+            data-size="invisible"></div>
+            <span class="button-span" onclick="validate()">REGISTER</span>
         </div>
     </div>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="js/register.js"></script>
     </script>
 </body>
