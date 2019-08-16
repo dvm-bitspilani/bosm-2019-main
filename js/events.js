@@ -7,7 +7,7 @@ const numberOfEvents = 18;
 let setNumber = 1;
 let numberOfEventsinOneSet;
 if (window.innerWidth < 600) {
-    numberOfEventsinOneSet = 3;
+    numberOfEventsinOneSet = 6;
 } else {
     numberOfEventsinOneSet = 5;
 }
