@@ -18,9 +18,6 @@
   src: url("../fonts/FuturaLightCondensedBT.ttf");
 }
 
-.body{
-  overflow: hidden;
-}
 .content-wrapper {
   opacity: 0;
   overflow-y: scroll;
@@ -32,11 +29,12 @@
 .landing-wrapper {
   height: 100vh;
   width: 100%;
+  max-width: 100%;
   background: transparent linear-gradient(180deg, #f7dc52 0%, #ffd500 100%) 0% 0% no-repeat padding-box;
   position: relative;
   display: flex;
 	align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 
   .landing-clip {
     position: absolute;
