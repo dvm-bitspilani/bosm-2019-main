@@ -24,17 +24,19 @@
 .landing-wrapper {
   height: 100vh;
   width: 100%;
-  background-color: #e6c002;
+  max-width: 100%;
+  background: transparent linear-gradient(180deg, #f7dc52 0%, #ffd500 100%) 0% 0% no-repeat padding-box;
   position: relative;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   .landing-wrapper .landing-clip {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: radial-gradient(#342c5f 0%, #342c5f 38%, #504482 100%);
+    background: transparent linear-gradient(136deg, #6657A3 0%, #1800FF 100%) 0% 0% no-repeat padding-box;
     clip-path: polygon(100% 0, 100% 30%, 100% 100%, 100% 100%, 100% 0); }
 
 @keyframes grow-clip {
@@ -42,6 +44,86 @@
     clip-path: polygon(100% 0, 100% 30%, 100% 100%, 100% 100%, 100% 0); }
   to {
     clip-path: polygon(65% 0, 40% 75%, 61% 100%, 100% 100%, 100% 0); } }
+  .landing-wrapper .hamburger {
+    position: absolute;
+    background: transparent linear-gradient(158deg, #3E2CA5 0%, #210AF6 100%) 0% 0% no-repeat padding-box;
+    right: 0;
+    top: 0;
+    transform: translateX(370px);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 100%;
+    width: 370px;
+    z-index: 30;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    .landing-wrapper .hamburger .close {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      background: url("../img/close.png") no-repeat center center/cover;
+      right: 0;
+      top: 0;
+      margin-top: 20px;
+      margin-right: 20px; }
+      .landing-wrapper .hamburger .close:hover {
+        cursor: pointer; }
+    .landing-wrapper .hamburger .ham-item {
+      width: 100%;
+      padding: 30px 0;
+      font-size: 2em;
+      text-align: center;
+      color: #fff;
+      font-family: "futura";
+      letter-spacing: 2px; }
+      .landing-wrapper .hamburger .ham-item:hover {
+        cursor: pointer; }
+  .landing-wrapper .mobile-hamburger {
+    position: absolute;
+    background: transparent linear-gradient(155deg, #3E2CAF 10%, #210AF6 90%) 0% 0% no-repeat padding-box;
+    right: 0;
+    top: 0;
+    transform: translateX(-100vw);
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: 100%;
+    width: 100vw;
+    z-index: 35;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    .landing-wrapper .mobile-hamburger .close {
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      background: url("../img/close.png") no-repeat center center/cover;
+      left: 0;
+      top: 0;
+      margin-top: 10px;
+      margin-left: 10px; }
+    .landing-wrapper .mobile-hamburger a {
+      color: #fff;
+      text-decoration: none; }
+      .landing-wrapper .mobile-hamburger a .ham-item {
+        width: 100%;
+        padding: 30px 0;
+        font-size: 2em;
+        text-align: center;
+        color: #fff;
+        font-family: "futura";
+        letter-spacing: 2px; }
+
+@media all and (max-width: 450px) {
+  .landing-wrapper {
+    background: #F3D331; }
+    .landing-wrapper .landing-clip {
+      background: transparent linear-gradient(14deg, #1800FF 0%, #6657A3 100%) 0% 0% no-repeat padding-box;
+      clip-path: polygon(100% 40%, 100% 100%, 0 100%, 0 60%); }
+    .landing-wrapper .hamburger {
+      display: none; }
+    .landing-wrapper .mobile-hamburger {
+      display: flex; } }
 
 .ellipse-1,
 .ellipse-2 {
@@ -116,8 +198,8 @@
   left: 6%; }
 
 .line-6 {
-  bottom: 42%;
-  left: 54%;
+  bottom: 38%;
+  left: 49%;
   z-index: 10; }
 
 .line-7 {
@@ -126,38 +208,38 @@
 
 .line-8,
 .line-9 {
-  height: 3px;
+  height: 2px;
   width: 0;
   background-color: #fff;
   position: absolute;
   z-index: 20;
-  opacity: 0.3; }
+  opacity: 0.6; }
 
 .line-8 {
-  top: 38%;
-  right: 23%; }
+  top: 39%;
+  right: 22%; }
 
 .line-9 {
-  top: 45%;
-  right: 21%; }
+  top: 48%;
+  right: 23%; }
 
 @keyframes grow-3 {
   from {
     width: 0; }
   to {
-    width: 100px; } }
+    width: 60px; } }
 
 .line-10,
 .line-11,
 .line-12,
 .line-13 {
   position: absolute;
-  height: 2px;
+  height: 3px;
   z-index: 20;
   width: 0;
   background-color: #fff;
   right: 0;
-  opacity: 0.3; }
+  opacity: 0.1; }
 
 .line-10 {
   top: 21.5%; }
@@ -193,9 +275,26 @@
   background-size: 100% 100%;
   width: 60%;
   height: 80%;
-  top: 5%;
+  top: 9%;
   left: 20%;
   z-index: 10; }
+
+@media all and (max-width: 450px) {
+  .ellipse-1,
+  .ellipse-2 {
+    height: 350px;
+    width: 350px;
+    left: calc(50vw - 175px); }
+  .line-3,
+  .line-4,
+  .line-5,
+  .line-6,
+  .line-7,
+  .line-8,
+  .line-9,
+  .line-12,
+  .line-13 {
+    display: none; } }
 
 .bosm-header {
   font-family: "spantaran";
@@ -222,6 +321,14 @@
   to {
     transform: translateY(0);
     opacity: 1; } }
+
+@media all and (max-width: 450px) {
+  .bosm-header {
+    font-size: 5em;
+    transform: translateY(0);
+    margin-bottom: -110%; }
+  .letter {
+    text-shadow: none; } }
 
 .grit,
 .guts,
@@ -287,6 +394,39 @@
     bottom: 30%;
     opacity: 0; } }
 
+@keyframes anim-4 {
+  0%, 8.3% {
+    bottom: 10%;
+    opacity: 0; }
+  8.3%, 25% {
+    bottom: 12%;
+    opacity: 1; }
+  33.33%, 100% {
+    bottom: 10%;
+    opacity: 0; } }
+
+@keyframes anim-5 {
+  0%, 33.33% {
+    bottom: 10%;
+    opacity: 0; }
+  41.63%, 58.29% {
+    bottom: 12%;
+    opacity: 1; }
+  66.66%, 100% {
+    bottom: 10%;
+    opacity: 0; } }
+
+@keyframes anim-6 {
+  0%, 66.66% {
+    bottom: 10%;
+    opacity: 0; }
+  74.96%, 91.62% {
+    bottom: 12%;
+    opacity: 1; }
+  100% {
+    bottom: 10%;
+    opacity: 0; } }
+
 .cricket {
   height: 100%;
   position: absolute;
@@ -318,12 +458,27 @@
   margin: 0;
   z-index: 20;
   box-sizing: border-box; }
+  .navbar a {
+    text-decoration: none; }
   .navbar .nav-item {
     padding: 30px;
     color: #fff;
     transition: all 0.1s ease; }
     .navbar .nav-item:hover {
       cursor: pointer; }
+
+@media all and (max-width: 450px) {
+  .grit,
+  .guts,
+  .glory {
+    right: 7%;
+    bottom: 10%;
+    font-size: 2em;
+    letter-spacing: 10px; }
+  .cricket img {
+    height: 57%; }
+  .navbar {
+    display: none; } }
 
 .logo {
   position: absolute;
@@ -334,6 +489,19 @@
   .logo img {
     height: 100%;
     width: auto; }
+
+.mobile-ham {
+  display: none;
+  position: absolute;
+  z-index: 30;
+  height: 30px;
+  width: 30px;
+  left: 0;
+  top: 0;
+  margin-top: 20px;
+  margin-left: 20px; }
+  .mobile-ham i {
+    font-size: 1.7em; }
 
 .time {
   position: absolute;
@@ -366,14 +534,40 @@
       color: #fff;
       margin-right: 5px; }
 
-.scroll {
+.scroll-downs {
   position: absolute;
-  bottom: 6%;
+  bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
-  height: 46px;
-  width: 27px;
-  background: url("../img/mouse.png") no-repeat center center/cover; }
+  margin: auto;
+  width: 34px;
+  height: 55px;
+  z-index: 20; }
+
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box; }
+
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+  animation-iteration-count: infinite; }
+
+@keyframes scroll {
+  10% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(15px); } }
 
 .social {
   font-size: 1.3em;
@@ -421,3 +615,46 @@
   top: 25%;
   left: 13%;
   animation-delay: 0.4s; }
+
+@media all and (max-width: 450px) {
+  .mobile-ham {
+    display: block; }
+  .logo {
+    left: 50%;
+    transform: translateX(-50%);
+    height: 80px;
+    width: 80px;
+    top: 10px; }
+  .mousey {
+    padding: 10px;
+    height: 17px; }
+  .time {
+    bottom: 5px; }
+    .time .timeNum {
+      font-size: 2em;
+      letter-spacing: 1px; }
+      .time .timeNum #hrs {
+        color: #F3D331; }
+    .time .timeLabel {
+      display: none; }
+  .scroll-downs {
+    display: none; }
+  .social {
+    bottom: 8px;
+    font-size: 1em; }
+    .social .label {
+      display: none; }
+    .social .social-icon {
+      font-size: 0.8em;
+      height: 30px;
+      width: 30px; }
+  .slogan-1,
+  .slogan-2 {
+    font-size: 1.7em;
+    letter-spacing: 7px; }
+  .slogan-1 {
+    top: 15%;
+    left: 4%; }
+  .slogan-2 {
+    top: 19.5%;
+    left: 18%; } }

@@ -165,16 +165,16 @@ body {
       .select-wrapper {
         width: 69%;
         height: 11%;
+        border-radius: 5px;
+        border: solid 1px #34aafc;
         select {
           -webkit-appearance: none;
           padding: 0% 3% 0% 7%;
           color: #2699fb;
           background-color: #ffffff;
-          width: 95%;
+          width: 90%;
           height: 100%;
           border: none;
-          border-radius: 5px;
-          border: solid 1px #34aafc;
           font-size: 1.2em;
           font-family: "Roboto", sans-serif;
           &:focus {
@@ -322,4 +322,7 @@ cursor: pointer;
   font-weight: 900;
   color: #2699fb;
   transform: translateX(-38px);
+  @media(max-width:400px){
+    transform: translateX(-20px);
+  }
 }
