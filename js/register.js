@@ -177,9 +177,11 @@ function bosmreg() {
 }
 
   function validate() {
+    // grecaptcha.execute();
+    // var v = grecaptcha.getResponse();
+    // console.log(v);
     grecaptcha.execute();
-    var v = grecaptcha.getResponse();
-    console.log(v);
+    console.log('Works');
   }
 
 

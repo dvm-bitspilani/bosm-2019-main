@@ -29,7 +29,7 @@
                 </div>
                 <div class="select-wrapper">
                     <select id="yos_opt" class="select-input" onchange="getyosvalue()">
-              <option value="">Select your Year of Study</option>
+              <option value="" selected disabled>Year of Study</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -41,13 +41,15 @@
             <div class="input-el">
                 <div class="select-wrapper">
                     <select id="sports_opt" class="select-input" onchange="getsportsvalue()">
-              <option value="">Select your Sports</option>
+              <option value="" selected disabled>Sports</option>
             </select>
                 </div>
-                <div class="selected-sports"></div>
+                <div class="selected-sports">
+
+                </div>
                 <div class="select-wrapper">
                     <select id="college_opt" class="select-input" onchange="getcollegeid()">
-              <option value="">Select College</option>
+              <option value="" selected disabled>College</option>
             </select>
                 </div>
                 <input type="text" placeholder="City" class="text-type" id="city" />
