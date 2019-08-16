@@ -20,20 +20,23 @@ $SFPro: "SFPro";
     overflow: hidden;
     position: relative;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     .event-background-asset-01 {
         position: absolute;
         background: url("../img/events-asset-01.png");
         background-size: cover;
         width: 500px;
         height: 500px;
-        top: calc(50% - 250px);
+        top: calc(50% - 125px);
         z-index: 0;
         right: -250px;
         animation: rotate-ellipse 45s linear infinite;
         -webkit-animation: rotate-ellipse 45s linear infinite;
+        @media screen and (max-width: 600px) {
+            width: 250px;
+            height: 250px;
+            right: -125px;
+            top: 25%;
+        }
     }
     .event-background-asset-02 {
         position: absolute;
@@ -45,6 +48,12 @@ $SFPro: "SFPro";
         left: 10%;
         margin: 10% 0;
         z-index: 0;
+        @media screen and (max-width: 600px) {
+            width: 150%;
+            left: -50%;
+            top: 15%;
+            transform: rotateX(-45deg);
+        }
     }
     .event-background-asset-03 {
         position: absolute;
@@ -55,6 +64,9 @@ $SFPro: "SFPro";
         top: 5%;
         left: 20%;
         z-index: 0;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
     }
     .events-index {
         position: absolute;
@@ -62,6 +74,9 @@ $SFPro: "SFPro";
         overflow: hidden;
         position: relative;
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .events-title {
             font-family: $FuturaPT;
             letter-spacing: 20px;
@@ -69,6 +84,11 @@ $SFPro: "SFPro";
             font-size: 4rem;
             text-align: center;
             color: #ffffff;
+            @media screen and (max-width: 600px) {
+                font-size: 2rem;
+                letter-spacing: 2vw;
+                margin: 3% auto;
+            }
         }
         .events-container {
             width: 100%;
@@ -77,11 +97,18 @@ $SFPro: "SFPro";
             justify-content: flex-start;
             align-items: center;
             transition: transform 0.75s ease-in;
+            @media screen and (max-width: 600px) {
+                padding: 0;
+            }
             .events-set {
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
                 min-width: 100%;
+                @media screen and (max-width: 600px) {
+                    flex-direction: column;
+                    height: 80vh;
+                }
                 .events-card {
                     width: 15%;
                     height: 20vw;
@@ -89,12 +116,10 @@ $SFPro: "SFPro";
                     transform-style: preserve-3d;
                     transition: transform 0.5s ease-in;
                     box-shadow: 0 0 50px 1px #333333;
-                    // @media screen and (max-width: 1500px) {
-                    //     height: 325px;
-                    // }
-                    // @media screen and (max-width: 1300px) {
-                    //     height: 275px;
-                    // }
+                    @media screen and (max-width: 600px) {
+                        width: 30%;
+                        height: 30%;
+                    }
                     .events-card-back {
                         width: 100%;
                         height: 100%;
@@ -135,6 +160,10 @@ $SFPro: "SFPro";
                             @media screen and (max-width: 1300px) {
                                 font-size: 1.1rem;
                             }
+                            @media screen and (max-width: 600px) {
+                                font-size: 0.8rem;
+                                letter-spacing: 5px
+                            }
                         }
                         img {
                             height: 100%;
@@ -154,11 +183,17 @@ $SFPro: "SFPro";
     font-size: 1.15rem;
     padding-right: 7.5%;
     color: #ffffff;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 }
 
 .events-nav-dots {
     text-align: center;
     margin: 32px 0;
+    @media screen and (max-width: 600px) {
+        margin: 16px 0;
+    }
     .event-nav-dot {
         width: 10px;
         height: 10px;
@@ -170,6 +205,11 @@ $SFPro: "SFPro";
         transition: 0.75s;
         &:nth-of-type(1) {
             background: #ffffff;
+        }
+        @media screen and (max-width: 600px) {
+            width: 7px;
+            height: 7px;
+            border: 2px solid #ffffff;
         }
     }
 }
