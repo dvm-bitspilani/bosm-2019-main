@@ -88,8 +88,13 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: url("../img/profile.jpeg") no-repeat center center/cover;
+    background: url("../img/profile.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     z-index: 5; }
+    .developer .dev-image:nth-of-type(5) {
+      background: url("../img/developers/mukul.jpeg"); }
   .developer .dev-info {
     position: absolute;
     left: 0;
