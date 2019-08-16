@@ -18,6 +18,9 @@
   src: url("../fonts/FuturaLightCondensedBT.ttf");
 }
 
+.body{
+  overflow: hidden;
+}
 .content-wrapper {
   opacity: 0;
   overflow-y: scroll;
