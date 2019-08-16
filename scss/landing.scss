@@ -58,7 +58,7 @@
 
   .hamburger {
     position: absolute;
-    background-color: salmon;
+    background: transparent linear-gradient(158deg, #3E2CA5 0%, #210AF6 100%) 0% 0% no-repeat padding-box;
     right: 0;
 		top: 0;
 		transform: translateX(370px);
@@ -125,15 +125,18 @@
 			margin-top: 10px;
 			margin-left: 10px;
     }
-    .ham-item {
-      width: 100%;
-      padding: 20px 0;
-      font-size: 2em;
-      text-align: center;
+    a {
       color: #fff;
-      font-family: "futura";
-      letter-spacing: 2px;
-      
+      text-decoration: none;
+      .ham-item {
+        width: 100%;
+        padding: 30px 0;
+        font-size: 2em;
+        text-align: center;
+        color: #fff;
+        font-family: "futura";
+        letter-spacing: 2px;
+      }
     }
   }
 }
@@ -554,6 +557,9 @@
   margin: 0;
   z-index: 20;
   box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
   .nav-item {
     padding: 30px;
     color: #fff;
