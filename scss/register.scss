@@ -318,10 +318,9 @@ cursor: pointer;
 //   background-size: cover;
 // }
 
-.fa, .fas{
+.dropdown{
   font-weight: 900;
   color: #2699fb;
-  transform: translateX(-38px);
   @media(max-width:400px){
     transform: translateX(-20px);
   }
