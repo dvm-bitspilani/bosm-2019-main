@@ -82,8 +82,8 @@ function getcollegeid() {
 }
 
 window.onload = function() {
-  const URL = "https://test1.bits-bosm.org/registrations/get_sports";
-  const URL2 = "https://test1.bits-bosm.org/registrations/get_colleges";
+  const URL = "https://bits-bosm.org/registrations/get_sports";
+  const URL2 = "https://bits-bosm.org/registrations/get_colleges";
 
   fetch(URL)
     .then(resp => resp.json())
@@ -125,21 +125,22 @@ function bosmreg() {
   const phone = document.getElementById("phone").value;
   const city = document.getElementById("city").value;
   const state = document.getElementById("state").value;
+  grecaptcha.execute();
   var v = grecaptcha.getResponse();
   console.log(v);
- // if (
-  //   name == "" ||
-  //   email == "" ||
-  //   phone == "" ||
-  //   city == "" ||
-  //   state == "" ||
-  //   sportsarr == [] ||
-  //   collegeid == null ||
-  //   yos_value == null ||
-  //   gender_value == null
-  // ) {
-  //   alert("Please fill all mentioned feilds");
-  // } else {
+ if (
+    name == "" ||
+    email == "" ||
+    phone == "" ||
+    city == "" ||
+    state == "" ||
+    sportsarr == [] ||
+    collegeid == null ||
+    yos_value == null ||
+    gender_value == null
+  ) {
+    alert("Please fill all mentioned feilds");
+  } else {
     data = {
       name: name,
       email_id: email,
@@ -154,7 +155,7 @@ function bosmreg() {
     };
 
 
-    fetch(" https://test1.bits-bosm.org/registrations/register/", {
+    fetch(" https://bits-bosm.org/registrations/register/", {
       method: "post",
       headers: {
         Accept: "application/json, text/plain, */*",
@@ -172,6 +173,15 @@ function bosmreg() {
         console.log(error);
       });
     console.log(data);
+  }
+}
+
+  function validate() {
+    // grecaptcha.execute();
+    // var v = grecaptcha.getResponse();
+    // console.log(v);
+    grecaptcha.execute();
+    console.log('Works');
   }
 
 

@@ -125,6 +125,7 @@
 			margin-top: 10px;
 			margin-left: 10px;
     }
+<<<<<<< HEAD
     a {
       color: #fff;
       text-decoration: none;
@@ -137,6 +138,17 @@
         font-family: "futura";
         letter-spacing: 2px;
       }
+=======
+    .ham-item {
+      width: 100%;
+      padding: 20px 0;
+      font-size: 2em;
+      text-align: center;
+      color: #fff;
+      font-family: "futura";
+      letter-spacing: 2px;
+      
+>>>>>>> d7f46d5486ca444f0d86c1933edb942102eac860
     }
   }
 }
@@ -146,7 +158,7 @@
     background: #F3D331;
 
     .landing-clip {
-      background: transparent linear-gradient(14deg, #6657A3 0%, #1800FF 100%) 0% 0% no-repeat padding-box;
+      background: transparent linear-gradient(14deg, #1800FF 0%, #6657A3 100%) 0% 0% no-repeat padding-box;
       clip-path: polygon(100% 40%, 100% 100%, 0 100%, 0 60%);
     }
 

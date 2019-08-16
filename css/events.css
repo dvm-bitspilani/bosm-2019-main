@@ -100,7 +100,9 @@
         @media screen and (max-width: 600px) {
           .events-wrapper .events-index .events-container .events-set {
             flex-direction: column;
-            height: 80vh; } }
+            height: 80vh;
+            flex-wrap: wrap;
+            align-content: space-evenly; } }
         .events-wrapper .events-index .events-container .events-set .events-card {
           width: 15%;
           height: 20vw;

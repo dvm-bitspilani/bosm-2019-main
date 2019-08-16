@@ -108,6 +108,8 @@ $SFPro: "SFPro";
                 @media screen and (max-width: 600px) {
                     flex-direction: column;
                     height: 80vh;
+                    flex-wrap: wrap;
+                    align-content: space-evenly;
                 }
                 .events-card {
                     width: 15%;
