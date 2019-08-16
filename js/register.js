@@ -2,9 +2,11 @@ var selected_sport = document.getElementsByClassName("selected-sports")[0];
 var sports_opt = document.getElementById("sports_opt");
 var college_opt = document.getElementById("college_opt");
 var sportsarr = [];
+var a = [];
 var yos_value;
 var gender_value;
 var collegeid;
+var no_of_sports = 0;
 
 function getsportsvalue() {
   const val = document.getElementById("sports_opt").value;
@@ -20,7 +22,18 @@ function getsportsvalue() {
   selected_sport.appendChild(div);
   div.onclick = function() {
     this.parentNode.removeChild(this);
+    const x = this.getElementsByTagName('span');
+    console.log(x[0].innerHTML);
+    console.log(document.getElementsByClassName('sports-tag')[5])
+    for(var i =1;i<no_of_sports;i++){
+      if(x[0].innerHTML == document.getElementsByClassName('sports-tag')[i].innerHTML){
+        document.getElementsByClassName('sports-tag')[i].disabled = false;
+      }
+    }
   };
+ document.getElementById("sports_opt").options[
+    document.getElementById("sports_opt").selectedIndex
+  ].disabled = true;
   console.log(val);
   console.log(sports_id);
   sportsarr.push(parseInt(sports_id));
@@ -94,8 +107,14 @@ window.onload = function() {
         opt.value = resp.data[i].name;
         opt.innerHTML = resp.data[i].name;
         opt.setAttribute("id", resp.data[i].id);
+        opt.className += 'sports-tag';
+        opt.onclick = function(){
+          console.log(1);
+        }
         sports_opt.appendChild(opt);
+        no_of_sports++;
       }
+      console.log(no_of_sports);
     })
     .catch(function(error) {
       console.log(error);
