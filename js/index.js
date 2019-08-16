@@ -3,6 +3,14 @@ document.getElementById("register").addEventListener("click", () => {
     window.location.href = "./regsiter.html";
 })
 
+let devs = document.getElementsByClassName("devs-wrapper")[0];
+const openDevs = () => {
+    devs.style.display = "block";
+}
+const closeDevs = () => {
+    devs.style.display = "none";
+}
+
 let menu = document.getElementsByClassName("hamburger")[0];
 let mobileMenu = document.getElementsByClassName("mobile-hamburger")[0];
 
