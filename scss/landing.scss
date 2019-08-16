@@ -125,7 +125,6 @@
 			margin-top: 10px;
 			margin-left: 10px;
     }
-<<<<<<< HEAD
     a {
       color: #fff;
       text-decoration: none;
@@ -138,17 +137,6 @@
         font-family: "futura";
         letter-spacing: 2px;
       }
-=======
-    .ham-item {
-      width: 100%;
-      padding: 20px 0;
-      font-size: 2em;
-      text-align: center;
-      color: #fff;
-      font-family: "futura";
-      letter-spacing: 2px;
-      
->>>>>>> d7f46d5486ca444f0d86c1933edb942102eac860
     }
   }
 }
@@ -569,6 +557,9 @@
   margin: 0;
   z-index: 20;
   box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
   .nav-item {
     padding: 30px;
     color: #fff;
