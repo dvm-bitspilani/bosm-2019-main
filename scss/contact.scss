@@ -84,84 +84,136 @@ $sfpro: "sfpro";
         grid-row-start: row-1;
         grid-row-end: end;
         background-color: #7E7E7E;
+        .meetTeam {
+            display: none;
+            @media screen and (max-width: 600px) {
+                display: block;
+                font-size: 2rem;
+                color: #ffffff;
+                font-family: "FuturaPT";
+                margin: 4%;
+                text-align: center;
+            }
+        }
         .cards-container {
             height: 100%;
-            width: 100%;
             display: flex;
             justify-content: space-evenly;
             align-content: center;
             flex-wrap: wrap;
-            /* flex-direction: column; */
-            // transform: translateX(-259px);
-            // align-items: center;
             transition: 0.75s;
-            @media screen and (max-width: 1000px) {
-                flex-direction: column;
+            @media screen and (max-width: 600px) {
+                display: inline-flex;
+                flex-wrap: nowrap;
+                height: 80%;
             }
-            .cards {
-                height: 307px;
-                width: 315px;
-                color: white;
+            .contacts-set {
+                width: 100vw;
                 display: flex;
-                flex-direction: column;
+                justify-content: space-evenly;
                 align-items: center;
-                justify-content: center;
-                font-family: $sfpro;
-                .card-heading {
-                    width: 100%;
-                    // font-size: 1.6vw;  
-                    font-size: 23px;
-                    letter-spacing: 2.84px;
-                    // margin-bottom: 0.20vw;
-                    margin-bottom: 10px;
-                    height: fit-content;
-                    text-align: center;
-                    font-weight: bold;
+                margin: 3% 0;
+                @media screen and (max-width: 600px) {
+                    height: 100%;
+                    flex-wrap: wrap;
+                    margin: 0;
+                    margin-top: 3%;
                 }
-                img {
-                    // width: 12.9vw;
-                    // height: 12.9vw;
-                    width: 176px;
-                    height: 176px;
-                    background: #DCDCDC;
-                    margin: 0 auto;
-                    margin-bottom: 10px;
-                }
-                .card-name {
-                    // height: 2.54vw;
-                    // width: 100%;
-                    // font-size: 1.52vw;
-                    height: 35px;
-                    font-size: 21px;
-                }
-                .card-number {
-                    color: rgba(255, 255, 255, 0.5);
-                }
-                .card-id {
-                    // width: 100%;
-                    // font-size:1.09vw;
-                    // height: 2.1vw;
-                    font-size: 15px;
-                    height: 30px;
-                    color: rgba(255, 255, 255, 0.6);
+                .cards {
+                    height: 17.5vw;
+                    width: 17.5%;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: $sfpro;
+                    @media screen and (max-width: 600px) {
+                        width: 40%;
+                        height: auto;
+                        margin: 0 2%;
+                    }
+                    .card-heading {
+                        width: 100%;
+                        // font-size: 1.6vw;  
+                        font-size: 23px;
+                        letter-spacing: 2.84px;
+                        // margin-bottom: 0.20vw;
+                        margin-bottom: 10px;
+                        height: fit-content;
+                        text-align: center;
+                        font-weight: bold;
+                        @media screen and (max-width: 600px) {
+                            font-size: 14px;
+                            letter-spacing: 1.5px;
+                        }
+                    }
+                    img {
+                        // width: 12.9vw;
+                        // height: 12.9vw;
+                        width: 175px;
+                        height: 175px;
+                        background: #DCDCDC;
+                        margin: 0 auto;
+                        margin-bottom: 10px;
+                        @media screen and (max-width: 600px) {
+                            width: 90px;
+                            height: 90px;
+                        }
+                    }
+                    .card-name {
+                        // height: 2.54vw;
+                        // width: 100%;
+                        // font-size: 1.52vw;
+                        height: 35px;
+                        font-size: 21px;
+                        @media screen and (max-width: 600px) {
+                            font-size: 14px;
+                            height: auto;
+                        }
+                    }
+                    .card-number {
+                        color: rgba(255, 255, 255, 0.5);
+                        @media screen and (max-width: 600px) {
+                            font-size: 12px;
+                        }
+                    }
+                    .card-id {
+                        // width: 100%;
+                        // font-size:1.09vw;
+                        // height: 2.1vw;
+                        font-size: 15px;
+                        height: 30px;
+                        color: rgba(255, 255, 255, 0.6);
+                        @media screen and (max-width: 600px) {
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
         }
-        // .contacts-nav-dots{
-        //     // width:100%;
-        //     text-align: center;
-        //     height: 50px;
-        //     .contact-nav-dot{
-        //         width: 10px;
-        //         height: 10px;
-        //         border-radius: 50%;
-        //         border: 3.5px solid #ffffff;
-        //         margin: 3px;
-        //         display: inline-block;
-        //         cursor: pointer;
-        //         transition: 0.75s;   
-        //     }
-        // }
+        .contacts-nav-dots {
+            display: none;
+            @media screen and (max-width: 600px) {
+                display: block;
+                // width:100%;
+                text-align: center;
+                margin-top: 8.5%;
+                .contact-nav-dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 3.5px solid #ffffff;
+                    margin: 3px;
+                    display: inline-block;
+                    cursor: pointer;
+                    transition: 0.75s;
+                    &:nth-of-type(1) {
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
         .arrow {
             position: absolute;
             bottom: 50vh;
@@ -215,15 +267,15 @@ $sfpro: "sfpro";
     }
 }
 
-@media all and (max-width: 700px){
-    .contact-wrapper{
+@media all and (max-width: 600px) {
+    .contact-wrapper {
         height: 200vh;
         overflow: hidden;
-        .contact-main-container{
+        .contact-main-container {
             grid-template-columns: [col-1] 100vw [end];
             grid-template-rows: [row-1] 100vh [row-2] 100vh [end];
         }
-        .contact-quote{
+        .contact-quote {
             grid-column-start: col-1;
             grid-column-end: end;
             grid-row-start: row-1;
@@ -231,85 +283,69 @@ $sfpro: "sfpro";
             background-color: #DCDCDC;
             padding-top: 10vh;
             background: url("../img/clocktower.png");
-            .contact-quote-heading{
+            .contact-quote-heading {
                 width: 98%;
-                height:2vw;
-                font-size: 2.5em;
+                height: 2vw;
+                font-size: 2rem;
                 margin-bottom: 14vh;
                 text-align: center;
             }
-            .image{
+            .image {
                 margin-bottom: 10vh;
-               img{
-                width: 38.2vh;
-                height: 38.2vh;
-               }
+                img {
+                    width: 38.2vh;
+                    height: 38.2vh;
+                }
             }
         }
-        .contact-container{
+        .contact-container {
             grid-column-start: col-1;
             grid-column-end: end;
             grid-row-start: row-2;
             grid-row-end: end;
             background-color: #7E7E7E;
             overflow: hidden;
-            .cards-container{
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: space-evenly;
-                align-content: center;
-                flex-wrap: wrap;
-                flex-direction: row;
-                .cards{
-                    height: 172px;
-                    width: 140px;
-                    color: white;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    font-family: $sfpro;
-                    .card-heading{
-                        width:100%;
+            .cards-container {
+                .cards {
+                    .card-heading {
+                        width: 100%;
                         // font-size: 1.6vw;  
-                        font-size: 12px;  
-                        letter-spacing:0.54px;
+                        font-size: 12px;
+                        letter-spacing: 0.54px;
                         // margin-bottom: 0.20vw;
-                        margin-bottom: 10px;  
-                        height:fit-content;
-                        text-align: center; 
-                        font-weight: bold; 
+                        margin-bottom: 10px;
+                        height: fit-content;
+                        text-align: center;
+                        font-weight: bold;
                     }
-                    img{
+                    img {
                         width: 12.6vh;
                         height: 12.6vh;
                         border-radius: 50%;
                     }
-                    .card-name{
+                    .card-name {
                         height: 23px;
                         font-size: 14px;
                     }
-                    .card-number{
-                        color:rgba(255, 255, 255, 0.5); 
-                        font-size: 7px;                   
+                    .card-number {
+                        color: rgba(255, 255, 255, 0.5);
+                        font-size: 7px;
                     }
-                    .card-id{
+                    .card-id {
                         // width: 100%;
                         // font-size:1.09vw;
                         // height: 2.1vw;
-                        font-size:7px;
+                        font-size: 7px;
                         height: 30px;
                         color: rgba(255, 255, 255, 0.6);
                     }
                 }
             }
-            .arrow{
+            .arrow {
                 display: none;
             }
         }
-    
-        .instructions{
+        .instructions {
             display: none;
         }
     }
