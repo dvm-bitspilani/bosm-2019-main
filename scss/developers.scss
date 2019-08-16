@@ -84,7 +84,7 @@ body {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background: salmon;
+    background: url("../img/profile.jpeg") no-repeat center center/cover;
     z-index: 5;
   }
 
@@ -126,6 +126,18 @@ body {
       width: 100%;
       text-align: center;
       padding-bottom: 10px;
+      font-size: 1.6em;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      div {
+        margin: 0 10px;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
     }
   }
 }
