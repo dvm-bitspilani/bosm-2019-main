@@ -240,7 +240,8 @@ body {
         justify-content: flex-start;
         align-items: center;
         .sports {
-          width: 25%;
+          width: auto;
+          padding: 1% 2% 1% 2%;
           height: 40%;
           background-color: #ffffff;
           border-radius: 40px;
@@ -252,6 +253,12 @@ body {
           border: solid 1px #34aafc;
           font-family: "Roboto", sans-serif;
           cursor: pointer;
+          @media (max-width:500px){
+            font-size: 0.7em;
+          }
+          @media (max-width:400px){
+            font-size: 0.5em;
+          }
         }
       }
     }
