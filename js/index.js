@@ -31,6 +31,11 @@ const navigate = (x) => {
     elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
     closeNav(mobileMenu, "-100vw");
 }
+const navigateDesktop = (x) => {
+    var elem = document.getElementById(`${selected[x]}`);
+    elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+    closeNav(menu, "370px");
+}
 
 document.getElementById("openNav").addEventListener("click", () => openNav(menu))
 document.getElementById("closeNav").addEventListener("click", () => closeNav(menu, "370px")

@@ -278,9 +278,9 @@
         <div class="landing-wrapper">
             <div class="hamburger">
                 <div class="close" id="closeNav"></div>
-                <div class="ham-item" style="margin-top: 130px">ABOUT US</div>
-                <div class="ham-item">GALLERY</div>
-                <div class="ham-item">CONTACT US</div>
+                <div class="ham-item" onclick="navigateDesktop(0)" style="margin-top: 130px">ABOUT US</div>
+                <div class="ham-item" onclick="navigateDesktop(2)">GALLERY</div>
+                <div class="ham-item" onclick="navigateDesktop(3)">CONTACT US</div>
                 <div class="ham-item">ARCHIVES</div>
                 <div class="ham-item">LOGIN</div>
                 <div class="ham-item" onclick="openDevs()">DEVELOPERS</div>
@@ -321,7 +321,7 @@
             <div class="landing-clip"></div>
             <div class="navbar">
                 <a href="#">
-                    <div class="nav-item">EVENTS</div>
+                    <div class="nav-item" onclick="navigateDesktop(0)">EVENTS</div>
                 </a>
                 <div class="nav-item" id="register">REGISTRATION</div>
                 <div class="nav-item" id="openNav"><i class="fa fa-bars"></i></div>
