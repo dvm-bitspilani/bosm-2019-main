@@ -1,4 +1,4 @@
-let galleryNumber = 1;
+let galleryNumber = 0;
 let numberOfGallerySet = 3;
 let numberOfGalleryMobileSet = 5;
 

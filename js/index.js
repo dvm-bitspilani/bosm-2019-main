@@ -15,12 +15,21 @@ let menu = document.getElementsByClassName("hamburger")[0];
 let mobileMenu = document.getElementsByClassName("mobile-hamburger")[0];
 
 const openNav = (ham) => {
+    if (ham == mobileMenu) {
+        ham.style.position = 'fixed';
+    }
     ham.style.transform = "translateX(0)";
     console.log('open ham');
 }
 const closeNav = (ham, width) => {
     ham.style.transform = "translateX(" + width + ")";
     console.log('close ham');
+}
+const selected = ['about', 'events', 'gallery', 'contact']
+const navigate = (x) => {
+    var elem = document.getElementById(`${selected[x]}`);
+    elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+    closeNav(mobileMenu, "-100vw");
 }
 
 document.getElementById("openNav").addEventListener("click", () => openNav(menu))

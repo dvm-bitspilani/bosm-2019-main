@@ -191,6 +191,18 @@
                 <div class="developer">
                     <div class="dev-image"></div>
                     <div class="dev-info">
+                        <div id="name">Chirag Singhal</div>
+                        <div id="separator"></div>
+                        <div id="team">Frontend Developer</div>
+                        <div id="links">
+                            <div><a href="https://github.com/chirag-singhal" target="blank"><i class="fab fa-github"></i></a></div>
+                            <div><a href="https://www.linkedin.com/in/chirag-singhal-389a6a16a/" target="blank"><i class="fab fa-linkedin"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="developer">
+                    <div class="dev-image"></div>
+                    <div class="dev-info">
                         <div id="name">Shreyans Jain</div>
                         <div id="separator"></div>
                         <div id="team">Frontend Developer</div>
@@ -236,18 +248,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="developer">
-                    <div class="dev-image"></div>
-                    <div class="dev-info">
-                        <div id="name">Chirag Singhal</div>
-                        <div id="separator"></div>
-                        <div id="team">Frontend Developer</div>
-                        <div id="links">
-                            <div><a href="https://github.com/chirag-singhal" target="blank"><i class="fab fa-github"></i></a></div>
-                            <div><a href="https://www.linkedin.com/in/chirag-singhal-389a6a16a/" target="blank"><i class="fab fa-linkedin"></i></a></div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="developer">
                     <div class="dev-image"></div>
@@ -288,10 +288,10 @@
 
                 <div class="mobile-hamburger">
                     <div class="close" id="closeMobileNav"></div>
-                    <a><div class="ham-item">ABOUT US</div></a>
-                    <a><div class="ham-item">EVENTS</div></a>
-                    <a><div class="ham-item">GALLERY</div></a>
-                    <a><div class="ham-item">CONTACT US</div></a>
+                    <a><div class="ham-item" onclick="navigate(0)">ABOUT US</div></a>
+                    <a><div class="ham-item" onclick="navigate(1)">EVENTS</div></a>
+                    <a><div class="ham-item" onclick="navigate(2)">GALLERY</div></a>
+                    <a><div class="ham-item" onclick="navigate(3)">CONTACT US</div></a>
                     <a><div class="ham-item">SPONSORS</div></a>
                     <a><div class="ham-item" onclick="window.location.href='regsiter.html'">REGISTER</div></a>
                     <a><div class="ham-item" onclick="openDevs()">DEVELOPERS</div></a>
@@ -370,7 +370,7 @@
                 </a>
             </div>
         </div>
-        <div class="about-div">
+        <div class="about-div" id="about">
             <div class="clip-div"></div>
             <div class="circle"></div>
             <div class="circle" style="left: calc(50vw - 100px);opacity : 0.7"></div>
@@ -486,7 +486,7 @@
                 </div>
             </div>
         </div>
-        <div class="events-wrapper">
+        <div class="events-wrapper" id="events">
             <div class="events-index">
                 <div class="events-title">EVENTS</div>
 
@@ -505,7 +505,7 @@
             <div class="event-background-asset-03"></div>
         </div>
 
-        <div class="events-wrapper gallery-wrapper">
+        <div class="events-wrapper gallery-wrapper" id="gallery">
             <div class="events-index">
                 <div class="events-title">GALLERY</div>
                 <div class="gallery-container">
@@ -696,7 +696,7 @@
             </div>
         </div>
 
-        <div class="contact-wrapper">
+        <div class="contact-wrapper" id="contact">
             <!-- <div class="gradient"></div> -->
             <div class="contact-main-container">
                 <div class="contact-quote">
