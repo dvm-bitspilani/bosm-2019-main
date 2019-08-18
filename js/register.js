@@ -33,7 +33,8 @@ function getsportsvalue() {
         document.getElementsByClassName('sports-tag')[i].disabled = false;
         for(var j =0;j<sportsarr.length;j++){
           if(sportsarr[j] == parseInt(document.getElementsByClassName('sports-tag')[i].id)){
-            delete sportsarr[j];
+            sportsarr.splice(j,1);
+            j--;
           }
         }
         console.log(sportsarr);
