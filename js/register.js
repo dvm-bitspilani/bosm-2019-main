@@ -9,6 +9,9 @@ var collegeid;
 var no_of_sports = 0;
 
 function getsportsvalue() {
+  if(sportsarr.length == 0){
+    selected_sport.innerHTML = "";
+  }
   const val = document.getElementById("sports_opt").value;
   const sports_id = document.getElementById("sports_opt")[
     document.getElementById("sports_opt").selectedIndex
@@ -28,6 +31,13 @@ function getsportsvalue() {
     for(var i =1;i<no_of_sports;i++){
       if(x[0].innerHTML == document.getElementsByClassName('sports-tag')[i].innerHTML){
         document.getElementsByClassName('sports-tag')[i].disabled = false;
+        for(var j =0;j<sportsarr.length;j++){
+          if(sportsarr[j] == parseInt(document.getElementsByClassName('sports-tag')[i].id)){
+            sportsarr.splice(j,1);
+            j--;
+          }
+        }
+        console.log(sportsarr);
       }
     }
   };

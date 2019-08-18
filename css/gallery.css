@@ -44,7 +44,7 @@
 
 .gallery:nth-of-type(1)>.gallery-1 {
     background: url('../img/gallery/b1.jpg');
-    background-position: center;
+    background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     grid-column-start: 2;
@@ -53,7 +53,7 @@
 
 .gallery:nth-of-type(1)>.gallery-2 {
     background: url('../img/gallery/b2.jpg');
-    background-position: center;
+    background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     grid-column-start: 4;
@@ -66,6 +66,7 @@
 .gallery:nth-of-type(1)>.gallery-3 {
     background: url('../img/gallery/b5.jpg');
     background-position: center;
+    background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     grid-column-start: 2;
@@ -77,6 +78,7 @@
 .gallery:nth-of-type(1)>.gallery-4 {
     background: url('../img/gallery/b4.jpg');
     background-position: center;
+    background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     grid-column-start: 4;
@@ -87,6 +89,7 @@
 .gallery:nth-of-type(1)>.gallery-5 {
     background: url('../img/gallery/ba3.jpg');
     background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     grid-column-start: 6;
@@ -97,6 +100,7 @@
 .gallery:nth-of-type(2)>.gallery-1 {
     background: url('../img/gallery/c1.jpg');
     background-position: center;
+    background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     grid-column-start: 2;
@@ -107,6 +111,7 @@
     background: url('../img/gallery/ch1.jpg');
     background-position: center;
     background-size: contain;
+    background-position: bottom;
     background-repeat: no-repeat;
     grid-column-start: 4;
     grid-column-end: 7;
@@ -118,6 +123,7 @@
 .gallery:nth-of-type(2)>.gallery-3 {
     background: url('../img/gallery/v1.jpg');
     background-position: center;
+    background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     grid-column-start: 2;
@@ -129,6 +135,7 @@
 .gallery:nth-of-type(2)>.gallery-4 {
     background: url('../img/gallery/t2.jpg');
     background-position: center;
+    background-position: bottom;
     background-size: contain;
     background-repeat: no-repeat;
     grid-column-start: 4;
@@ -140,6 +147,7 @@
     background: url('../img/gallery/s1.jpg');
     background-position: center;
     background-size: contain;
+    background-position: bottom;
     background-repeat: no-repeat;
     grid-column-start: 6;
     grid-row-start: 5;
@@ -149,6 +157,7 @@
 .gallery:nth-of-type(3)>.gallery-1 {
     background: url('../img/gallery/ba1.jpg');
     background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
     grid-column-start: 2;
@@ -160,6 +169,7 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom;
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 1;
@@ -171,6 +181,7 @@
     background: url('../img/gallery/v2.jpg');
     background-position: center;
     background-size: contain;
+    background-position: bottom;
     background-repeat: no-repeat;
     grid-column-start: 2;
     grid-row-start: 3;
@@ -182,6 +193,7 @@
     background: url('../img/gallery/h1.jpg');
     background-position: center;
     background-size: contain;
+    background-position: bottom;
     background-repeat: no-repeat;
     grid-column-start: 4;
     grid-row-start: 5;
@@ -192,6 +204,7 @@
     background: url('../img/gallery/p1.jpg');
     background-position: center;
     background-size: contain;
+    background-position: bottom;
     background-repeat: no-repeat;
     grid-column-start: 6;
     grid-row-start: 5;
@@ -266,6 +279,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 1;
         z-index: 10;
@@ -276,6 +290,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 3;
         z-index: 10;
@@ -286,6 +301,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 5;
         z-index: 10;
@@ -296,6 +312,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 1;
         z-index: 10;
@@ -306,6 +323,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 3;
         z-index: 10;
@@ -316,6 +334,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 1;
         z-index: 10;
@@ -326,6 +345,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 3;
         z-index: 10;
@@ -336,6 +356,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 5;
         z-index: 10;
@@ -346,6 +367,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 5;
         z-index: 10;
@@ -355,6 +377,7 @@
         background: url('../img/gallery/s1.jpg');
         background-position: center;
         background-size: contain;
+        background-position: bottom;
         background-repeat: no-repeat;
         grid-column-start: 2;
         grid-row-start: 1;
@@ -366,6 +389,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 1;
         z-index: 10;
@@ -376,6 +400,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 3;
         z-index: 10;
@@ -387,6 +412,7 @@
         background-size: contain;
         background-repeat: no-repeat;
         grid-column-start: 2;
+        background-position: bottom;
         grid-row-start: 5;
         z-index: 10;
     }
@@ -396,6 +422,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 3;
         z-index: 10;
@@ -406,6 +433,7 @@
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: bottom;
         grid-column-start: 2;
         grid-row-start: 5;
         z-index: 10;
