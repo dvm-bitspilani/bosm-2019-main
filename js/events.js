@@ -1,6 +1,42 @@
 const bosmLogoUrl = 'img/bosm-logo.png';
-const eventsNames = ['Basketball', 'Lawn Tennis', 'Volleyball', 'Hockey', 'Cricket', 'Football', 'Athletics', 'Squash', 'Chess', 'Carrom', 'Snooker & Pool', 'Power Lifting', 'Bodybuilding', 'Taekwondo', 'Table Tennis', 'Badminton', 'Ultimate Frisbee', 'Swimming'];
-const eventsImgUrl = ['img/events/Basketball-min.png', 'img/events/Lawn Tennis-min.png', 'img/events/Volleyball-min.png', 'img/events/Hockey-min.png', 'img/events/Cricket-min.png', 'img/events/Football-min.png', 'img/events/Athletics-min.png', 'img/events/Squash-min.png', 'img/events/Chess-min.png', 'img/events/Carrom-min.png', 'img/events/Snooker and Pool-min.png', 'img/events/Powerlifting-min.png', 'img/events/Body Building-min.png', 'img/events/Taekwondo-min.png', 'img/events/Table Tennis-min.png', 'img/events/Badminton-min.png', 'img/events/Ultimate Frisbee-min.png', 'img/events/Swimming-min.png'];
+const eventsNames = ['Basketball',
+    'Lawn Tennis',
+    'Volleyball',
+    'Hockey',
+    'Cricket',
+    'Football',
+    'Athletics',
+    'Squash',
+    'Chess',
+    'Carrom',
+    'Snooker & Pool',
+    'Power Lifting',
+    'Bodybuilding',
+    'Taekwondo',
+    'Table Tennis',
+    'Badminton',
+    'Ultimate Frisbee',
+    'Swimming'
+];
+const eventsImgUrl = ['img/events/Basketball-min.png',
+    'img/events/Lawn Tennis-min.png',
+    'img/events/Volleyball-min.png',
+    'img/events/Hockey-min.png',
+    'img/events/Cricket-min.png',
+    'img/events/Football-min.png',
+    'img/events/Athletics-min.png',
+    'img/events/Squash-min.png',
+    'img/events/Chess-min.png',
+    'img/events/Carrom-min.png',
+    'img/events/Snooker and Pool-min.png',
+    'img/events/Powerlifting-min.png',
+    'img/events/Body Building-min.png',
+    'img/events/Taekwondo-min.png',
+    'img/events/Table Tennis-min.png',
+    'img/events/Badminton-min.png',
+    'img/events/Ultimate Frisbee-min.png',
+    'img/events/Swimming-min.png'
+];
 const eventsContainer = document.getElementsByClassName("events-container")[0];
 
 const numberOfEvents = 18;
@@ -73,12 +109,12 @@ const createEvent = () => {
             let eventsNameContainer = document.createElement('div');
             eventsNameContainer.className = "event-name";
 
-            let eventsName = document.createTextNode(eventsNames[numberOfSet * numberOfEventsinOneSet + j - 1]);
+            let eventsName = document.createTextNode(eventsNames[numberOfSet * numberOfEventsinOneSet + j]);
             eventsNameContainer.appendChild(eventsName);
             eventsCardFront.appendChild(eventsNameContainer);
 
             let eventsCardFrontImg = document.createElement('img');
-            eventsCardFrontImg.setAttribute('src', eventsImgUrl[numberOfSet * numberOfEventsinOneSet + j - 1]);
+            eventsCardFrontImg.setAttribute('src', eventsImgUrl[numberOfSet * numberOfEventsinOneSet + j]);
 
             eventsCardFront.appendChild(eventsCardFrontImg);
             eventsCard.appendChild(eventsCardFront);

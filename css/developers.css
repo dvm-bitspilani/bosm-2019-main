@@ -9,8 +9,7 @@
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  scroll-behavior: smooth; }
+  overflow: hidden; }
 
 ::-webkit-scrollbar {
   display: none; }
@@ -145,7 +144,7 @@ body {
   left: 2%;
   background: url("../img/tilt_line.png") no-repeat center center/cover; }
 
-.ellipse-1 {
+.ellipse-1-dev {
   height: 500px;
   width: 500px;
   position: absolute;

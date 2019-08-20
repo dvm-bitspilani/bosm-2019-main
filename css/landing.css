@@ -309,7 +309,7 @@
 
 .letter {
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  text-shadow: 35px 35px 75px #4e4d4d; }
+  text-shadow: 35px 35px 85px #4e4d4d; }
 
 .letter:hover {
   transform: rotateY(360deg); }
@@ -395,32 +395,40 @@
     opacity: 0; } }
 
 @keyframes anim-4 {
-  0%, 8.3% {
+  0%,
+  8.3% {
     bottom: 10%;
     opacity: 0; }
-  8.3%, 25% {
+  8.3%,
+  25% {
     bottom: 12%;
     opacity: 1; }
-  33.33%, 100% {
+  33.33%,
+  100% {
     bottom: 10%;
     opacity: 0; } }
 
 @keyframes anim-5 {
-  0%, 33.33% {
+  0%,
+  33.33% {
     bottom: 10%;
     opacity: 0; }
-  41.63%, 58.29% {
+  41.63%,
+  58.29% {
     bottom: 12%;
     opacity: 1; }
-  66.66%, 100% {
+  66.66%,
+  100% {
     bottom: 10%;
     opacity: 0; } }
 
 @keyframes anim-6 {
-  0%, 66.66% {
+  0%,
+  66.66% {
     bottom: 10%;
     opacity: 0; }
-  74.96%, 91.62% {
+  74.96%,
+  91.62% {
     bottom: 12%;
     opacity: 1; }
   100% {

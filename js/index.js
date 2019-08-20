@@ -28,18 +28,29 @@ const closeNav = (ham, width) => {
 const selected = ['about', 'events', 'gallery', 'contact']
 const navigate = (x) => {
     var elem = document.getElementById(`${selected[x]}`);
-    elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+    elem.scrollIntoView({ block: 'start', behavior: 'smooth' });
     closeNav(mobileMenu, "-100vw");
+    if (x == 1) {
+        openCard();
+        eventSetChangeInterval = setInterval(changeEventSet, 5000);
+        document.removeEventListener("wheel", initiateAnimation);
+        document.removeEventListener("touchmove", initiateAnimation);
+    }
 }
 const navigateDesktop = (x) => {
     var elem = document.getElementById(`${selected[x]}`);
-    elem.scrollIntoView({ block: 'start',  behavior: 'smooth' });
+    elem.scrollIntoView({ block: 'start', behavior: 'smooth' });
     closeNav(menu, "370px");
+    if (x == 1) {
+        openCard();
+        eventSetChangeInterval = setInterval(changeEventSet, 5000);
+        document.removeEventListener("wheel", initiateAnimation);
+        document.removeEventListener("touchmove", initiateAnimation);
+    }
 }
 
 document.getElementById("openNav").addEventListener("click", () => openNav(menu))
-document.getElementById("closeNav").addEventListener("click", () => closeNav(menu, "370px")
-)
+document.getElementById("closeNav").addEventListener("click", () => closeNav(menu, "370px"))
 
 document.getElementById("openMobileNav").addEventListener("click", () => openNav(mobileMenu))
 document.getElementById("closeMobileNav").addEventListener("click", () => closeNav(mobileMenu, "-100vw"))
@@ -119,7 +130,7 @@ window.onload = function() {
                 document.getElementsByClassName("line-13")[0].style.animation = animation2;
             }, 500)
         }
-            // ----------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------
     }, 4500);
 
     setInterval(() => setTime(), 60000);

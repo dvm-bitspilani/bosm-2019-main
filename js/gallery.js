@@ -5,7 +5,6 @@ let numberOfGalleryMobileSet = 5;
 const galleryContainer = document.getElementsByClassName("gallery-container")[0];
 
 const changeGallerySet = () => {
-    // console.log(galleryNumber)
     if (galleryNumber < numberOfGallerySet) {
         galleryNumber++;
         galleryContainer.style.transform = "translate(" + (-100 * (galleryNumber - 1)) + "%)";
@@ -20,7 +19,6 @@ const changeGallerySet = () => {
 }
 
 const changeGalleryMobileSet = () => {
-    console.log(galleryNumber)
     if (galleryNumber < numberOfGalleryMobileSet) {
         galleryNumber++;
         galleryContainer.style.transform = "translate(" + (-100 * (galleryNumber - 1)) + "%)";
@@ -33,9 +31,8 @@ const changeGalleryMobileSet = () => {
         changeGallerySet();
     }
 }
-console.log(window.innerWidth)
-if(window.innerWidth < 768) 
-   var galleryMobileSetChangeInterval = setInterval(changeGalleryMobileSet, 5000);
+if (window.innerWidth < 768)
+    var galleryMobileSetChangeInterval = setInterval(changeGalleryMobileSet, 5000);
 else
     var gallerySetChangeInterval = setInterval(changeGallerySet, 5000);
 
@@ -51,4 +48,3 @@ const navigateMobileGallery = (dotIndex) => {
     clearInterval(galleryMobileSetChangeInterval);
     gallerySetChangeInterval = setInterval(galleryMobileSetChangeInterval, 5000);
 }
-
