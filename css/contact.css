@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "FuturaPT";
+  src: url("../fonts/FuturaBoldCondensedBT.ttf"); }
+
+@font-face {
+  font-family: "sfpro";
+  src: url("../fonts/SF-Pro-Text-Regular.ttf"); }
+
+.contact-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #1876B7;
+  overflow: hidden; }
+  .contact-wrapper .contact-main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: [col-1] 50vw [col-2] 0vw [col-3] 100vw [end];
+    grid-template-rows: [row-1] 100vh [end];
+    transition: 1s;
+    transform: translateX(0); }
+  .contact-wrapper .contact-quote {
+    grid-column-start: col-1;
+    grid-column-end: col-2;
+    grid-row-start: row-1;
+    grid-row-end: span end;
+    background-color: #DCDCDC;
+    padding-top: 4vw;
+    background: url("../img/clocktower.png"); }
+    .contact-wrapper .contact-quote .contact-quote-heading {
+      width: 100%;
+      height: 4vw;
+      font-size: 3.5em;
+      font-family: "FuturaPT";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 7vw;
+      letter-spacing: 1.0vw;
+      color: white;
+      text-align: center; }
+    .contact-wrapper .contact-quote .image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 31vh;
+      margin-bottom: 6vw; }
+      .contact-wrapper .contact-quote .image img {
+        width: 314px;
+        height: 314px;
+        border-radius: 50%;
+        background-image: url("../img/director.png");
+        background-size: cover; }
+    .contact-wrapper .contact-quote .quote-box {
+      width: 70%;
+      margin: 0 auto;
+      font-size: 21px;
+      font-family: "sfpro";
+      color: white;
+      letter-spacing: 0;
+      text-align: center; }
+  .contact-wrapper .contact-container {
+    grid-column-start: col-3;
+    grid-column-end: end;
+    grid-row-start: row-1;
+    grid-row-end: end;
+    background-color: #7E7E7E; }
+    .contact-wrapper .contact-container .meetTeam {
+      display: none; }
+      @media screen and (max-width: 600px) {
+        .contact-wrapper .contact-container .meetTeam {
+          display: block;
+          font-size: 2rem;
+          color: #ffffff;
+          font-family: "FuturaPT";
+          margin: 4%;
+          text-align: center; } }
+    .contact-wrapper .contact-container .cards-container {
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-content: center;
+      flex-wrap: wrap;
+      transition: 0.75s; }
+      @media screen and (max-width: 600px) {
+        .contact-wrapper .contact-container .cards-container {
+          display: inline-flex;
+          flex-wrap: nowrap;
+          height: 80%; } }
+      .contact-wrapper .contact-container .cards-container .contacts-set {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 3% 0; }
+        @media screen and (max-width: 600px) {
+          .contact-wrapper .contact-container .cards-container .contacts-set {
+            height: 100%;
+            flex-wrap: wrap;
+            margin: 0;
+            margin-top: 3%; } }
+        .contact-wrapper .contact-container .cards-container .contacts-set .cards {
+          height: 17.5vw;
+          width: 17.5%;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-family: "sfpro"; }
+          @media screen and (max-width: 600px) {
+            .contact-wrapper .contact-container .cards-container .contacts-set .cards {
+              width: 40%;
+              height: auto;
+              margin: 0 2%; } }
+          .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-heading {
+            width: 100%;
+            font-size: 23px;
+            letter-spacing: 2.84px;
+            margin-bottom: 10px;
+            height: fit-content;
+            text-align: center;
+            font-weight: bold; }
+            @media screen and (max-width: 600px) {
+              .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-heading {
+                font-size: 14px;
+                letter-spacing: 1.5px; } }
+          .contact-wrapper .contact-container .cards-container .contacts-set .cards img {
+            width: 175px;
+            height: 175px;
+            background: #DCDCDC;
+            margin: 0 auto;
+            margin-bottom: 10px; }
+            @media screen and (max-width: 600px) {
+              .contact-wrapper .contact-container .cards-container .contacts-set .cards img {
+                width: 90px;
+                height: 90px; } }
+          .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-name {
+            height: 35px;
+            font-size: 21px; }
+            @media screen and (max-width: 600px) {
+              .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-name {
+                font-size: 14px;
+                height: auto; } }
+          .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-number {
+            color: rgba(255, 255, 255, 0.5); }
+            @media screen and (max-width: 600px) {
+              .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-number {
+                font-size: 12px; } }
+          .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-id {
+            font-size: 15px;
+            height: 30px;
+            color: rgba(255, 255, 255, 0.6); }
+            @media screen and (max-width: 600px) {
+              .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-id {
+                font-size: 12px; } }
+    .contact-wrapper .contact-container .contacts-nav-dots {
+      display: none; }
+      @media screen and (max-width: 600px) {
+        .contact-wrapper .contact-container .contacts-nav-dots {
+          display: block;
+          text-align: center;
+          margin-top: 8.5%; }
+          .contact-wrapper .contact-container .contacts-nav-dots .contact-nav-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 3.5px solid #ffffff;
+            margin: 3px;
+            display: inline-block;
+            cursor: pointer;
+            transition: 0.75s; }
+            .contact-wrapper .contact-container .contacts-nav-dots .contact-nav-dot:nth-of-type(1) {
+              background: #ffffff; } }
+    .contact-wrapper .contact-container .arrow {
+      position: absolute;
+      bottom: 50vh;
+      left: calc(-1.545vw);
+      grid-column-start: col-2;
+      grid-column-end: col-3;
+      grid-row-start: row-1;
+      grid-row-end: end;
+      z-index: 2;
+      transition: 0.5s; }
+      .contact-wrapper .contact-container .arrow img {
+        height: 3.09vw;
+        width: 3.09vw;
+        cursor: pointer; }
+  .contact-wrapper .instructions {
+    background: #E1E1E1;
+    display: flex;
+    grid-column-start: col-3;
+    grid-column-end: end;
+    grid-row-start: row-1;
+    grid-row-end: end;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: start;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    transition: 0.5s; }
+    .contact-wrapper .instructions h1 {
+      color: black;
+      font-size: 46px;
+      font-family: "FuturaPT";
+      letter-spacing: 13.54px;
+      margin-bottom: 4vw;
+      margin-left: 4vw;
+      transition: 0.25s; }
+    .contact-wrapper .instructions div {
+      color: black;
+      font-family: "FuturaPT";
+      letter-spacing: 6.64px;
+      font-size: 22px;
+      letter-spacing: 1.5px;
+      margin-left: 4vw;
+      transition: 0.25s; }
+
+@media all and (max-width: 600px) {
+  .contact-wrapper {
+    height: 200vh;
+    overflow: hidden; }
+    .contact-wrapper .contact-main-container {
+      grid-template-columns: [col-1] 100vw [end];
+      grid-template-rows: [row-1] 100vh [row-2] 100vh [end]; }
+    .contact-wrapper .contact-quote {
+      grid-column-start: col-1;
+      grid-column-end: end;
+      grid-row-start: row-1;
+      grid-row-end: span row-2;
+      background-color: #DCDCDC;
+      padding-top: 10vh;
+      background: url("../img/clocktower.png"); }
+      .contact-wrapper .contact-quote .contact-quote-heading {
+        width: 98%;
+        height: 2vw;
+        font-size: 2rem;
+        margin-bottom: 14vh;
+        text-align: center; }
+      .contact-wrapper .contact-quote .image {
+        margin-bottom: 10vh; }
+        .contact-wrapper .contact-quote .image img {
+          width: 38.2vh;
+          height: 38.2vh; }
+    .contact-wrapper .contact-container {
+      grid-column-start: col-1;
+      grid-column-end: end;
+      grid-row-start: row-2;
+      grid-row-end: end;
+      background-color: #7E7E7E;
+      overflow: hidden; }
+      .contact-wrapper .contact-container .cards-container .cards .card-heading {
+        width: 100%;
+        font-size: 12px;
+        letter-spacing: 0.54px;
+        margin-bottom: 10px;
+        height: fit-content;
+        text-align: center;
+        font-weight: bold; }
+      .contact-wrapper .contact-container .cards-container .cards img {
+        width: 12.6vh;
+        height: 12.6vh;
+        border-radius: 50%; }
+      .contact-wrapper .contact-container .cards-container .cards .card-name {
+        height: 23px;
+        font-size: 14px; }
+      .contact-wrapper .contact-container .cards-container .cards .card-number {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 7px; }
+      .contact-wrapper .contact-container .cards-container .cards .card-id {
+        font-size: 7px;
+        height: 30px;
+        color: rgba(255, 255, 255, 0.6); }
+      .contact-wrapper .contact-container .arrow {
+        display: none; }
+    .contact-wrapper .instructions {
+      display: none; } }
