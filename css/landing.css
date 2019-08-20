@@ -468,11 +468,10 @@
   .navbar a {
     text-decoration: none; }
   .navbar .nav-item {
-    padding: 30px;
+    margin: 30px;
     color: #fff;
-    transition: all 0.1s ease; }
-    .navbar .nav-item:hover {
-      cursor: pointer; }
+    transition: all 0.1s ease;
+    cursor: pointer; }
 
 @media all and (max-width: 450px) {
   .grit,
