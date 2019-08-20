@@ -9,7 +9,7 @@ var collegeid;
 var no_of_sports = 0;
 
 function getsportsvalue() {
-  if(sportsarr.length == 0){
+  if (sportsarr.length == 0) {
     selected_sport.innerHTML = "";
   }
   const val = document.getElementById("sports_opt").value;
@@ -23,17 +23,25 @@ function getsportsvalue() {
   span.innerHTML = val;
   div.appendChild(span);
   selected_sport.appendChild(div);
+  div.innerHTML +=
+    '<i class="fas fa-times" style="padding-left:1vh;color:#34aafc"></i>';
   div.onclick = function() {
     this.parentNode.removeChild(this);
-    const x = this.getElementsByTagName('span');
+    const x = this.getElementsByTagName("span");
     console.log(x[0].innerHTML);
-    console.log(document.getElementsByClassName('sports-tag')[5])
-    for(var i =1;i<no_of_sports;i++){
-      if(x[0].innerHTML == document.getElementsByClassName('sports-tag')[i].innerHTML){
-        document.getElementsByClassName('sports-tag')[i].disabled = false;
-        for(var j =0;j<sportsarr.length;j++){
-          if(sportsarr[j] == parseInt(document.getElementsByClassName('sports-tag')[i].id)){
-            sportsarr.splice(j,1);
+    console.log(document.getElementsByClassName("sports-tag")[5]);
+    for (var i = 1; i < no_of_sports; i++) {
+      if (
+        x[0].innerHTML ==
+        document.getElementsByClassName("sports-tag")[i].innerHTML
+      ) {
+        document.getElementsByClassName("sports-tag")[i].disabled = false;
+        for (var j = 0; j < sportsarr.length; j++) {
+          if (
+            sportsarr[j] ==
+            parseInt(document.getElementsByClassName("sports-tag")[i].id)
+          ) {
+            sportsarr.splice(j, 1);
             j--;
           }
         }
@@ -41,7 +49,7 @@ function getsportsvalue() {
       }
     }
   };
- document.getElementById("sports_opt").options[
+  document.getElementById("sports_opt").options[
     document.getElementById("sports_opt").selectedIndex
   ].disabled = true;
   console.log(val);
@@ -117,10 +125,10 @@ window.onload = function() {
         opt.value = resp.data[i].name;
         opt.innerHTML = resp.data[i].name;
         opt.setAttribute("id", resp.data[i].id);
-        opt.className += 'sports-tag';
-        opt.onclick = function(){
+        opt.className += "sports-tag";
+        opt.onclick = function() {
           console.log(1);
-        }
+        };
         sports_opt.appendChild(opt);
         no_of_sports++;
       }
@@ -147,8 +155,6 @@ window.onload = function() {
 };
 
 function bosmreg() {
-  
-
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
@@ -157,7 +163,7 @@ function bosmreg() {
   grecaptcha.execute();
   var v = grecaptcha.getResponse();
   console.log(v);
- if (
+  if (
     name == "" ||
     email == "" ||
     phone == "" ||
@@ -180,9 +186,8 @@ function bosmreg() {
       college_id: collegeid,
       city: city,
       state: state,
-      captcha : v
+      captcha: v
     };
-
 
     fetch(" https://bits-bosm.org/registrations/register/", {
       method: "post",
@@ -205,12 +210,10 @@ function bosmreg() {
   }
 }
 
-  function validate() {
-    // grecaptcha.execute();
-    // var v = grecaptcha.getResponse();
-    // console.log(v);
-    grecaptcha.execute();
-    console.log('Works');
-  }
-
-
+function validate() {
+  // grecaptcha.execute();
+  // var v = grecaptcha.getResponse();
+  // console.log(v);
+  grecaptcha.execute();
+  console.log("Works");
+}

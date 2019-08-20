@@ -3,7 +3,8 @@ body {
   padding: 0;
   background-color: #2699fb;
   overflow-x: hidden;
-  @media(max-width:500px){
+  scroll-behavior: smooth;
+  @media (max-width: 500px) {
     background-color: white;
   }
 }
@@ -33,7 +34,7 @@ body {
   z-index: 40;
   border-radius: 10px;
   overflow-x: hidden;
-  @media(max-width:500px){
+  @media (max-width: 500px) {
     width: 100%;
     height: 150vh;
     border: none;
@@ -54,12 +55,12 @@ body {
       border-radius: 10px;
       box-shadow: 0 0 10px #34aafc;
       cursor: pointer;
-      @media (max-width:500px) {
+      @media (max-width: 500px) {
         margin-bottom: 5vh;
         padding: 15px 35px;
         font-size: 1.2em;
       }
-      @media (max-width:500px) {
+      @media (max-width: 500px) {
         margin-bottom: 5vh;
         padding: 10px 20px;
         font-size: 1em;
@@ -71,7 +72,7 @@ body {
     height: 15vh;
     position: relative;
     padding: 2% 0 2% 4%;
-    @media (max-width:500px){
+    @media (max-width: 500px) {
       margin-top: 30vh;
     }
     span {
@@ -83,12 +84,12 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
-        @media(max-width: 500px){
+        transform: translate(-50%, -50%);
+        @media (max-width: 500px) {
           font-size: 2em;
           top: 60%;
         }
-        @media(max-width: 400px){
+        @media (max-width: 400px) {
           font-size: 1.2em;
         }
       }
@@ -100,13 +101,13 @@ body {
         &:hover {
           transform: scale(1.2);
         }
-        @media(max-width: 500px){
+        @media (max-width: 500px) {
           font-size: 2em;
           margin-right: 10vw;
           position: absolute;
           top: -4vh;
         }
-        @media(max-width: 400px){
+        @media (max-width: 400px) {
           font-size: 1.5em;
         }
       }
@@ -118,7 +119,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width:500px) {
+    @media (max-width: 500px) {
       flex-flow: column;
       height: 150vh;
     }
@@ -129,13 +130,13 @@ body {
       justify-content: space-evenly;
       align-items: center;
       flex-flow: column;
-      &:nth-child(2){
+      &:nth-child(2) {
         height: 95%;
-        @media (max-width:500px) {
+        @media (max-width: 500px) {
           height: 50vh;
         }
       }
-      @media(max-width:500px){
+      @media (max-width: 500px) {
         width: 100%;
         height: 50vh;
       }
@@ -157,7 +158,7 @@ body {
         color: #2699fb;
         font-size: 1.2em;
         font-family: "Roboto", sans-serif;
-        @media (max-width:400px){
+        @media (max-width: 400px) {
           font-size: 1em;
         }
       }
@@ -184,7 +185,7 @@ body {
           &:focus {
             outline: none;
           }
-          @media(max-width:400px){
+          @media (max-width: 400px) {
             font-size: 1em;
           }
         }
@@ -209,7 +210,7 @@ body {
           }
           margin-bottom: 1vh;
         }
-        @media(max-width:500px){
+        @media (max-width: 500px) {
           width: 100%;
           height: 6%;
           text-align: center;
@@ -227,15 +228,15 @@ body {
           padding: 2% 6% 2% 6%;
           cursor: pointer;
           transition: all 0.2s ease-in-out;
-          @media(max-width:400px){
+          @media (max-width: 400px) {
             padding: 1% 3% 1% 3%;
             font-size: 1em;
           }
-          }
+        }
       }
       .selected-sports {
         width: 69%;
-        height: 10%;
+        height: 15%;
         color: #2699fb;
         background-color: #ffffff;
         border-radius: 5px;
@@ -243,6 +244,9 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        overflow-y: scroll;
         .sports {
           width: auto;
           padding: 1% 2% 1% 2%;
@@ -250,6 +254,7 @@ body {
           background-color: #ffffff;
           border-radius: 40px;
           margin-left: 1vw;
+          margin-top: 1vh;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -257,18 +262,18 @@ body {
           border: solid 1px #34aafc;
           font-family: "Roboto", sans-serif;
           cursor: pointer;
-          @media (max-width:500px){
+          @media (max-width: 500px) {
             font-size: 0.7em;
           }
-          @media (max-width:400px){
+          @media (max-width: 400px) {
             font-size: 0.5em;
           }
         }
-        .label-text{
+        .label-text {
           margin-left: 3%;
           opacity: 0.7;
           font-family: "Roboto", sans-serif;
-          @media (max-width:500px) {
+          @media (max-width: 500px) {
             font-size: 0.5em;
           }
         }
@@ -295,10 +300,10 @@ body {
   background-repeat: no-repeat;
   height: 50px;
   width: 50px;
-cursor: pointer;
+  cursor: pointer;
 }
 
-.capt{
+.capt {
   width: 100%;
   height: 30vh;
   display: flex;
@@ -337,10 +342,10 @@ cursor: pointer;
 //   background-size: cover;
 // }
 
-.dropdown{
+.dropdown {
   font-weight: 900;
   color: #2699fb;
-  @media(max-width:400px){
+  @media (max-width: 400px) {
     transform: translateX(-20px);
   }
 }
