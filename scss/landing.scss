@@ -347,7 +347,7 @@
     .ellipse-2 {
         height: 350px;
         width: 350px;
-        left: calc(50vw - 175px);
+        left: calc(50vw - 212.5px);
     }
     .line-3,
     .line-4,
@@ -413,11 +413,10 @@
 .glory {
     position: absolute;
     right: 8%;
-    bottom: 32%;
     // transform: translateY(100px);
     opacity: 0;
     font-family: "futura-light";
-    font-size: 2.4em;
+    font-size: 0.175em;
     letter-spacing: 40px;
     color: #e6c002;
     animation-duration: 15s;
@@ -441,17 +440,17 @@
 @keyframes anim-1 {
     0%,
     8.3% {
-        bottom: 30%;
+        bottom: -20%;
         opacity: 0;
     }
     8.3%,
     25% {
-        bottom: 32%;
+        bottom: -15%;
         opacity: 1;
     }
     33.33%,
     100% {
-        bottom: 30%;
+        bottom: -20%;
         opacity: 0;
     }
 }
@@ -459,17 +458,17 @@
 @keyframes anim-2 {
     0%,
     33.33% {
-        bottom: 30%;
+        bottom: -20%;
         opacity: 0;
     }
     41.63%,
     58.29% {
-        bottom: 32%;
+        bottom: -15%;
         opacity: 1;
     }
     66.66%,
     100% {
-        bottom: 30%;
+        bottom: -20%;
         opacity: 0;
     }
 }
@@ -477,16 +476,16 @@
 @keyframes anim-3 {
     0%,
     66.66% {
-        bottom: 30%;
+        bottom: -20%;
         opacity: 0;
     }
     74.96%,
     91.62% {
-        bottom: 32%;
+        bottom: -15%;
         opacity: 1;
     }
     100% {
-        bottom: 30%;
+        bottom: -20%;
         opacity: 0;
     }
 }
@@ -494,17 +493,17 @@
 @keyframes anim-4 {
     0%,
     8.3% {
-        bottom: 10%;
+        bottom: -40%;
         opacity: 0;
     }
     8.3%,
     25% {
-        bottom: 12%;
+        bottom: -30%;
         opacity: 1;
     }
     33.33%,
     100% {
-        bottom: 10%;
+        bottom: -40%;
         opacity: 0;
     }
 }
@@ -512,17 +511,17 @@
 @keyframes anim-5 {
     0%,
     33.33% {
-        bottom: 10%;
+        bottom: -40%;
         opacity: 0;
     }
     41.63%,
     58.29% {
-        bottom: 12%;
+        bottom: -30%;
         opacity: 1;
     }
     66.66%,
     100% {
-        bottom: 10%;
+        bottom: -40%;
         opacity: 0;
     }
 }
@@ -530,16 +529,16 @@
 @keyframes anim-6 {
     0%,
     66.66% {
-        bottom: 10%;
+        bottom: -40%;
         opacity: 0;
     }
     74.96%,
     91.62% {
-        bottom: 12%;
+        bottom: -30%;
         opacity: 1;
     }
     100% {
-        bottom: 10%;
+        bottom: -40%;
         opacity: 0;
     }
 }
@@ -599,9 +598,9 @@
     .guts,
     .glory {
         right: 7%;
-        bottom: 10%;
-        font-size: 2em;
-        letter-spacing: 10px;
+        font-size: 0.375em;
+        letter-spacing: 15px;
+        top: auto;
     }
     .cricket {
         img {
@@ -650,6 +649,11 @@
         flex-direction: row;
         font-size: 2.5em;
         letter-spacing: 4px;
+        &>div {
+            @media screen and (max-width: 600px) {
+                margin: 0 5px;
+            }
+        }
         #days,
         #min {
             color: #fff;
@@ -668,6 +672,9 @@
         #daysLabel,
         #minLabel {
             color: #4a3f7b;
+            @media screen and (max-width: 600px) {
+                color: #F3D331
+            }
         }
         #daysLabel {
             margin-right: 5px;
@@ -794,15 +801,20 @@
     }
     .time {
         bottom: 5px;
+        left: 3%;
         .timeNum {
-            font-size: 2em;
+            font-size: 1.5em;
             letter-spacing: 1px;
             #hrs {
                 color: #F3D331;
             }
         }
         .timeLabel {
-            display: none;
+            font-size: 0.65em;
+            margin-top: 0;
+            &>div {
+                margin: 0 5px;
+            }
         }
     }
     .scroll-downs {
@@ -822,8 +834,8 @@
     }
     .slogan-1,
     .slogan-2 {
-        font-size: 1.7em;
-        letter-spacing: 7px;
+        font-size: 1.5em;
+        letter-spacing: 5px;
     }
     .slogan-1 {
         top: 15%;
