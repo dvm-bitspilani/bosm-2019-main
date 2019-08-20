@@ -77,8 +77,9 @@ const createEvent = () => {
             eventsNameContainer.appendChild(eventsName);
             eventsCardFront.appendChild(eventsNameContainer);
 
-            let eventsCardFrontImg = document.createElement('img');
-            eventsCardFrontImg.setAttribute('src', eventsImgUrl[numberOfEventsinOneSet * i + j]);
+            let eventsCardFrontImg = document.createElement('div');
+            eventsCardFrontImg.className = "event-img"
+            eventsCardFrontImg.setAttribute('style', "background-image: url('" + eventsImgUrl[numberOfEventsinOneSet * i + j] + "')");
 
             eventsCardFront.appendChild(eventsCardFrontImg);
             eventsCard.appendChild(eventsCardFront);
@@ -113,8 +114,9 @@ const createEvent = () => {
             eventsNameContainer.appendChild(eventsName);
             eventsCardFront.appendChild(eventsNameContainer);
 
-            let eventsCardFrontImg = document.createElement('img');
-            eventsCardFrontImg.setAttribute('src', eventsImgUrl[numberOfSet * numberOfEventsinOneSet + j]);
+            let eventsCardFrontImg = document.createElement('div');
+            eventsCardFrontImg.className = "event-img"
+            eventsCardFrontImg.setAttribute('style', "background-image: url('" + eventsImgUrl[numberOfSet * numberOfEventsinOneSet + j] + "')");
 
             eventsCardFront.appendChild(eventsCardFrontImg);
             eventsCard.appendChild(eventsCardFront);
