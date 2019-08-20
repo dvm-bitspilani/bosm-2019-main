@@ -1,374 +1,375 @@
 @font-face {
-  font-family: "futbold";
-  src: url("../fonts/FuturaBoldCondensedBT.ttf");
+    font-family: "futbold";
+    src: url("../fonts/FuturaBoldCondensedBT.ttf");
 }
 
 @font-face {
-  font-family: "sfpro";
-  src: url("../fonts/SF-Pro-Text-Regular.ttf");
+    font-family: "sfpro";
+    src: url("../fonts/SF-Pro-Text-Regular.ttf");
 }
 
 .about-div {
-  height: 100vh;
-  width: 100%;
-  background: transparent linear-gradient(181deg, #2A14EA 0%, #288AFF 100%) 0% 0% no-repeat padding-box;
-  position: relative;
-  @media(max-width: 500px){
-    height: 150vh;
-  }
-  .circle {
-    width: 500px;
-    height: 500px;
-    background: url("../img/Ellipse.png") no-repeat center center/cover;
-    position: absolute;
-    left: calc(50vw - 250px);
-    top: 20%;
-    transform: translateY(-50%);
-    animation: rotate-ellipse 45s linear infinite;
-  }
-  .dash1 {
-    height: 2px;
-    width: 20%;
-    background-color: #fff;
-    position: absolute;
-    right: 0;
-    top: 15%;
-    opacity: 0.2;
-    animation: translate-div 60s ease-in-out infinite;
-  }
-  .dash2 {
-    height: 2px;
-    width: 13%;
-    background-color: #fff;
-    position: absolute;
-    right: 0;
-    top: 14%;
-    opacity: 0.2;
-    animation: translate-div 70s ease-in-out infinite;
-  }
-  @keyframes rotate-ellipse {
-    from {
-      transform: translateY(-50%) rotate(0);
-    }
-    to {
-      transform: translateY(-50%) rotate(360deg);
-    }
-  }
-  @keyframes translate-div {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-100vw);
-    }
-  }
-  .clip-div {
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background:  #FED401;
-    clip-path: polygon(0 0, 61% 0, 34% 100%, 0% 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    @media (max-width: 500px){
-      display: none;
+    background: transparent linear-gradient(181deg, #2A14EA 0%, #288AFF 100%) 0% 0% no-repeat padding-box;
+    position: relative;
+    @media(max-width: 500px) {
+        height: 150vh;
     }
-  }
-  .about-content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    z-index: 10;
-    @media (max-width: 500px){
-      flex-flow: column;
-      flex-direction: column-reverse; 
+    .circle {
+        width: 500px;
+        height: 500px;
+        background: url("../img/Ellipse.png") no-repeat center center/cover;
+        position: absolute;
+        left: calc(50vw - 250px);
+        top: 20%;
+        transform: translateY(-50%);
+        animation: rotate-ellipse 45s linear infinite;
     }
-    .slider-div {
-      width: 50%;
-      height: 85%;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-flow: column;
-      @media (max-width: 500px){
+    .dash1 {
+        height: 2px;
+        width: 20%;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 15%;
+        opacity: 0.2;
+        animation: translate-div 60s ease-in-out infinite;
+    }
+    .dash2 {
+        height: 2px;
+        width: 13%;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 14%;
+        opacity: 0.2;
+        animation: translate-div 70s ease-in-out infinite;
+    }
+    @keyframes rotate-ellipse {
+        from {
+            transform: translateY(-50%) rotate(0);
+        }
+        to {
+            transform: translateY(-50%) rotate(360deg);
+        }
+    }
+    @keyframes translate-div {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100vw);
+        }
+    }
+    .clip-div {
+        height: 100%;
         width: 100%;
-        height: 50vh;
-        justify-content: space-around;
-      }
-      .heading {
-        font-family: futbold;
-        color: #fffffe;
-        font-size: 5em;
-        letter-spacing: 2vw;
-        @media (max-width:500px){
-          display: none;
+        background: #FED401;
+        clip-path: polygon(0 0, 61% 0, 34% 100%, 0% 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        @media (max-width: 500px) {
+            display: none;
         }
-      }
-      .img-div {
-        width: 55%;
-        height: 35%;
-        border-radius: 10px;
-        box-shadow: 0 0 25px gray;
-        position: relative;
-        margin-right: 2vw;
-        overflow-x: hidden;
-        @media(max-width:500px){
-        width: 90%;
-        height: 45%;
-        }
-        @media(max-width:400px){
-          height: 50%;
-        }
-        .img1 {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          background: url("../img/bosm-teaser.png");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          position: absolute;
-          transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .play-btn {
-            font-size: 4em;
-            color: white;
-            cursor: pointer;
-            transition: transform 0.5s ease-in-out;
-            &:hover {
-              transform: scale(1.1);
-            }
-          }
-        }
-        .img2 {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          background: url("../img/bosm-after.png");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          position: absolute;
-          left: 100%;
-          z-index: 22;
-          transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .play-btn {
-            font-size: 4em;
-            color: white;
-            cursor: pointer;
-            transition: transform 0.5s ease-in-out;
-            &:hover {
-              transform: scale(1.1);
-            }
-          }
-        }
-        .img3 {
-          width: 100%;
-          height: 100%;
-          border-radius: 10px;
-          background: url("../img/bosm-street.png");
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-          position: absolute;
-          left: 200%;
-          transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          .play-btn {
-            font-size: 4em;
-            text-decoration: none;
-            color: white;
-            cursor: pointer;
-            transition: transform 0.5s ease-in-out;
-            &:hover {
-              transform: scale(1.1);
-            }
-          }
-        }
-      }
-      .nav-dots {
-        width: 25%;
-        height: 7%;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        margin-bottom: 2vh;
-        .dot {
-          width: 7px;
-          height: 7px;
-          border-radius: 50%;
-          border: 3px solid #ffffff;
-          cursor: pointer;
-          transition: all 0.5s ease-in-out;
-          &:nth-child(1) {
-
-            background-color: #fffffe;
-          }
-          @media(max-width: 400px){
-            width: 5px;
-            height: 5px;
-          }
-        }
-      }
-      .tweet-div {
-        height: 17%;
-        width: 65%;
-        background-color: #ffffff;
-        border-radius: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: sfpro;
-        color: #4a4a4a;
-        font-size: 1.5em;
-        position: relative;
-        overflow-x: hidden;
-        @media(max-width:500px){
-          height: 35%;
-          width: 90%;
-        }
-        .tweet-text{
-         position: absolute;
-         width: 100%;
-         height: 100%;
-         background-color: #fffffe;
-         border-radius: 10px;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         transition: all 0.5s ease-in-out;
-         overflow-y: hidden;
-         &:nth-child(2){
-           left: 100%;
-         }
-         &:nth-child(3){
-          left: 200%;
-        }
-        &:nth-child(4){
-          left: 300%;
-        }
-        &:nth-child(5){
-          left: 400%;
-        }
-        .tweet-pic{
-          width: 80px;
-          height: 80px;
-          border-radius: 50%;
-          background-color: #5600ff;
-          @media(max-width: 400px){
-            width: 60px;
-            height: 60px;
-          }
-          @media(max-width: 400px) and (min-width: 350px){
-            width: 70px;
-            height: 70px;
-          }
-        }
-        .tweet-info{
-          height: 100%;
-          width: 70%;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: flex-start;
-          flex-flow: column;
-          padding-left: 3%;
-          padding-top: 3%;
-          padding-bottom: 3%; 
-          .tweet-name{
-            color: #171717;
-            font-family: sfpro;
-            font-size: 0.7em;
-            @media(max-width: 400px){
-              font-size: 0.5em;
-            }
-            @media(max-width: 400px) and (min-width: 350px){
-              font-size: 0.6em;
-            }
-          }
-          .tweet-id{
-            color: #9D9D9D;
-            font-family: sfpro;
-            font-size: 0.4em;
-          }
-          .tweet{
-            color: #4A4A4A;
-            font-family: sfpro;
-            font-size: 0.7em;
-            @media(max-width:400px){
-              font-size: 0.5em;
-            }
-            @media(max-width: 400px) and (min-width: 350px){
-              font-size: 0.6em;
-            }
-          }
-          .tweet-date{
-            color: #9D9D9D;
-            font-family: sfpro;
-            font-size: 0.5em;
-            @media(max-width:450px){
-              font-size: 0.3em;
-            }
-            @media(max-width: 400px) and (min-width: 350px){
-              font-size: 0.4em;
-            }
-          }
-        }
-        }
-      }
     }
-    .content-div {
-      width: 50%;
-      height: 100%;
-      text-align: start;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column;
-      @media (max-width:500px) {
+    .about-content {
         width: 100%;
-        height: 100vh;
-      }
-      .mob-heading{
-        transform: scale(0);
-        @media (max-width:500px) {
-        transform: scale(1);
-        font-family: futbold;
-        color: #fffffe;
-        font-size: 2em;
-        letter-spacing: 2vw;
-        margin-bottom: 2vh;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        z-index: 10;
+        @media (max-width: 500px) {
+            flex-flow: column;
+            flex-direction: column-reverse;
         }
-      }
-      span {
-        width: 80%;
-        font-size: 1.2em;
-        color: white;
-        font-family: sfpro;
-        margin-left: 10%;
-        text-align: center;
-        @media (max-width: 500px){
-          font-size: 1.1em;
-          margin-left: 0;
-          width: 90%;
+        .slider-div {
+            width: 50%;
+            height: 85%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: column;
+            @media (max-width: 500px) {
+                width: 100%;
+                height: 50vh;
+                justify-content: space-around;
+            }
+            .heading {
+                font-family: futbold;
+                color: #fffffe;
+                font-size: 5em;
+                letter-spacing: 2vw;
+                @media (max-width: 500px) {
+                    display: none;
+                }
+            }
+            .img-div {
+                width: 55%;
+                height: 35%;
+                border-radius: 10px;
+                box-shadow: 0 0 25px gray;
+                position: relative;
+                margin-right: 2vw;
+                overflow-x: hidden;
+                @media(max-width: 500px) {
+                    width: 90%;
+                    height: 45%;
+                }
+                @media(max-width:400px) {
+                    height: 50%;
+                }
+                .img1 {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background: url("../img/bosm-teaser.png");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .play-btn {
+                        font-size: 4em;
+                        color: white;
+                        cursor: pointer;
+                        transition: transform 0.5s ease-in-out;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .img2 {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background: url("../img/bosm-after.png");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 100%;
+                    z-index: 22;
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .play-btn {
+                        font-size: 4em;
+                        color: white;
+                        cursor: pointer;
+                        transition: transform 0.5s ease-in-out;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                .img3 {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                    background: url("../img/bosm-street.png");
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 200%;
+                    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .play-btn {
+                        font-size: 4em;
+                        text-decoration: none;
+                        color: white;
+                        cursor: pointer;
+                        transition: transform 0.5s ease-in-out;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+            .nav-dots {
+                width: 25%;
+                height: 7%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                margin-bottom: 2vh;
+                .dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    border: 3.5px solid #ffffff;
+                    cursor: pointer;
+                    transition: all 0.5s ease-in-out;
+                    &:nth-child(1) {
+                        background-color: #fffffe;
+                    }
+                    @media(max-width: 400px) {
+                        width: 7px;
+                        height: 7px;
+                        border: 2px solid #ffffff;
+                    }
+                }
+            }
+            .tweet-div {
+                height: 17%;
+                width: 65%;
+                background-color: #ffffff;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: sfpro;
+                color: #4a4a4a;
+                font-size: 1.5em;
+                position: relative;
+                overflow-x: hidden;
+                padding: 8px;
+                @media(max-width: 500px) {
+                    height: 35%;
+                    width: 90%;
+                }
+                .tweet-text {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #fffffe;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all 0.5s ease-in-out;
+                    overflow-y: hidden;
+                    &:nth-child(2) {
+                        left: 100%;
+                    }
+                    &:nth-child(3) {
+                        left: 200%;
+                    }
+                    &:nth-child(4) {
+                        left: 300%;
+                    }
+                    &:nth-child(5) {
+                        left: 400%;
+                    }
+                    .tweet-pic {
+                        width: 80px;
+                        height: 80px;
+                        border-radius: 50%;
+                        background-color: #5600ff;
+                        @media(max-width: 400px) {
+                            width: 60px;
+                            height: 60px;
+                        }
+                        @media(max-width: 400px) and (min-width: 350px) {
+                            width: 70px;
+                            height: 70px;
+                        }
+                    }
+                    .tweet-info {
+                        height: 100%;
+                        width: 70%;
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items: flex-start;
+                        flex-flow: column;
+                        padding-left: 3%;
+                        padding-top: 3%;
+                        padding-bottom: 3%;
+                        .tweet-name {
+                            color: #171717;
+                            font-family: sfpro;
+                            font-size: 0.7em;
+                            @media(max-width: 400px) {
+                                font-size: 0.5em;
+                            }
+                            @media(max-width: 400px) and (min-width: 350px) {
+                                font-size: 0.6em;
+                            }
+                        }
+                        .tweet-id {
+                            color: #9D9D9D;
+                            font-family: sfpro;
+                            font-size: 0.4em;
+                        }
+                        .tweet {
+                            color: #4A4A4A;
+                            font-family: sfpro;
+                            font-size: 0.7em;
+                            @media(max-width: 400px) {
+                                font-size: 0.5em;
+                            }
+                            @media(max-width: 400px) and (min-width: 350px) {
+                                font-size: 0.6em;
+                            }
+                        }
+                        .tweet-date {
+                            color: #9D9D9D;
+                            font-family: sfpro;
+                            font-size: 0.5em;
+                            @media(max-width: 450px) {
+                                font-size: 0.3em;
+                            }
+                            @media(max-width: 400px) and (min-width: 350px) {
+                                font-size: 0.4em;
+                            }
+                        }
+                    }
+                }
+            }
         }
-        @media(max-width: 400px) and (min-width: 350px){
-          font-size: 0.9em;
+        .content-div {
+            width: 50%;
+            height: 100%;
+            text-align: start;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            @media (max-width: 500px) {
+                width: 100%;
+                height: 100vh;
+                justify-content: flex-start;
+            }
+            .mob-heading {
+                transform: scale(0);
+                @media (max-width: 500px) {
+                    transform: scale(1);
+                    font-family: futbold;
+                    color: #fffffe;
+                    font-size: 2em;
+                    letter-spacing: 2vw;
+                    margin: 4vh 0;
+                }
+            }
+            span {
+                width: 80%;
+                font-size: 1.2em;
+                color: white;
+                font-family: sfpro;
+                margin-left: 10%;
+                text-align: center;
+                @media (max-width: 500px) {
+                    font-size: 1.1em;
+                    margin-left: 0;
+                    width: 90%;
+                }
+                @media(max-width: 400px) and (min-width: 350px) {
+                    font-size: 0.9em;
+                }
+                @media(max-width: 340px) and (min-width: 310px) {
+                    font-size: 0.7em;
+                }
+            }
         }
-        @media(max-width: 340px) and (min-width: 310px){
-          font-size: 0.7em;
-        }
-
-      }
     }
-  }
 }

@@ -16,6 +16,9 @@
   overflow: hidden;
   position: relative;
   height: 100vh; }
+  @media screen and (max-width: 600px) {
+    .events-wrapper {
+      padding-top: 4vh; } }
   .events-wrapper .event-background-asset-01 {
     position: absolute;
     background: url("../img/events-asset-01.png");
@@ -73,7 +76,7 @@
     .events-wrapper .events-index .events-title {
       font-family: "FuturaPT";
       letter-spacing: 20px;
-      margin: 2% auto;
+      margin: 1% auto;
       font-size: 4rem;
       text-align: center;
       color: #ffffff; }
@@ -81,7 +84,7 @@
         .events-wrapper .events-index .events-title {
           font-size: 2rem;
           letter-spacing: 2vw;
-          margin: 3% auto; } }
+          margin: 5% auto; } }
     .events-wrapper .events-index .events-container {
       width: 100%;
       padding: 76px 0;
@@ -155,8 +158,8 @@
                   font-size: 1.1rem; } }
               @media screen and (max-width: 600px) {
                 .events-wrapper .events-index .events-container .events-set .events-card .events-card-front .event-name {
-                  font-size: 0.8rem;
-                  letter-spacing: 5px; } }
+                  font-size: 0.75rem;
+                  letter-spacing: 3px; } }
             .events-wrapper .events-index .events-container .events-set .events-card .events-card-front .event-img {
               height: 100%;
               width: 100%;
