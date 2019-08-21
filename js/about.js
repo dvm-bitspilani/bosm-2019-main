@@ -96,7 +96,7 @@ function slideleft() {
   }
 }
 
-function slidetweet(){
+function slidetweet() {
   tweet++;
   if (tweet > 5) {
     tweet = 0;
@@ -146,6 +146,8 @@ function slidetweet(){
   }
 }
 
+var Var;
+
 function ytpage(i, e) {
   switch (i) {
     case 0:
@@ -162,6 +164,77 @@ function ytpage(i, e) {
   }
 }
 
-var Var = setInterval(slideleft, 5000);
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var player;
+var player2;
+var player3;
+function onYouTubePlayerAPIReady() {
+  console.log('script loaded')
+  player = new YT.Player('play1', {
+    height: '100%',
+    width: '100%',
+    videoId: '4lv-Ji3W9oU',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+  player2 = new YT.Player('play2', {
+    height: '100%',
+    width: '100%',
+    videoId: '3lbRUfKTwWc',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+  player3 = new YT.Player('play3', {
+    height: '100%',
+    width: '100%',
+    videoId: '5sH7FRg-7_Q',
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  console.log('ready')
+}
+
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+var done = false;
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.PLAYING && !done) {
+    clearInterval(Var)
+    done = true;
+  }
+  myPlayerState = event.data;
+
+  if (myPlayerState == 1 || myPlayerState == 3) {
+    console.log('paused')
+    clearInterval(Var)
+    // PAUSE SLIDER
+  }
+  else if (myPlayerState == 2 || myPlayerState == 0) {
+    console.log('play');
+    Var = setInterval(slideleft, 5000)
+  }
+}
+function stopVideo() {
+  player.stopVideo();
+}
+
+Var = setInterval(slideleft, 5000);
 var Var3 = setInterval(slidetweet, 3000);
 // var Var2 = setInterval(tweetchange, 3000);
