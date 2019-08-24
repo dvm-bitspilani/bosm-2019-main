@@ -130,8 +130,9 @@
             .events-wrapper .events-index .events-container .events-set .events-card .events-card-back img {
               width: 75%; }
           .events-wrapper .events-index .events-container .events-set .events-card .events-card-front {
-            width: 100%;
+            width: 90%;
             height: 100%;
+            padding: 0 5%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -163,6 +164,7 @@
             .events-wrapper .events-index .events-container .events-set .events-card .events-card-front .event-img {
               height: 100%;
               width: 100%;
+              padding: 0 6%;
               border-radius: 5%;
               background-size: 100% 100%; }
 

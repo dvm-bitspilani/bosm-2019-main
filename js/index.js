@@ -31,10 +31,13 @@ const navigate = (x) => {
     elem.scrollIntoView({ block: 'start', behavior: 'smooth' });
     closeNav(mobileMenu, "-100vw");
     if (x == 1) {
-        openCard();
-        eventSetChangeInterval = setInterval(changeEventSet, 5000);
-        document.removeEventListener("wheel", initiateAnimation);
-        document.removeEventListener("touchmove", initiateAnimation);
+        if (!isEventsAnimationInitiated) {
+            openCard();
+            eventSetChangeInterval = setInterval(changeEventSet, 5000);
+            document.removeEventListener("wheel", initiateAnimation);
+            document.removeEventListener("touchmove", initiateAnimation);
+            isEventsAnimationInitiated = true;
+        }
     }
 }
 const navigateDesktop = (x) => {
@@ -42,10 +45,13 @@ const navigateDesktop = (x) => {
     elem.scrollIntoView({ block: 'start', behavior: 'smooth' });
     closeNav(menu, "370px");
     if (x == 1) {
-        openCard();
-        eventSetChangeInterval = setInterval(changeEventSet, 5000);
-        document.removeEventListener("wheel", initiateAnimation);
-        document.removeEventListener("touchmove", initiateAnimation);
+        if (!isEventsAnimationInitiated) {
+            openCard();
+            eventSetChangeInterval = setInterval(changeEventSet, 5000);
+            document.removeEventListener("wheel", initiateAnimation);
+            document.removeEventListener("touchmove", initiateAnimation);
+            isEventsAnimationInitiated = true;
+        }
     }
 }
 

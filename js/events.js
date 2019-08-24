@@ -173,13 +173,17 @@ const foldCard = () => {
 }
 
 let eventSetChangeInterval;
+let isEventsAnimationInitiated
 
 const initiateAnimation = () => {
     if (eventsContainer.getBoundingClientRect().top - 10 <= window.innerHeight) {
-        openCard();
-        eventSetChangeInterval = setInterval(changeEventSet, 5000);
-        document.removeEventListener("wheel", initiateAnimation);
-        document.removeEventListener("touchmove", initiateAnimation);
+        if (!isEventsAnimationInitiated) {
+            openCard();
+            eventSetChangeInterval = setInterval(changeEventSet, 5000);
+            document.removeEventListener("wheel", initiateAnimation);
+            document.removeEventListener("touchmove", initiateAnimation);
+            isEventsAnimationInitiated = true;
+        }
     }
 }
 
