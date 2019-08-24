@@ -32,6 +32,88 @@ $sfpro: "sfpro";
         transition: 1s;
         transform: translateX(0);
     }
+    .full-director-message{
+        width: 100%;
+        height: 100%;   
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: -50vw;
+        background: url('../img/clocktower.png');
+        background-size: cover;
+        opacity: 0;
+        transition: 1s; 
+        .contact-quote-heading{
+            width: 100%;
+            height: 4vw;
+            font-size: 3.5em;
+            font-family: $FuturaPT;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 7vw;
+            letter-spacing: 1vw;
+            color: white;
+            text-align: center;
+            margin-top: 3vw;
+            transition:0.5s;
+            opacity: 0;
+        }
+        .image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 314px;
+                height: 314px;
+                border-radius: 50%;
+                // background: #7E7E7E;
+                background-image: url("../img/director.png");
+                background-size: cover;
+            }
+            width: 39%;
+            margin-top: 12vh;
+            height: 31vh;
+            margin-bottom: 9vh;
+            transition:0.5s;
+            opacity: 0;
+        }
+        // .quote-box{
+        //     width: 41%;
+        //     margin-left: 2vw; 
+        //     transition:0.5s;
+        //     opacity: 0;
+        // }
+        .long-msg{
+            position: absolute;
+            top: 23vh;
+            height: 60vh;
+            width: 55vw;
+            left: 42vw;
+            color: white;
+            font-family: "sfpro";
+            font-size: 22px;
+            text-align: center;
+            overflow-y: scroll;
+            z-index: 5;
+            transition:0.5s;
+            opacity: 0;
+        }
+        .quote-box{
+            margin: 0 auto;
+            font-family: "sfpro";
+            color: white;
+            letter-spacing: 0;
+            text-align: center;
+            width: 30%;
+            margin-left: 4vw;
+            font-size: 25px;
+            transition:0.5s;
+            opacity: 0;
+        }
+
+    }
     .contact-quote {
         grid-column-start: col-1;
         grid-column-end: col-2;
@@ -54,6 +136,7 @@ $sfpro: "sfpro";
             letter-spacing: 1vw;
             color: white;
             text-align: center;
+            transition: 0.5s;
         }
         .image {
             width: 100%;
@@ -62,6 +145,7 @@ $sfpro: "sfpro";
             align-items: center;
             height: 31vh;
             margin-bottom: 6vw;
+            transition: 0.5s;
             img {
                 width: 314px;
                 height: 314px;
@@ -79,7 +163,26 @@ $sfpro: "sfpro";
             color: white;
             letter-spacing: 0;
             text-align: center;
+            transition: 0.5s;
         }
+
+        .right-arrow {
+            position: absolute;
+            bottom: 50vh;
+            left: calc(-2.545vw);
+            grid-column-start: col-2;
+            grid-column-end: col-3;
+            grid-row-start: row-1;
+            grid-row-end: end;
+            z-index: 2;
+            transition: 0.5s;
+            img {
+                height: 3.09vw;
+                width: 3.09vw;
+                cursor: pointer;
+            }
+        }
+        
     }
     .contact-container {
         grid-column-start: col-3;
@@ -225,7 +328,7 @@ $sfpro: "sfpro";
         .arrow {
             position: absolute;
             bottom: 50vh;
-            left: calc(-1.545vw);
+            left: calc(0vw);
             grid-column-start: col-2;
             grid-column-end: col-3;
             grid-row-start: row-1;
@@ -298,6 +401,9 @@ $sfpro: "sfpro";
                     width: 38.2vh;
                     height: 38.2vh;
                 }
+            }
+            .full-director-message{
+                display: none;
             }
         }
         .contact-container {
