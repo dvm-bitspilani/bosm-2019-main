@@ -44,6 +44,17 @@ $sfpro: "sfpro";
         background-size: cover;
         opacity: 0;
         transition: 1s; 
+        .quote-icon{
+            color: white;
+            /* font-family: "sfpro"; */
+            font-size: 200px;
+            text-align: center;
+            letter-spacing: -31px;
+            transform: rotateZ(180deg);
+            margin-bottom: 3px;
+            height: 241px;
+            width: 100%;
+        }
         .contact-quote-heading{
             width: 100%;
             height: 4vw;
@@ -62,20 +73,27 @@ $sfpro: "sfpro";
         }
         .image{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            flex-direction: column;
             img {
-                width: 314px;
-                height: 314px;
+                width: 30vh;
+                height: 30vh;
                 border-radius: 50%;
                 // background: #7E7E7E;
                 background-image: url("../img/director.png");
                 background-size: cover;
             }
+            .director-name{
+                color: white;
+                font-family: "sfpro";
+                font-size: 22px;
+                text-align: center;
+            }
             width: 39%;
             margin-top: 12vh;
-            height: 31vh;
-            margin-bottom: 9vh;
+            height: 35vh;
+            margin-bottom: 2vh;
             transition:0.5s;
             opacity: 0;
         }
@@ -85,12 +103,13 @@ $sfpro: "sfpro";
         //     transition:0.5s;
         //     opacity: 0;
         // }
+    
         .long-msg{
             position: absolute;
             top: 23vh;
             height: 60vh;
             width: 55vw;
-            left: 42vw;
+            left: 40vw;
             color: white;
             font-family: "sfpro";
             font-size: 22px;
@@ -100,6 +119,7 @@ $sfpro: "sfpro";
             transition:0.5s;
             opacity: 0;
         }
+
         .quote-box{
             margin: 0 auto;
             font-family: "sfpro";
@@ -108,7 +128,7 @@ $sfpro: "sfpro";
             text-align: center;
             width: 30%;
             margin-left: 4vw;
-            font-size: 25px;
+            font-size: 20px;
             transition:0.5s;
             opacity: 0;
         }
@@ -132,7 +152,7 @@ $sfpro: "sfpro";
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 7vw;
+            margin-bottom: 4vw;
             letter-spacing: 1vw;
             color: white;
             text-align: center;
@@ -141,18 +161,25 @@ $sfpro: "sfpro";
         .image {
             width: 100%;
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            height: 31vh;
-            margin-bottom: 6vw;
+            height: 40vh;
+            margin-bottom: 1vw;
             transition: 0.5s;
+            flex-direction: column;
             img {
-                width: 314px;
-                height: 314px;
+                width: 34vh;
+                height: 34vh;
                 border-radius: 50%;
                 // background: #7E7E7E;
                 background-image: url("../img/director.png");
                 background-size: cover;
+            }
+            .director-name{
+                color: white;
+                font-family: "sfpro";
+                font-size: 22px;
+                text-align: center;
             }
         }
         .quote-box {
@@ -181,6 +208,17 @@ $sfpro: "sfpro";
                 width: 3.09vw;
                 cursor: pointer;
             }
+        }
+        .quote-icon{
+            color: white;
+            /* font-family: "sfpro"; */
+            font-size: 200px;
+            text-align: center;
+            letter-spacing: -31px;
+            transform: rotateZ(180deg);
+            margin-bottom: 3px;
+            height: 241px;
+            width: 100%;
         }
         
     }

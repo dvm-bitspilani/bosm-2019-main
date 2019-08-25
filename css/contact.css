@@ -33,6 +33,17 @@
   opacity: 0;
   transition: 1s;
 }
+.contact-wrapper .full-director-message .quote-icon {
+  color: white;
+  /* font-family: "sfpro"; */
+  font-size: 200px;
+  text-align: center;
+  letter-spacing: -31px;
+  transform: rotateZ(180deg);
+  margin-bottom: 3px;
+  height: 241px;
+  width: 100%;
+}
 .contact-wrapper .full-director-message .contact-quote-heading {
   width: 100%;
   height: 4vw;
@@ -51,28 +62,35 @@
 }
 .contact-wrapper .full-director-message .image {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   width: 39%;
   margin-top: 12vh;
-  height: 31vh;
-  margin-bottom: 9vh;
+  height: 35vh;
+  margin-bottom: 2vh;
   transition: 0.5s;
   opacity: 0;
 }
 .contact-wrapper .full-director-message .image img {
-  width: 314px;
-  height: 314px;
+  width: 30vh;
+  height: 30vh;
   border-radius: 50%;
   background-image: url("../img/director.png");
   background-size: cover;
+}
+.contact-wrapper .full-director-message .image .director-name {
+  color: white;
+  font-family: "sfpro";
+  font-size: 22px;
+  text-align: center;
 }
 .contact-wrapper .full-director-message .long-msg {
   position: absolute;
   top: 23vh;
   height: 60vh;
   width: 55vw;
-  left: 42vw;
+  left: 40vw;
   color: white;
   font-family: "sfpro";
   font-size: 22px;
@@ -90,7 +108,7 @@
   text-align: center;
   width: 30%;
   margin-left: 4vw;
-  font-size: 25px;
+  font-size: 20px;
   transition: 0.5s;
   opacity: 0;
 }
@@ -113,7 +131,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 7vw;
+  margin-bottom: 4vw;
   letter-spacing: 1vw;
   color: white;
   text-align: center;
@@ -122,18 +140,25 @@
 .contact-wrapper .contact-quote .image {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 31vh;
-  margin-bottom: 6vw;
+  height: 40vh;
+  margin-bottom: 1vw;
   transition: 0.5s;
+  flex-direction: column;
 }
 .contact-wrapper .contact-quote .image img {
-  width: 314px;
-  height: 314px;
+  width: 34vh;
+  height: 34vh;
   border-radius: 50%;
   background-image: url("../img/director.png");
   background-size: cover;
+}
+.contact-wrapper .contact-quote .image .director-name {
+  color: white;
+  font-family: "sfpro";
+  font-size: 22px;
+  text-align: center;
 }
 .contact-wrapper .contact-quote .quote-box {
   width: 70%;
@@ -160,6 +185,17 @@
   height: 3.09vw;
   width: 3.09vw;
   cursor: pointer;
+}
+.contact-wrapper .contact-quote .quote-icon {
+  color: white;
+  /* font-family: "sfpro"; */
+  font-size: 200px;
+  text-align: center;
+  letter-spacing: -31px;
+  transform: rotateZ(180deg);
+  margin-bottom: 3px;
+  height: 241px;
+  width: 100%;
 }
 .contact-wrapper .contact-container {
   grid-column-start: col-3;

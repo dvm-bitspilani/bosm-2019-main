@@ -83,7 +83,7 @@ function navigateDirectorMessage(action){
             image[1].style.opacity = 1;
             quoteBox[1].style.opacity = 1;
             longMsg.style.opacity = 1;
-            rightArrow.style.transform = "rotateY(180deg) translateX(9px)";
+            rightArrow.style.transform = "rotateY(180deg) translateX(15px)";
         }, 1000);
     } else {
         heading[1].style.opacity = 0;
