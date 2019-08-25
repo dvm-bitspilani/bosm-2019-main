@@ -196,7 +196,7 @@ $sfpro: "sfpro";
         .right-arrow {
             position: absolute;
             bottom: 50vh;
-            left: calc(-2.545vw);
+            left: calc(-2.55vw);
             grid-column-start: col-2;
             grid-column-end: col-3;
             grid-row-start: row-1;
@@ -204,8 +204,8 @@ $sfpro: "sfpro";
             z-index: 2;
             transition: 0.5s;
             img {
-                height: 3.09vw;
-                width: 3.09vw;
+                height: 5.09vw;
+                width: 2.59vw;
                 cursor: pointer;
             }
         }
@@ -390,8 +390,8 @@ $sfpro: "sfpro";
             z-index: 2;
             transition: 0.5s;
             img {
-                height: 3.09vw;
-                width: 3.09vw;
+                height: 5.09vw;
+                width: 2.59vw;
                 cursor: pointer;
             }
         }

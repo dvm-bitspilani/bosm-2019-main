@@ -173,7 +173,7 @@
 .contact-wrapper .contact-quote .right-arrow {
   position: absolute;
   bottom: 50vh;
-  left: calc(-2.545vw);
+  left: calc(-2.55vw);
   grid-column-start: col-2;
   grid-column-end: col-3;
   grid-row-start: row-1;
@@ -182,8 +182,8 @@
   transition: 0.5s;
 }
 .contact-wrapper .contact-quote .right-arrow img {
-  height: 3.09vw;
-  width: 3.09vw;
+  height: 5.09vw;
+  width: 2.59vw;
   cursor: pointer;
 }
 .contact-wrapper .contact-quote .quote-icon {
@@ -386,8 +386,8 @@
   transition: 0.5s;
 }
 .contact-wrapper .contact-container .arrow img {
-  height: 3.09vw;
-  width: 3.09vw;
+  height: 5.09vw;
+  width: 2.59vw;
   cursor: pointer;
 }
 .contact-wrapper .instructions {
