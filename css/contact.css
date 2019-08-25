@@ -278,6 +278,12 @@
     letter-spacing: 1.5px;
   }
 }
+@media screen and (max-width: 600px) {
+  .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-heading {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+}
 .contact-wrapper .contact-container .cards-container .contacts-set .cards img {
   width: 175px;
   height: 175px;
@@ -302,6 +308,7 @@
 .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-name {
   height: 35px;
   font-size: 21px;
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-name {
@@ -309,22 +316,39 @@
     height: auto;
   }
 }
+@media screen and (max-width: 325px) {
+  .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-name {
+    font-size: 10px;
+  }
+}
 .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-number {
   color: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-number {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 325px) {
+  .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-number {
+    font-size: 10px;
+  }
+}
 .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-id {
   font-size: 15px;
   height: 30px;
   color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 @media screen and (max-width: 600px) {
   .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-id {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .contact-wrapper .contact-container .cards-container .contacts-set .cards .card-id {
+    font-size: 10px;
   }
 }
 .contact-wrapper .contact-container .contacts-nav-dots {
@@ -417,15 +441,18 @@
     width: 98%;
     height: 2vw;
     font-size: 2rem;
-    margin-bottom: 14vh;
+    margin-bottom: 5vh;
     text-align: center;
   }
   .contact-wrapper .contact-quote .image {
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
   }
   .contact-wrapper .contact-quote .image img {
-    width: 38.2vh;
-    height: 38.2vh;
+    width: 33.2vh;
+    height: 33.2vh;
+  }
+  .contact-wrapper .contact-quote .quote-box {
+    font-size: 16px;
   }
   .contact-wrapper .contact-quote .full-director-message {
     display: none;
@@ -455,15 +482,18 @@
   .contact-wrapper .contact-container .cards-container .cards .card-name {
     height: 23px;
     font-size: 14px;
+    text-align: center;
   }
   .contact-wrapper .contact-container .cards-container .cards .card-number {
     color: rgba(255, 255, 255, 0.5);
     font-size: 7px;
+    text-align: center;
   }
   .contact-wrapper .contact-container .cards-container .cards .card-id {
     font-size: 7px;
     height: 30px;
     color: rgba(255, 255, 255, 0.6);
+    text-align: center;
   }
   .contact-wrapper .contact-container .arrow {
     display: none;

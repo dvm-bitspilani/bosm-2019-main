@@ -290,6 +290,10 @@ $sfpro: "sfpro";
                             font-size: 14px;
                             letter-spacing: 1.5px;
                         }
+                        @media screen and (max-width: 600px) {
+                            font-size: 10px;
+                            letter-spacing: 1.5px;
+                        }
                     }
                     img {
                         // width: 12.9vw;
@@ -316,15 +320,23 @@ $sfpro: "sfpro";
                         // font-size: 1.52vw;
                         height: 35px;
                         font-size: 21px;
+                        text-align: center;
                         @media screen and (max-width: 600px) {
                             font-size: 14px;
                             height: auto;
                         }
+                        @media screen and (max-width: 325px) {
+                            font-size: 10px;
+                        }
                     }
                     .card-number {
                         color: rgba(255, 255, 255, 0.5);
+                        text-align: center;
                         @media screen and (max-width: 600px) {
                             font-size: 12px;
+                        }
+                        @media screen and (max-width: 325px) {
+                            font-size: 10px;
                         }
                     }
                     .card-id {
@@ -334,8 +346,12 @@ $sfpro: "sfpro";
                         font-size: 15px;
                         height: 30px;
                         color: rgba(255, 255, 255, 0.6);
+                        text-align: center;
                         @media screen and (max-width: 600px) {
                             font-size: 12px;
+                        }
+                        @media screen and (max-width: 325px) {
+                            font-size: 10px;
                         }
                     }
                 }
@@ -430,15 +446,18 @@ $sfpro: "sfpro";
                 width: 98%;
                 height: 2vw;
                 font-size: 2rem;
-                margin-bottom: 14vh;
+                margin-bottom: 5vh;
                 text-align: center;
             }
             .image {
-                margin-bottom: 10vh;
+                margin-bottom: 2vh;
                 img {
-                    width: 38.2vh;
-                    height: 38.2vh;
+                    width: 33.2vh;
+                    height: 33.2vh;
                 }
+            }
+            .quote-box{
+                font-size: 16px;
             }
             .full-director-message{
                 display: none;
@@ -472,10 +491,12 @@ $sfpro: "sfpro";
                     .card-name {
                         height: 23px;
                         font-size: 14px;
+                        text-align: center;
                     }
                     .card-number {
                         color: rgba(255, 255, 255, 0.5);
                         font-size: 7px;
+                        text-align: center;
                     }
                     .card-id {
                         // width: 100%;
@@ -484,6 +505,7 @@ $sfpro: "sfpro";
                         font-size: 7px;
                         height: 30px;
                         color: rgba(255, 255, 255, 0.6);
+                        text-align: center;
                     }
                 }
             }
