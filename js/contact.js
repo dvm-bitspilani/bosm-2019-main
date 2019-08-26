@@ -75,10 +75,6 @@ function navigateDirectorMessage(action){
         }, 100);
 
         setTimeout(() => {
-            // h2.style.opacity = 0;
-        }, 800);
-
-        setTimeout(() => {
             heading[1].style.opacity = 1;
             image[1].style.opacity = 1;
             quoteBox[1].style.opacity = 1;
@@ -142,3 +138,28 @@ const navigatecontact = (dotIndex) => {
     // clearInterval(contactSetChangeInterval);
     // contactSetChangeInterval = setInterval(changecontactSet, 5000);
 }
+
+function fullmsg(){
+var container = document.getElementsByClassName('contact-main-container')[0];
+var fullMsg = document.getElementsByClassName('full-director-message')[0];
+var heading = document.querySelectorAll('.contact-quote-heading');
+var image = document.querySelectorAll('.image');
+var quoteBox = document.querySelectorAll('.quote-box');
+var longMsg = document.getElementsByClassName('long-msg')[0];
+  if(window.innerWidth < 600){
+    heading[1].style.opacity = 1;
+    image[1].style.opacity = 1;
+    quoteBox[1].style.opacity = 1;
+    longMsg.style.opacity = 1;
+    container.style.transform = "translate(0vw)";   
+    fullMsg.style.opacity = 1;
+    fullMsg.style.left=0;
+  }
+}
+    
+window.addEventListener("resize",()=>{
+    fullmsg();
+});
+
+fullmsg();
+
