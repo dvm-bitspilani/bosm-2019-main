@@ -1,3 +1,5 @@
+// import { read } from "fs";
+
 var arrow = document.getElementsByClassName('arrow')[0];
 var isOpen = false;
 var instructions = document.getElementsByClassName('instructions')[0];
@@ -140,26 +142,57 @@ const navigatecontact = (dotIndex) => {
 }
 
 function fullmsg(){
-var container = document.getElementsByClassName('contact-main-container')[0];
-var fullMsg = document.getElementsByClassName('full-director-message')[0];
-var heading = document.querySelectorAll('.contact-quote-heading');
-var image = document.querySelectorAll('.image');
-var quoteBox = document.querySelectorAll('.quote-box');
-var longMsg = document.getElementsByClassName('long-msg')[0];
-  if(window.innerWidth < 600){
-    heading[1].style.opacity = 1;
-    image[1].style.opacity = 1;
-    quoteBox[1].style.opacity = 1;
-    longMsg.style.opacity = 1;
-    container.style.transform = "translate(0vw)";   
-    fullMsg.style.opacity = 1;
-    fullMsg.style.left=0;
-  }
-}
+    var container = document.getElementsByClassName('contact-main-container')[0];
+    var fullMsg = document.getElementsByClassName('full-director-message')[0];
+    var heading = document.querySelectorAll('.contact-quote-heading');
+    var image = document.querySelectorAll('.image');
+    var quoteBox = document.querySelectorAll('.quote-box');
+    var longMsg = document.getElementsByClassName('long-msg')[0];
+        // if(window.innerWidth <600){
+        //     contact.style.transform = "0vw";
+        // }else{
+        //     contact.style.transform = "-50vw";
+        // }
+        // fullMsg.style.zIndex = "0";
+    if(window.innerWidth < 600){
+    if(isDirectorMsgOpen){
+        heading[1].style.opacity = 1;
+        image[1].style.opacity = 1;
+        quoteBox[1].style.opacity = 1;
+        longMsg.style.opacity = 1;
+        fullMsg.style.opacity = 1;
+        fullMsg.style.left="-100vw";
+        container.style.transform = "translateX(100vw)";
+        console.log(container);
+    }else{
+        heading[1].style.opacity = 0;
+        image[1].style.opacity = 0;
+        quoteBox[1].style.opacity = 0;
+        longMsg.style.opacity = 0;
+        fullMsg.style.left="-100vw";
+        container.style.transform = "translateX(0vw)";  
+        setTimeout(()=>{
+            fullMsg.style.opacity = 0;
+        },500);
+    }
+    }
+}   
     
 window.addEventListener("resize",()=>{
     fullmsg();
 });
 
-fullmsg();
+var readMore = document.querySelectorAll(".read-more")[0];
+var back = document.querySelector(".back");
 
+readMore.addEventListener("click",()=>{
+console.log(readMore);
+    isDirectorMsgOpen = true;
+    fullmsg();
+});
+
+back.addEventListener("click",()=>{
+console.log(readMore);
+    isDirectorMsgOpen = false;
+    fullmsg();
+});

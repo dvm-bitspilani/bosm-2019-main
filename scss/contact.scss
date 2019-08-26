@@ -44,6 +44,8 @@ $sfpro: "sfpro";
         background-size: cover;
         opacity: 0;
         transition: 1s; 
+        z-index: 1;
+        transition: 1s;
         .quote-icon{
             color: white;
             /* font-family: "sfpro"; */
@@ -132,7 +134,7 @@ $sfpro: "sfpro";
             transition:0.5s;
             opacity: 0;
         }
-        .read-more{
+        .back{
             display: none;
         }
     }
@@ -223,6 +225,9 @@ $sfpro: "sfpro";
             width: 100%;
         }
         
+        .read-more{
+            display:none;
+        }
     }
     .contact-container {
         grid-column-start: col-3;
@@ -461,6 +466,23 @@ $sfpro: "sfpro";
             .quote-box{
                 font-size: 16px;
             }
+            .quote-icon{
+                display: none;
+            }
+            .read-more{
+                display: block;
+                margin: 0 auto;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 3vh;
+                color: #7ac8ff;
+                background: white;
+                width: fit-content;
+                font-family: sfpro;
+                font-size: 15px;
+                border-radius: 11px;
+                padding: 3px 11px;
+            }
         }
 
         .full-director-message{
@@ -482,12 +504,12 @@ $sfpro: "sfpro";
                 width: 85vw;
                 font-size: 15px;
             }
-            .read-more{
+            .back{
             display: block;
             margin: 0 auto;
             margin: 0 auto;
             text-align: center;
-            margin-top: 3vh;
+            margin-top: 6vh;
             color: #7ac8ff;
             background: white;
             width: fit-content;

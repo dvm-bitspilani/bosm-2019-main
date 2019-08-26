@@ -32,6 +32,8 @@
   background-size: cover;
   opacity: 0;
   transition: 1s;
+  z-index: 1;
+  transition: 1s;
 }
 .contact-wrapper .full-director-message .quote-icon {
   color: white;
@@ -112,7 +114,7 @@
   transition: 0.5s;
   opacity: 0;
 }
-.contact-wrapper .full-director-message .read-more {
+.contact-wrapper .full-director-message .back {
   display: none;
 }
 .contact-wrapper .contact-quote {
@@ -199,6 +201,9 @@
   margin-bottom: 3px;
   height: 241px;
   width: 100%;
+}
+.contact-wrapper .contact-quote .read-more {
+  display: none;
 }
 .contact-wrapper .contact-container {
   grid-column-start: col-3;
@@ -457,6 +462,23 @@
   .contact-wrapper .contact-quote .quote-box {
     font-size: 16px;
   }
+  .contact-wrapper .contact-quote .quote-icon {
+    display: none;
+  }
+  .contact-wrapper .contact-quote .read-more {
+    display: block;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3vh;
+    color: #7ac8ff;
+    background: white;
+    width: fit-content;
+    font-family: sfpro;
+    font-size: 15px;
+    border-radius: 11px;
+    padding: 3px 11px;
+  }
   .contact-wrapper .full-director-message .contact-quote-heading {
     font-size: 1.5em;
     margin-top: 8vh;
@@ -474,12 +496,12 @@
     width: 85vw;
     font-size: 15px;
   }
-  .contact-wrapper .full-director-message .read-more {
+  .contact-wrapper .full-director-message .back {
     display: block;
     margin: 0 auto;
     margin: 0 auto;
     text-align: center;
-    margin-top: 3vh;
+    margin-top: 6vh;
     color: #7ac8ff;
     background: white;
     width: fit-content;
