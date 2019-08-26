@@ -161,13 +161,16 @@ function fullmsg(){
         quoteBox[1].style.opacity = 1;
         longMsg.style.opacity = 1;
         fullMsg.style.opacity = 1;
-        fullMsg.style.left="-100vw";
-        container.style.transform = "translateX(100vw)";
+        fullMsg.style.left="0vw";
+        container.style.transform = "translateX(0vw)";
         console.log(container);
     }else{
         heading[1].style.opacity = 0;
         image[1].style.opacity = 0;
         quoteBox[1].style.opacity = 0;
+        heading[0].style.opacity = 1;
+        image[0].style.opacity = 1;
+        quoteBox[0].style.opacity = 1;
         longMsg.style.opacity = 0;
         fullMsg.style.left="-100vw";
         container.style.transform = "translateX(0vw)";  
@@ -175,6 +178,15 @@ function fullmsg(){
             fullMsg.style.opacity = 0;
         },500);
     }
+    }
+    else{
+        fullMsg.style.left="-50vw";
+        if(isDirectorMsgOpen){
+            container.style.transform = "translateX(50vw)";
+        }else{
+            container.style.transform = "translateX(0vw)";
+        }
+
     }
 }   
     
@@ -189,10 +201,35 @@ readMore.addEventListener("click",()=>{
 console.log(readMore);
     isDirectorMsgOpen = true;
     fullmsg();
+    // disableScroll();
+    
 });
 
 back.addEventListener("click",()=>{
 console.log(readMore);
     isDirectorMsgOpen = false;
     fullmsg();
+    // enableScroll();/
 });
+
+function preventDefault(e){
+    // e.preventDefault();
+}
+
+// function disableScroll(){
+//     document.body.addEventListener('touchmove', preventDefault, { passive: false });
+// }
+// function enableScroll(){
+//     document.body.removeEventListener('touchmove', preventDefault, { passive: false });
+// }
+// function disable_scroll() {
+//     document.ontouchmove = function(e){ 
+//          e.preventDefault(); 
+//     }
+//  }
+ 
+//  function enable_scroll() {
+//     document.ontouchmove = function(e){ 
+//       return true; 
+//     }
+//  }
