@@ -206,8 +206,10 @@ const changeEventSet = () => {
 }
 
 const navigateEvent = (dotIndex) => {
-    setNumber = dotIndex - 1;
-    changeEventSet();
-    clearInterval(eventSetChangeInterval);
-    eventSetChangeInterval = setInterval(changeEventSet, 5000);
+    if (setNumber != dotIndex) {
+        setNumber = dotIndex - 1;
+        changeEventSet();
+        clearInterval(eventSetChangeInterval);
+        eventSetChangeInterval = setInterval(changeEventSet, 5000);
+    }
 }
