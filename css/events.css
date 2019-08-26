@@ -73,6 +73,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media screen and (max-width: 600px) {
+      .events-wrapper .events-index {
+        padding-top: 2.5vh; } }
     .events-wrapper .events-index .events-title {
       font-family: "FuturaPT";
       letter-spacing: 20px;
@@ -166,7 +169,7 @@
               width: 100%;
               padding: 0 6%;
               border-radius: 5%;
-              background-size: 100% 100%; }
+              background-size: cover; }
 
 .events-msg {
   font-family: "SFPro";
