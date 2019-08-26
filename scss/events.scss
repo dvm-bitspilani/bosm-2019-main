@@ -80,6 +80,9 @@ $SFPro: "SFPro";
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media screen and (max-width: 600px) {
+            padding-top: 2.5vh;
+        }
         .events-title {
             font-family: $FuturaPT;
             letter-spacing: 20px;
