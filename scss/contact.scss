@@ -40,7 +40,7 @@ $sfpro: "sfpro";
         position: absolute;
         top: 0;
         left: -50vw;
-        background: url('../img/clocktower.png');
+        background: url('../img/clocktower-desktop.png');
         background-size: cover;
         opacity: 0;
         transition: 1s; 
@@ -460,7 +460,7 @@ $sfpro: "sfpro";
                 font-size: 16px;
             }
             .full-director-message{
-                display: none;
+                // display: none;
             }
         }
         .contact-container {
