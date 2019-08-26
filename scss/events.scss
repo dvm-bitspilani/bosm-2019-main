@@ -218,10 +218,5 @@ $SFPro: "SFPro";
         &:nth-of-type(1) {
             background: #ffffff;
         }
-        @media screen and (max-width: 600px) {
-            width: 7px;
-            height: 7px;
-            border: 2px solid #ffffff;
-        }
     }
 }
