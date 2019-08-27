@@ -149,7 +149,7 @@ $sfpro: "sfpro";
             position: absolute;
             left: 45vw;
             top: 64vh;
-            @media screen and (min-height: 780px){
+            @media screen and (min-height: 780px) and (min-width: 1600px){
                 top: 56vh;
             }
         }
@@ -553,6 +553,18 @@ $sfpro: "sfpro";
             font-size: 15px;
             border-radius: 11px;
             padding: 3px 11px;
+            }
+            .quote-icon.start{
+                left: -42.5vw;
+                top: 21.5vh;
+                letter-spacing: -1.95vh;
+                font-size: 12vh;
+            }
+            .quote-icon.end{
+                left: 44vw;
+                top: 77vh;
+                letter-spacing: -1.95vh;
+                font-size: 12vh;
             }
         }
 
