@@ -63,12 +63,14 @@ function navigateDirectorMessage(action){
     var image = document.querySelectorAll('.image');
     var quoteBox = document.querySelectorAll('.quote-box');
     var longMsg = document.getElementsByClassName('long-msg')[0];
-    console.log(heading,image,quoteBox);
+    var quoteIconOne = document.getElementsByClassName('start')[0];
+    var quoteIconSecond = document.getElementsByClassName('end')[0];    
     if (action) {
         heading[0].style.opacity = 0;
         image[0].style.opacity = 0;
         quoteBox[0].style.opacity = 0;
-
+        quoteIconSecond.style.opacity = 0;
+        quoteIconOne.style.opacity = 0;
         setTimeout(() => {
             container.style.transform = "translate(50vw)";            
         }, 150);
@@ -81,6 +83,8 @@ function navigateDirectorMessage(action){
             image[1].style.opacity = 1;
             quoteBox[1].style.opacity = 1;
             longMsg.style.opacity = 1;
+            quoteIconSecond.style.opacity = 1;
+            quoteIconOne.style.opacity = 1;
             rightArrow.style.transform = "rotateY(180deg) translateX(15px)";
         }, 1000);
     } else {
@@ -88,6 +92,8 @@ function navigateDirectorMessage(action){
         image[1].style.opacity = 0;
         quoteBox[1].style.opacity = 0;
         longMsg.style.opacity = 0;
+        quoteIconSecond.style.opacity = 0;
+        quoteIconOne.style.opacity = 0;
         setTimeout(()=>{
             container.style.transform = "translate(0vw)";
         },100);
@@ -148,12 +154,8 @@ function fullmsg(){
     var image = document.querySelectorAll('.image');
     var quoteBox = document.querySelectorAll('.quote-box');
     var longMsg = document.getElementsByClassName('long-msg')[0];
-        // if(window.innerWidth <600){
-        //     contact.style.transform = "0vw";
-        // }else{
-        //     contact.style.transform = "-50vw";
-        // }
-        // fullMsg.style.zIndex = "0";
+    var quoteIconOne = document.getElementsByClassName('start')[0];
+    var quoteIconSecond = document.getElementsByClassName('end')[0]; 
     if(window.innerWidth < 600){
     if(isDirectorMsgOpen){
         heading[1].style.opacity = 1;
@@ -162,12 +164,15 @@ function fullmsg(){
         longMsg.style.opacity = 1;
         fullMsg.style.opacity = 1;
         fullMsg.style.left="0vw";
+        quoteIconSecond.style.opacity = 1;
+        quoteIconOne.style.opacity = 1;
         container.style.transform = "translateX(0vw)";
-        console.log(container);
     }else{
         heading[1].style.opacity = 0;
         image[1].style.opacity = 0;
         quoteBox[1].style.opacity = 0;
+        quoteIconSecond.style.opacity = 0;
+        quoteIconOne.style.opacity = 0;
         heading[0].style.opacity = 1;
         image[0].style.opacity = 1;
         quoteBox[0].style.opacity = 1;
