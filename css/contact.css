@@ -416,6 +416,8 @@
   transition: 0.25s;
   margin-left: 4vw;
   margin-bottom: 4vh;
+  width: 50vw;
+  text-align: center;
 }
 .contact-wrapper .instructions div {
   color: #ffffff;
@@ -426,6 +428,8 @@
   transition: 0.25s;
   margin-left: 4vw;
   margin-top: 4vh;
+  width: 50vw;
+  text-align: center;
 }
 
 @media all and (max-width: 600px) {
