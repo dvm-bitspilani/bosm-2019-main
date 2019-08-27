@@ -101,6 +101,40 @@
   transition: 0.5s;
   opacity: 0;
 }
+.contact-wrapper .full-director-message .quote-icon.start {
+  color: white;
+  /* font-family: "sfpro"; */
+  font-size: 21vh;
+  text-align: center;
+  letter-spacing: -2.95vh;
+  margin-bottom: 3px;
+  height: 10px;
+  width: 100%;
+  font-family: sans-serif;
+  position: absolute;
+  left: -12vw;
+  top: 40vh;
+  transform: rotateZ(180deg);
+}
+.contact-wrapper .full-director-message .quote-icon.end {
+  color: white;
+  /* font-family: "sfpro"; */
+  font-size: 21vh;
+  text-align: center;
+  letter-spacing: -2.95vh;
+  margin-bottom: 3px;
+  height: 10px;
+  width: 100%;
+  font-family: sans-serif;
+  position: absolute;
+  left: 45vw;
+  top: 64vh;
+}
+@media screen and (min-height: 780px) {
+  .contact-wrapper .full-director-message .quote-icon.end {
+    top: 56vh;
+  }
+}
 .contact-wrapper .full-director-message .quote-box {
   margin: 0 auto;
   font-family: "sfpro";
