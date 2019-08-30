@@ -221,20 +221,56 @@ function preventDefault(e){
     // e.preventDefault();
 }
 
-// function disableScroll(){
-//     document.body.addEventListener('touchmove', preventDefault, { passive: false });
-// }
-// function enableScroll(){
-//     document.body.removeEventListener('touchmove', preventDefault, { passive: false });
-// }
-// function disable_scroll() {
-//     document.ontouchmove = function(e){ 
-//          e.preventDefault(); 
-//     }
-//  }
- 
-//  function enable_scroll() {
-//     document.ontouchmove = function(e){ 
-//       return true; 
-//     }
-//  }
+let initialXContact = null;
+let initialYContact = null;
+
+function startTouchContact(e) {
+    initialXContact = e.touches[0].clientX;
+    initialYContact = e.touches[0].clientY;
+};
+
+function moveTouchContact(e) {
+
+    if (initialXContact === null) {
+        return;
+    }
+
+    if (initialYContact === null) {
+        return;
+    }
+
+    let currentX = e.touches[0].clientX;
+    let currentY = e.touches[0].clientY;
+
+    let diffX = initialXContact - currentX;
+    let diffY = initialYContact - currentY;
+
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+        // sliding horizontally
+        if (diffX > 0) {
+            contactNumber -= 1;
+            if(contactNumber < 1){
+              contactNumber = 1;
+            }
+            changecontactSet();
+            navigatecontact(contactNumber);
+        } else {
+            // swiped right
+            contactNumber += 1;
+            if((numberOfContactSet) < contactNumber){
+              contactNumber = 2;
+            }
+            changecontactSet();
+            navigatecontact(contactNumber);
+        }
+    }
+    initialXContact = null;
+    initialYContact = null;
+
+    e.preventDefault();
+
+};
+
+
+document.getElementsByClassName("cards-container")[0].addEventListener("touchstart", startTouchContact, false);
+document.getElementsByClassName("cards-container")[0].addEventListener("touchmove", moveTouchContact, false);

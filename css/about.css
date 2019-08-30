@@ -13,7 +13,7 @@
   position: relative; }
   @media (max-width: 500px) {
     .about-div {
-      height: 150vh; } }
+      height: 170vh; } }
   .about-div .circle {
     width: 500px;
     height: 500px;
@@ -86,7 +86,7 @@
       @media (max-width: 500px) {
         .about-div .about-content .slider-div {
           width: 100%;
-          height: 50vh;
+          height: 70vh;
           justify-content: space-around; } }
       .about-div .about-content .slider-div .heading {
         font-family: futbold;
@@ -107,7 +107,7 @@
         @media (max-width: 500px) {
           .about-div .about-content .slider-div .img-div {
             width: 90%;
-            height: 45%; } }
+            height: 40%; } }
         @media (max-width: 400px) {
           .about-div .about-content .slider-div .img-div {
             height: 50%; } }
@@ -212,7 +212,7 @@
         padding: 8px; }
         @media (max-width: 500px) {
           .about-div .about-content .slider-div .tweet-div {
-            height: 35%;
+            height: 25%;
             width: 90%; } }
         .about-div .about-content .slider-div .tweet-div .tweet-text {
           position: absolute;
