@@ -68,7 +68,7 @@ body {
 
 .developers {
   display: grid;
-  width: 80%;
+  width: 90%;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 440px 440px 440px;
   margin: 0 auto; }
@@ -78,7 +78,11 @@ body {
   height: 350px;
   width: 340px;
   position: relative;
-  margin-bottom: 40px; }
+  margin: 16px; }
+  @media screen and (max-width: 1100px) and (min-width: 600px) {
+    .developer {
+      height: 320px;
+      width: 275px; } }
   .developer .dev-image {
     height: 200px;
     width: 200px;
@@ -93,12 +97,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     z-index: 5; }
+    @media screen and (max-width: 1100px) and (min-width: 600px) {
+      .developer .dev-image {
+        height: 170px;
+        width: 170px; } }
   .developer:nth-of-type(4) .dev-image {
     background-image: url("../img/developers/mukul.jpeg"); }
   .developer:nth-of-type(6) .dev-image {
     background-image: url("../img/developers/chirag.jpeg"); }
   .developer:nth-of-type(1) .dev-image {
     background-image: url("../img/developers/Devansh.jpg"); }
+  .developer:nth-of-type(7) .dev-image {
+    background-image: url("../img/developers/manikya.jpg"); }
   .developer .dev-info {
     position: absolute;
     left: 0;
