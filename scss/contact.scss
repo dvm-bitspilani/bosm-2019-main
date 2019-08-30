@@ -40,17 +40,18 @@ $sfpro: "sfpro";
         position: absolute;
         top: 0;
         left: -50vw;
-        background: url('../img/clocktower.png');
+        background: url('../img/clocktower-desktop.png');
         background-size: cover;
         opacity: 0;
         transition: 1s; 
+        z-index: 1;
+        transition: 1s;
         .quote-icon{
             color: white;
             /* font-family: "sfpro"; */
             font-size: 200px;
             text-align: center;
             letter-spacing: -31px;
-            transform: rotateZ(180deg);
             margin-bottom: 3px;
             height: 241px;
             width: 100%;
@@ -120,6 +121,39 @@ $sfpro: "sfpro";
             opacity: 0;
         }
 
+        .quote-icon.start{
+            color: white;
+            /* font-family: "sfpro"; */
+            font-size: 21vh;
+            text-align: center;
+            letter-spacing: -2.95vh;
+            margin-bottom: 3px;
+            height: 10px;
+            width: 100%;
+            font-family: sans-serif;
+            position: absolute;
+            left: -12vw;
+            top: 40vh;
+            transform: rotateZ(180deg);
+        }
+        .quote-icon.end{
+            color: white;
+            /* font-family: "sfpro"; */
+            font-size: 21vh;
+            text-align: center;
+            letter-spacing: -2.95vh;
+            margin-bottom: 3px;
+            height: 10px;
+            width: 100%;
+            font-family: sans-serif;
+            position: absolute;
+            left: 45vw;
+            top: 64vh;
+            @media screen and (min-height: 780px) and (min-width: 1600px){
+                top: 56vh;
+            }
+        }
+
         .quote-box{
             margin: 0 auto;
             font-family: "sfpro";
@@ -132,7 +166,9 @@ $sfpro: "sfpro";
             transition:0.5s;
             opacity: 0;
         }
-
+        .back{
+            display: none;
+        }
     }
     .contact-quote {
         grid-column-start: col-1;
@@ -221,13 +257,16 @@ $sfpro: "sfpro";
             width: 100%;
         }
         
+        .read-more{
+            display:none;
+        }
     }
     .contact-container {
         grid-column-start: col-3;
         grid-column-end: end;
         grid-row-start: row-1;
         grid-row-end: end;
-        background-color: #272c52;
+        background-color: #0061a6;
         .meetTeam {
             display: none;
             @media screen and (max-width: 600px) {
@@ -413,6 +452,8 @@ $sfpro: "sfpro";
             transition: 0.25s;
             margin-left: 4vw;
             margin-bottom: 4vh;
+            width: 50vw;
+            text-align: center;
         }
         div {
             color: #ffffff;
@@ -423,6 +464,8 @@ $sfpro: "sfpro";
             transition: 0.25s;
             margin-left: 4vw;
             margin-top: 4vh;
+            width: 50vw;
+            text-align: center;
         }
     }
 }
@@ -459,16 +502,77 @@ $sfpro: "sfpro";
             .quote-box{
                 font-size: 16px;
             }
-            .full-director-message{
+            .quote-icon{
                 display: none;
             }
+            .read-more{
+                display: block;
+                margin: 0 auto;
+                margin: 0 auto;
+                text-align: center;
+                margin-top: 3vh;
+                color: #7ac8ff;
+                background: white;
+                width: fit-content;
+                font-family: sfpro;
+                font-size: 15px;
+                border-radius: 11px;
+                padding: 3px 11px;
+            }
         }
+
+        .full-director-message{
+            // display: none;
+            .contact-quote-heading {
+                font-size: 1.5em;
+                margin-top: 8vh;
+            }
+            .image{ 
+                display: none;
+            }
+            .quote-box{
+                display: none;
+            }
+            .long-msg{
+                position: unset;
+                margin: 0 auto;
+                height: 74vh;
+                width: 85vw;
+                font-size: 15px;
+            }
+            .back{
+            display: block;
+            margin: 0 auto;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 6vh;
+            color: #7ac8ff;
+            background: white;
+            width: fit-content;
+            font-family: sfpro;
+            font-size: 15px;
+            border-radius: 11px;
+            padding: 3px 11px;
+            }
+            .quote-icon.start{
+                left: -42.5vw;
+                top: 21.5vh;
+                letter-spacing: -1.95vh;
+                font-size: 12vh;
+            }
+            .quote-icon.end{
+                left: 44vw;
+                top: 77vh;
+                letter-spacing: -1.95vh;
+                font-size: 12vh;
+            }
+        }
+
         .contact-container {
             grid-column-start: col-1;
             grid-column-end: end;
             grid-row-start: row-2;
             grid-row-end: end;
-            background-color: #7ac8ff;
             overflow: hidden;
             .cards-container {
                 .cards {

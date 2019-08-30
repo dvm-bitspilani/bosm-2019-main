@@ -14,7 +14,7 @@
     background: transparent linear-gradient(181deg, #2A14EA 0%, #288AFF 100%) 0% 0% no-repeat padding-box;
     position: relative;
     @media(max-width: 500px) {
-        height: 150vh;
+        height: 170vh;
     }
     .circle {
         width: 500px;
@@ -95,7 +95,7 @@
             flex-flow: column;
             @media (max-width: 500px) {
                 width: 100%;
-                height: 50vh;
+                height: 70vh;
                 justify-content: space-around;
             }
             .heading {
@@ -117,7 +117,7 @@
                 overflow-x: hidden;
                 @media(max-width: 500px) {
                     width: 90%;
-                    height: 45%;
+                    height: 40%;
                 }
                 @media(max-width:400px) {
                     height: 50%;
@@ -235,7 +235,7 @@
                 overflow-x: hidden;
                 padding: 8px;
                 @media(max-width: 500px) {
-                    height: 35%;
+                    height: 25%;
                     width: 90%;
                 }
                 .tweet-text {
