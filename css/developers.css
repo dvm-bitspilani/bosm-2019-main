@@ -17,8 +17,9 @@ body {
 .devs-wrapper {
   display: none;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   margin: 0;
+  overflow-x: hidden;
   overflow-y: scroll;
   background: transparent linear-gradient(180deg, #288aff 0%, #72b2ff 100%) 0% 0% no-repeat padding-box;
   position: absolute;
@@ -166,6 +167,11 @@ body {
   top: 40%;
   background: url("../img/Ellipse.png") no-repeat center center/cover;
   animation: rotate 55s ease infinite; }
+  @media screen and (max-width: 600px) {
+    .ellipse-1-dev {
+      width: 250px;
+      height: 250px;
+      left: 20%; } }
 
 @keyframes rotate {
   from {
@@ -189,7 +195,7 @@ body {
   .developers {
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 370px 370px 370px 370px 370px 370px 370px 370px 370px; }
+    grid-template-rows: 370px 370px 370px 370px 370px 370px 370px 370px; }
   .developer {
     height: 315px;
     margin-bottom: 20px; }
