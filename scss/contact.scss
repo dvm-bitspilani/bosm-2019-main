@@ -266,7 +266,7 @@ $sfpro: "sfpro";
         grid-column-end: end;
         grid-row-start: row-1;
         grid-row-end: end;
-        background-color: #272c52;
+        background-color: #0061a6;
         .meetTeam {
             display: none;
             @media screen and (max-width: 600px) {
@@ -573,7 +573,6 @@ $sfpro: "sfpro";
             grid-column-end: end;
             grid-row-start: row-2;
             grid-row-end: end;
-            background-color: #7ac8ff;
             overflow: hidden;
             .cards-container {
                 .cards {
