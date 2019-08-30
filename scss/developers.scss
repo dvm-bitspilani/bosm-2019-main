@@ -117,6 +117,11 @@ body {
             width: 170px;
         }
     }
+    &:nth-of-type(1) {
+        .dev-image {
+            background-image: url("../img/developers/Devansh.jpg");
+        }
+    }
     &:nth-of-type(4) {
         .dev-image {
             background-image: url("../img/developers/mukul.jpeg");
@@ -127,14 +132,14 @@ body {
             background-image: url("../img/developers/chirag.jpeg");
         }
     }
-    &:nth-of-type(1) {
-        .dev-image {
-            background-image: url("../img/developers/Devansh.jpg");
-        }
-    }
     &:nth-of-type(7) {
         .dev-image {
             background-image: url("../img/developers/manikya.jpg");
+        }
+    }
+    &:nth-of-type(8) {
+        .dev-image {
+            background-image: url("../img/developers/mohul.jpg");
         }
     }
     .dev-info {
