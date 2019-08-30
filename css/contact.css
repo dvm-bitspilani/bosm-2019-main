@@ -30,7 +30,7 @@
     background-size: cover;
     opacity: 0;
     transition: 1s;
-    z-index: 1;
+    z-index: -1;
     transition: 1s; }
     .contact-wrapper .full-director-message .quote-icon {
       color: white;
@@ -429,11 +429,12 @@
         margin-top: 3vh;
         color: #7ac8ff;
         background: white;
-        width: fit-content;
+        width: max-content;
         font-family: sfpro;
         font-size: 15px;
         border-radius: 11px;
-        padding: 3px 11px; }
+        padding: 3px 11px;
+        cursor: pointer; }
     .contact-wrapper .full-director-message .contact-quote-heading {
       font-size: 1.5em;
       margin-top: 8vh; }
@@ -455,11 +456,12 @@
       margin-top: 6vh;
       color: #7ac8ff;
       background: white;
-      width: fit-content;
+      width: max-content;
       font-family: sfpro;
       font-size: 15px;
       border-radius: 11px;
-      padding: 3px 11px; }
+      padding: 3px 11px;
+      cursor: pointer; }
     .contact-wrapper .full-director-message .quote-icon.start {
       left: -42.5vw;
       top: 21.5vh;

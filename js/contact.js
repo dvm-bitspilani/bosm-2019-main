@@ -163,7 +163,8 @@ function fullmsg(){
         quoteBox[1].style.opacity = 1;
         longMsg.style.opacity = 1;
         fullMsg.style.opacity = 1;
-        fullMsg.style.left="0vw";
+        fullMsg.style.left = "0vw";
+        fullMsg.style.zIndex = 1;
         quoteIconSecond.style.opacity = 1;
         quoteIconOne.style.opacity = 1;
         container.style.transform = "translateX(0vw)";
@@ -178,6 +179,7 @@ function fullmsg(){
         quoteBox[0].style.opacity = 1;
         longMsg.style.opacity = 0;
         fullMsg.style.left="-100vw";
+        fullMsg.style.zIndex = -1;
         container.style.transform = "translateX(0vw)";  
         setTimeout(()=>{
             fullMsg.style.opacity = 0;
@@ -203,7 +205,6 @@ var readMore = document.querySelectorAll(".read-more")[0];
 var back = document.querySelector(".back");
 
 readMore.addEventListener("click",()=>{
-console.log(readMore);
     isDirectorMsgOpen = true;
     fullmsg();
     // disableScroll();
@@ -211,7 +212,6 @@ console.log(readMore);
 });
 
 back.addEventListener("click",()=>{
-console.log(readMore);
     isDirectorMsgOpen = false;
     fullmsg();
     // enableScroll();/

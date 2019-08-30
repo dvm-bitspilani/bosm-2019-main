@@ -44,7 +44,7 @@ $sfpro: "sfpro";
         background-size: cover;
         opacity: 0;
         transition: 1s; 
-        z-index: 1;
+        z-index: -1;
         transition: 1s;
         .quote-icon{
             color: white;
@@ -513,11 +513,12 @@ $sfpro: "sfpro";
                 margin-top: 3vh;
                 color: #7ac8ff;
                 background: white;
-                width: fit-content;
+                width: max-content;
                 font-family: sfpro;
                 font-size: 15px;
                 border-radius: 11px;
                 padding: 3px 11px;
+                cursor: pointer;
             }
         }
 
@@ -548,11 +549,12 @@ $sfpro: "sfpro";
             margin-top: 6vh;
             color: #7ac8ff;
             background: white;
-            width: fit-content;
+            width: max-content;
             font-family: sfpro;
             font-size: 15px;
             border-radius: 11px;
             padding: 3px 11px;
+            cursor: pointer;
             }
             .quote-icon.start{
                 left: -42.5vw;
