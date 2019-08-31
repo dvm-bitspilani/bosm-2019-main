@@ -30,7 +30,7 @@
     background-size: cover;
     opacity: 0;
     transition: 1s;
-    z-index: -1;
+    z-index: 1;
     transition: 1s; }
     .contact-wrapper .full-director-message .quote-icon {
       color: white;

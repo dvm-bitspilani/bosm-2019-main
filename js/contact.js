@@ -164,7 +164,7 @@ function fullmsg(){
         longMsg.style.opacity = 1;
         fullMsg.style.opacity = 1;
         fullMsg.style.left = "0vw";
-        fullMsg.style.zIndex = 1;
+        // fullMsg.style.zIndex = -1;
         quoteIconSecond.style.opacity = 1;
         quoteIconOne.style.opacity = 1;
         container.style.transform = "translateX(0vw)";
@@ -179,7 +179,7 @@ function fullmsg(){
         quoteBox[0].style.opacity = 1;
         longMsg.style.opacity = 0;
         fullMsg.style.left="-100vw";
-        fullMsg.style.zIndex = -1;
+        // fullMsg.style.zIndex = 1;
         container.style.transform = "translateX(0vw)";  
         setTimeout(()=>{
             fullMsg.style.opacity = 0;
