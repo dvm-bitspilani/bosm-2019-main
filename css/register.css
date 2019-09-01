@@ -152,7 +152,7 @@ body {
         outline: none; }
       .form-div .form-container .input-el .select-wrapper {
         width: 69%;
-        height: 11%;
+        height: 10%;
         border-radius: 5px;
         border: solid 1px #34aafc; }
         .form-div .form-container .input-el .select-wrapper select {
@@ -302,3 +302,21 @@ body {
   @media (max-width: 400px) {
     .dropdown {
       transform: translateX(-20px); } }
+
+.label-text-2 {
+  color: #2699fb;
+  font-family: sfpro;
+  font-size: 1.2rem;
+}
+
+.coach-wrapper {
+  width: 69%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.coach-wrapper > input {
+  box-shadow: 0 0 0 1px #2699fb;
+  margin-right: 16px;
+}
