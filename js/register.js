@@ -7,6 +7,15 @@ var yos_value;
 var gender_value;
 var collegeid;
 var no_of_sports = 0;
+var is_coach = false;
+
+function isCoachCheck() {
+  if (document.getElementById('is_coach').checked === true) {
+    is_coach = true;
+  } else {
+    is_coach = false;
+  }
+}
 
 function getsportsvalue() {
   if (sportsarr.length == 0) {
@@ -186,7 +195,8 @@ function bosmreg() {
       college_id: collegeid,
       city: city,
       state: state,
-      captcha: v
+      captcha: v,
+      is_coach
     };
 
     fetch(" https://bits-bosm.org/registrations/register/", {
