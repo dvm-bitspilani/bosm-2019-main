@@ -19,11 +19,11 @@ const openNav = (ham) => {
         ham.style.position = 'fixed';
     }
     ham.style.transform = "translateX(0)";
-    console.log('open ham');
+    // console.log('open ham');
 }
 const closeNav = (ham, width) => {
     ham.style.transform = "translateX(" + width + ")";
-    console.log('close ham');
+    // console.log('close ham');
 }
 const selected = ['about', 'events', 'gallery', 'contact']
 const navigate = (x) => {

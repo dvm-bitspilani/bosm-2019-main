@@ -17,8 +17,6 @@ var text = [
   "#tweetno.5"
 ];
 
-
-
 function setvalue(i) {
   count = i;
   switch (count) {
@@ -176,7 +174,7 @@ var player;
 var player2;
 var player3;
 function onYouTubePlayerAPIReady() {
-  console.log('script loaded')
+  // console.log('script loaded')
   player = new YT.Player('play1', {
     height: '100%',
     width: '100%',
@@ -207,7 +205,7 @@ function onYouTubePlayerAPIReady() {
 }
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  console.log('ready')
+  // console.log('ready')
 }
 
 // 5. The API calls this function when the player's state changes.
@@ -238,3 +236,5 @@ function stopVideo() {
 Var = setInterval(slideleft, 5000);
 var Var3 = setInterval(slidetweet, 3000);
 // var Var2 = setInterval(tweetchange, 3000);
+
+console.log('%c Made With Love By DVM','color: #bada55;font-size:40px');
