@@ -97,7 +97,7 @@
       /* font-family: "sfpro"; */
       font-size: 21vh;
       text-align: center;
-      letter-spacing: -2.95vw;
+      letter-spacing: -2.95vh;
       margin-bottom: 3px;
       height: 10px;
       width: 100%;
@@ -435,43 +435,45 @@
         border-radius: 11px;
         padding: 3px 11px;
         cursor: pointer; }
-    .contact-wrapper .full-director-message .contact-quote-heading {
-      font-size: 1.5em;
-      margin-top: 8vh; }
-    .contact-wrapper .full-director-message .image {
-      display: none; }
-    .contact-wrapper .full-director-message .quote-box {
-      display: none; }
-    .contact-wrapper .full-director-message .long-msg {
-      position: unset;
-      margin: 0 auto;
-      height: 74vh;
-      width: 85vw;
-      font-size: 15px; }
-    .contact-wrapper .full-director-message .back {
-      display: block;
-      margin: 0 auto;
-      margin: 0 auto;
-      text-align: center;
-      margin-top: 6vh;
-      color: #7ac8ff;
-      background: white;
-      width: max-content;
-      font-family: sfpro;
-      font-size: 15px;
-      border-radius: 11px;
-      padding: 3px 11px;
-      cursor: pointer; }
-    .contact-wrapper .full-director-message .quote-icon.start {
-      left: -42.5vw;
-      top: 21.5vh;
-      letter-spacing: -1.95vh;
-      font-size: 12vh; }
-    .contact-wrapper .full-director-message .quote-icon.end {
-      left: 44vw;
-      top: 77vh;
-      letter-spacing: -1.95vh;
-      font-size: 12vh; }
+    .contact-wrapper .full-director-message {
+      left: -100vw; }
+      .contact-wrapper .full-director-message .contact-quote-heading {
+        font-size: 1.5em;
+        margin-top: 8vh; }
+      .contact-wrapper .full-director-message .image {
+        display: none; }
+      .contact-wrapper .full-director-message .quote-box {
+        display: none; }
+      .contact-wrapper .full-director-message .long-msg {
+        position: unset;
+        margin: 0 auto;
+        height: 74vh;
+        width: 85vw;
+        font-size: 15px; }
+      .contact-wrapper .full-director-message .back {
+        display: block;
+        margin: 0 auto;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 6vh;
+        color: #7ac8ff;
+        background: white;
+        width: max-content;
+        font-family: sfpro;
+        font-size: 15px;
+        border-radius: 11px;
+        padding: 3px 11px;
+        cursor: pointer; }
+      .contact-wrapper .full-director-message .quote-icon.start {
+        left: -42.5vw;
+        top: 21.5vh;
+        letter-spacing: -16px;
+        font-size: 12vh; }
+      .contact-wrapper .full-director-message .quote-icon.end {
+        left: 44vw;
+        top: 77vh;
+        letter-spacing: -16px;
+        font-size: 12vh; }
     .contact-wrapper .contact-container {
       grid-column-start: col-1;
       grid-column-end: end;

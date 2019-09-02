@@ -126,7 +126,7 @@ $sfpro: "sfpro";
             /* font-family: "sfpro"; */
             font-size: 21vh;
             text-align: center;
-            letter-spacing: -2.95vw;
+            letter-spacing: -2.95vh;
             margin-bottom: 3px;
             height: 10px;
             width: 100%;
@@ -524,6 +524,7 @@ $sfpro: "sfpro";
 
         .full-director-message{
             // display: none;
+            left: -100vw;
             .contact-quote-heading {
                 font-size: 1.5em;
                 margin-top: 8vh;
@@ -559,13 +560,13 @@ $sfpro: "sfpro";
             .quote-icon.start{
                 left: -42.5vw;
                 top: 21.5vh;
-                letter-spacing: -1.95vh;
+                letter-spacing: -16px;
                 font-size: 12vh;
             }
             .quote-icon.end{
                 left: 44vw;
                 top: 77vh;
-                letter-spacing: -1.95vh;
+                letter-spacing: -16px;
                 font-size: 12vh;
             }
         }

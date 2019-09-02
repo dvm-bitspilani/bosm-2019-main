@@ -306,17 +306,14 @@ body {
 .label-text-2 {
   color: #2699fb;
   font-family: sfpro;
-  font-size: 1.2rem;
-}
+  font-size: 1.2rem; }
 
 .coach-wrapper {
   width: 69%;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-}
+  align-items: center; }
 
 .coach-wrapper > input {
   box-shadow: 0 0 0 1px #2699fb;
-  margin-right: 16px;
-}
+  margin-right: 16px; }
