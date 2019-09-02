@@ -106,6 +106,8 @@ body {
     background-image: url("../img/developers/Devansh.jpg"); }
   .developer:nth-of-type(4) .dev-image {
     background-image: url("../img/developers/mukul.jpeg"); }
+  .developer:nth-of-type(5) .dev-image {
+    background-image: url("../img/developers/Akshit.jpg"); }
   .developer:nth-of-type(6) .dev-image {
     background-image: url("../img/developers/chirag.jpeg"); }
   .developer:nth-of-type(7) .dev-image {
