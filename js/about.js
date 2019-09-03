@@ -238,3 +238,4 @@ var Var3 = setInterval(slidetweet, 3000);
 // var Var2 = setInterval(tweetchange, 3000);
 
 console.log('%c Made With Love By DVM','color: #bada55;font-size:40px');
+console.log('%c ', 'font-size:400px; background:url("https://bits-bosm.org/img/meme.jpg") no-repeat; background-size:contain;');
