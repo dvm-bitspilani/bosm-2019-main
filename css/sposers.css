@@ -29,12 +29,13 @@ body {
 .main-wrapper > .navbar > span {
   color: white;
   font-size: 2.5em;
+  cursor: pointer;
 }
 
 .main-wrapper > .navbar > .logo {
   width: 80px;
   height: 80px;
-  background-image: url("/img/bosm-logo.png");
+  background-image: url("../img/bosm-logo.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -70,7 +71,6 @@ body {
   width: 300px;
   display: inline-block;
   margin: 10px;
-  background: beige;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -106,7 +106,6 @@ body {
   width: 300px;
   display: inline-block;
   margin: 10px;
-  background: beige;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
