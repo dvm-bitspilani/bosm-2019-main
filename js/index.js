@@ -71,7 +71,11 @@ function setTime() {
 
     let min = Math.floor((dDay - timeNow) / (1000 * 60)) - days * 24 * 60 - hrs * 60;
     min = min < 10 ? `0${min}` : min;
-
+    if (days < 0) {
+        days = '00';
+        hrs = '00';
+        min = '00';
+    }
     document.getElementById("days").innerHTML = days;
     document.getElementById("hrs").innerHTML = hrs;
     document.getElementById("min").innerHTML = min;
