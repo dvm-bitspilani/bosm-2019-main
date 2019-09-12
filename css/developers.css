@@ -123,6 +123,8 @@ body {
     background-image: url("../img/developers/pradyumna.jpg"); }
   .developer:nth-of-type(11) .dev-image {
     background-image: url("../img/developers/abhinav.jpg"); }
+  .developer:nth-of-type(12) .dev-image {
+    background-image: url("../img/developers/anant.jpg"); }
   .developer .dev-info {
     position: absolute;
     left: 0;
