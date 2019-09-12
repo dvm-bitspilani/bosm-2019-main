@@ -1,5 +1,5 @@
-var url = "../img/sponsers/";
-var url2 = "../img/foodspons/";
+var url = "./img/sponsers/";
+var url2 = "./img/foodspons/";
 
 var spons = [
   "9stacksLogos02.png",
