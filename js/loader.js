@@ -74,3 +74,7 @@ function animate() {
     // 	svg.style.opacity = 0;
 
 }
+
+setTimeout(() => {
+    document.getElementsByClassName('loader')[0].style.animation = 'scaleToggle 1.5s infinite';
+}, 4000);
