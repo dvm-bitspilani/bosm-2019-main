@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "FuturaPT";
+    src: url("../fonts/FuturaBoldCondensedBT.ttf");
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "FuturaPT";
+}
+
+.main-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: transparent linear-gradient(180deg, #288aff 0%, #72b2ff 100%) 0% 0% no-repeat padding-box;
+}
+
+.main-wrapper > .navbar {
+    width: 96%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2% 0 2%;
+}
+
+.main-wrapper > .navbar > span {
+    color: white;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.main-wrapper > .navbar > .logo {
+    width: 80px;
+    height: 80px;
+    background-image: url("../img/bosm-logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.spons-wrapper {
+    height: 94vh;
+    padding-bottom: 6vh;
+    width: 100%;
+    background-color: #ffffff;
+    background: url('../images/assets/sponsors.jpg') no-repeat center center/cover;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 16;
+    transition: 0.5s;
+}
+
+.spons-container::-webkit-scrollbar{
+    display: none;
+}
+.spons-heading {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    /* padding-left: 25vw; */
+}
+
+.spons-wrapper span {
+    color: white;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.spons-container {
+    width: 80%;
+    height: 78%;
+    overflow-y: scroll;
+    margin: 0 auto;
+}
+
+.sponsor {
+    margin-bottom: 7.5vh;
+}
+
+.sponsor-heading {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    color: white;
+}
+
+.sponsor-card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sponsor-card-container .spons-details {
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sponsor-card-container img {
+    width: 17.5vw;
+}
+
+.spons-tab-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 32px;
+    background: #eeeeee;
+    padding: 16px;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+
+.spons-tab, .past-spons-tab {
+    width: 50%;
+    padding: 8px auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.spons-tab span, .past-spons-tab span {
+    font-size: 2rem;
+    padding-bottom: 2px;
+    color: #222222;
+    transition: 0.5s;
+}
+
+.spons-tab span.active, .past-spons-tab span.active {
+    border-bottom: 2px solid #222222;
+}
+
+.spons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.food-spons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sub-heading {
+    width: 100%;
+    text-align: center;
+    margin: 5vh 0;
+    font-size: 2.5rem;
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .navbar span {
+        transform: translateY(-25%) translateX(-25%);
+    }
+    .spons-wrapper span {
+        font-size: 2.5rem;
+    }
+    .sponsor-heading {
+        font-size: 1.5rem;
+    }
+    .sponsor-card-container img {
+        width: 60vw;
+    }
+}
